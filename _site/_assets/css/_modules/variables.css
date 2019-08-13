@@ -1,0 +1,75 @@
+:root {
+
+  /* TYPOGRAPHY
+  ---------------------------------------- */
+  --base-font: "moderat";
+  --base-font-size: calc(1rem + .08vw);
+  --base-line-height: 1.5;
+  --measure: 60ch;
+
+  /* SPACING
+  ---------------------------------------- */
+  --ratio: var(--base-line-height);
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: var(--base-font-size);
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+
+  /* COLORS
+  ---------------------------------------- */
+
+  /* Neutrals */
+  --c-white: #fff;
+  --c-neutral-50: #F7F7F8;
+  --c-neutral-100: #E7E9EA;
+  --c-neutral-200: #CBCFD2;
+  --c-neutral-300: #B0B6BA;
+  --c-neutral-400: #97A0A5;
+  --c-neutral-500: #808A90;
+  --c-neutral-600: #68747A;
+  --c-neutral-700: #4F5D65;
+  --c-neutral-800: #35444C;
+  --c-neutral-900: #263238;
+  --c-black: #000;
+
+  /* Orange */
+  --c-orange-100: #FEF1DA;
+  --c-orange-200: #FFD385;
+  --c-orange-300: #FBA308;
+  --c-orange-400: #FB9105;
+  --c-orange-500: #F0670A;
+
+  /* Orange Gradient */
+  --g-orange: linear-gradient(195deg, var(--c-orange-200), var(--c-orange-300));
+
+  /* Mint */
+  --c-mint-100: #E0F7F8;
+  --c-mint-200: #80DDE4;
+  --c-mint-300: #00ABBA;
+  --c-mint-400: #0395A1;
+  --c-mint-500: #055E5F;
+
+  /* Mint Gradient */
+  --g-mint: linear-gradient(195deg, #A3F5B7, var(--c-mint-300));
+
+  /* Green */
+  --c-green-100: #EBFDEB;
+  --c-green-200: #94F3AF;
+  --c-green-300: #12E64E;
+  --c-green-400: #00BF3B;
+  --c-green-500: #097929;
+
+  /* Red */
+  --c-red-100: #FFE1E6;
+  --c-red-200: #FFA3A3;
+  --c-red-300: #FF3535;
+  --c-red-400: #C92A2A;
+  --c-red-500: #871C1C;
+}

@@ -1,0 +1,26 @@
+@import "_modules/fonts.css";
+@import "_modules/variables.css";
+@import "_modules/colors.css";
+
+* {
+  box-sizing: border-box;
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+section,
+aside,
+footer {
+  max-width: none;
+}
+
+html, body {
+  font-family: var(--base-font);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+}
