@@ -3,21 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HUK24 &middot; Markenportal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="_assets/css/base.css">
   </head>
   <body>
-    <header>
-      <h1>HUK24 &middot; Markenportal</h1
-        <nav>
-          <ul>
-            <li><a href="#brand-personality">Marke</a></li>
-            <li><a href="#principles">Prinzipien</a></li>
-            <li><a href="#logo">Logo</a></li>
-            <li><a href="#colors">Farben</a></li>
-            <li><a href="#typo">Typographie</a></li>
-            <li><a href="#composition">Komposition</a></li>
-          </ul>
-        </nav>
+    <header class="page-header">
+      <div class="page-header__bar">
+        <h1 class="logo--huk">HUK24 &middot; Markenportal</h1>
+        <label class="nav-label" for="site-nav-toggle">Menü</label>
+      </div>
+      <input id="site-nav-toggle" class="nav-toggle" type="checkbox">
+      <nav class="site-nav">
+        <ul class="site-nav__items">
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href>Marke HUK24</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="./design.html">Design</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="#patterns">UI-Elemente</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section id="brand-personality">
@@ -150,22 +152,32 @@
       </section>
       <section id="typo">
         <h2>Typographie</h2>
-        <h3>Moderat und Moderat Bold</h3>
+        <h3><span class="font-400">Moderat Regulär und</span> Fett</h3>
+        <h4>Überschriften</h4>
+        <p>Moderat ist eine zeitgenössische Sans-Serif-Schrift, die sich durch eine charakteristische Kombination aus geometrischen Formen und einigen kantigen Akzenten auszeichnet. Für die KD-Lounge, eine von Studenten initiierte und getragene Vortragsreihe an der HTWG Konstanz, die sich mit Design und allen angrenzenden Disziplinen beschäftigt, wurde eine Schrift entworfen, die nicht nur auf Einladungen und Plakaten für die Lounge Verwendung fand, sondern auch zur Refinanzierung ebendieser dient. Unter den bisherigen Gästen der KD-Lounge waren Gestalter wie Kurt Weidemann, David Carson, Ruedi Baur, Erich Brechbühl, Götz Gramlich oder Sven Lindhorst-Emme.</p>
         <ul>
-          <li>13px</li>
-          <li>16px</li>
-          <li>19px</li>
-          <li>23px</li>
-          <li>28px</li>
-          <li>33px</li>
-          <li>40px</li>
-          <li>48px</li>
-          <li>57px</li>
+          <li class="h1--large">Überschrift 1+ 57px</li>
+          <li class="h1">Überschrift 1 48px</li>
+          <li class="h2">Überschrift 2 40px</li>
+          <li class="h3">Überschrift 3 33px</li>
+          <li class="h4">Überschrift 4 28px</li>
+          <li class="h5">Überschrift 5 23px</li>
+          <li class="h6">Überschrift 6 13px</li>
+        </ul>
+        <h4>Fließtext</h4>
+        <ul>
+          <li>Mobile 16px</li>
+          <li>Desktop 19px</li>
         </ul>
       </section>
-      <section id="composition">
-        <h2>Komposition</h2>
-        <h3>Layout/Größen/Grid</h3>
+      <section id="layout">
+        <h2>Layout</h2>
+        <h3>Größen</h3>
+        <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
+        <h3>Grid</h3>
+        <p></p>
+        <h3>Breakpoints</h3>
+        <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
       </section>
     </main>
   </body>

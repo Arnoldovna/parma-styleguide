@@ -1,0 +1,39 @@
+
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.page-header__bar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--base-font-size);
+  background: white;
+  box-shadow: 0 1px 4px rgba(0,0,0,.12);
+  z-index: 100;
+}
+
+.logo--huk {
+  max-height: calc(var(--base-font-size) * 1.5);
+  background: url(../../img/logo--huk24.svg) top left no-repeat;
+  background-size: contain;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media (min-width: 500px) {
+
+  .page-header {
+    display: flex;
+    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+  }
+
+  .page-header__bar {
+    position: static;
+    box-shadow: none;
+    overflow: hidden;
+  }
+}
