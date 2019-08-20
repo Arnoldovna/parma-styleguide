@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html lang="de" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="  " />
-    <meta name="robots" content="index, follow" />
-    <meta name="google" content="notranslate">
-    <title> HUK24 Markenportal </title>
-    <link rel="canonical" href="/design/" />
-    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
-    <link rel="author" href="" />
-    <link rel="stylesheet" href="../_assets/css/base.css">
-  </head>
-  <body>
-    <header class="page-header">
-  <div class="page-header__bar">
-    <h1 class="logo--huk">HUK24 &middot; Markenportal</h1>
-    <label id="js-nav-label" class="nav-label" for="site-nav-toggle">Menü</label>
-  </div>
-  <input id="site-nav-toggle" class="nav-toggle" type="checkbox">
-  <nav class="site-nav">
-    <ul class="site-nav__items">
-      <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="/">Marke</a></li>
-      <li class="site-nav__item"><a class="site-nav__link" href="/design">Design</a></li>
-      <li class="site-nav__item"><a class="site-nav__link" href="https://huk24-de.web.dmz.tuhuk.de/styleguide/">UI-Elemente</a></li>
-    </ul>
-  </nav>
-</header>
-
-    <main>
+---
+layout: layouts/default
+baseurl: ../
+---
+<main>
   <nav class="page-nav">
     <ul class="page-nav__items">
       <li class="page-nav__item"><a class="page-nav__link" href="#logo">Logo</a></li>
@@ -44,7 +17,7 @@
   <section id="logo">
     <h2>Logo</h2>
     <picture>
-      <img src="../_assets/img/logo--huk24.svg" alt="Das HUK24 Logo">
+      <img src="{{ baseurl }}_assets/img/logo--huk24.svg" alt="Das HUK24 Logo">
     </picture>
   </section>
   <section id="colors">
@@ -167,7 +140,3 @@
     <h2>Unsere Sprache</h2>
   </section>
 </main>
-
-    <script type="text/javascript" src="../_assets/js/main.js"></script>
-  </body>
-</html>

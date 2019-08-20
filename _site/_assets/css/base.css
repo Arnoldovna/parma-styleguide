@@ -71,3 +71,10 @@ h6, .h6 {
   line-height: var(--h6-line-height);
   text-transform: uppercase;
 }
+
+@media (min-width: 512px) {
+
+  body {
+    padding-top: var(--s5);
+  }
+}
