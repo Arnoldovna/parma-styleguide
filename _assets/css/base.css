@@ -21,7 +21,7 @@ footer {
   max-width: none;
 }
 
-html, body {
+body {
   margin: 0;
   font-family: var(--base-font);
   font-size: var(--base-font-size);

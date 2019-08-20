@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: var(--base-font-size);
+  padding: calc(var(--base-font-size) / 2) var(--base-font-size);
   background: white;
   box-shadow: 0 1px 4px rgba(0,0,0,.12);
   z-index: 100;
@@ -17,6 +17,7 @@
 
 .logo--huk {
   max-height: calc(var(--base-font-size) * 1.5);
+  margin: calc(var(--base-font-size) * .75) 0 0;
   background: url(../../img/logo--huk24.svg) top left no-repeat;
   background-size: contain;
   text-indent: 100%;
@@ -35,5 +36,9 @@
     position: static;
     box-shadow: none;
     overflow: hidden;
+  }
+
+  .logo--huk {
+    margin: calc(var(--base-font-size) * .5) 0 0;
   }
 }
