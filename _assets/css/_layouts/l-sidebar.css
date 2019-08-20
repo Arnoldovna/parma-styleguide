@@ -1,0 +1,14 @@
+
+
+@media (min-width: 32rem) {
+
+  .l-sidebar {
+    display: grid;
+    grid-template-columns: minmax(7rem, 20rem) minmax(25rem, 1fr);
+  }
+
+  .l-sidebar__main,
+  .l-sidebar__aside {
+    padding: 0 calc(var(--base-font-size) * 1.5);
+  }
+}

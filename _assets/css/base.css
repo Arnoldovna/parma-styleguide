@@ -3,6 +3,8 @@
 @import "_modules/colors.css";
 @import "_modules/header.css";
 @import "_modules/site-nav.css";
+@import "_modules/page-nav.css";
+@import "_layouts/l-sidebar.css";
 
 * {
   box-sizing: border-box;
@@ -72,7 +74,7 @@ h6, .h6 {
   text-transform: uppercase;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 32rem) {
 
   body {
     padding-top: var(--s5);

@@ -107,7 +107,7 @@
   transition: transform .3s .14s cubic-bezier(0.110, 1.650, 0.535, 0.855);
 }
 
-@media (min-width: 512px) {
+@media (min-width: 32rem) {
 
   .nav-label {
     display: none;

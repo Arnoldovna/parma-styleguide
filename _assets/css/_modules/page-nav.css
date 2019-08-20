@@ -1,0 +1,19 @@
+
+
+.page-nav--is-fixed {
+  position: fixed;
+  top: calc(var(--s3) - 3px);
+}
+
+.page-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-nav__link {
+  display: block;
+  height: 3rem;
+  color: var(--c-neutral-900);
+  text-decoration: none;
+}

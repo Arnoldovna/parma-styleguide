@@ -1,6 +1,6 @@
 
 .page-header {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
 }
@@ -25,7 +25,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 512px) {
+@media (min-width: 32rem) {
 
   .page-header {
     display: flex;
