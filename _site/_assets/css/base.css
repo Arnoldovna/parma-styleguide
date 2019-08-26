@@ -4,6 +4,7 @@
 @import "_modules/header.css";
 @import "_modules/site-nav.css";
 @import "_modules/page-nav.css";
+@import "_modules/waypoint.css";
 @import "_layouts/l-sidebar.css";
 @import "_layouts/l-stack.css";
 @import "_layouts/l-scroll-block.css";

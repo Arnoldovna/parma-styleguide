@@ -70,6 +70,10 @@ transform: translateY(0);
   text-decoration: none;
 }
 
+.page-nav__link--is-active {
+  color: var(--c-neutral-900);
+}
+
 @media (min-width: 36rem) {
 
   .page-nav__toggle,
@@ -93,5 +97,9 @@ transform: translateY(0);
 
   .page-nav__link {
     padding: 1rem 0;
+  }
+
+  .page-nav__link--is-active {
+    color: var(--c-orange-300);
   }
 }

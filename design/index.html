@@ -6,7 +6,7 @@ baseurl: ../
 <main class="l-sidebar">
   <input id="js-page-nav__toggle" type="checkbox" class="page-nav__toggle">
   <label id="js-page-nav__label" for="js-page-nav__toggle" class="page-nav__label">
-    Inhalte
+    <span id="js-page-nav__label__content">Inhalte</span>
     <img class="page-nav__arrow" src="{{ baseurl }}_assets/img/arrow--down.svg" alt="Pfeil nach unten">
   </label>
   <div class="l-sidebar__aside">
@@ -15,21 +15,19 @@ baseurl: ../
         <li class="page-nav__item"><a class="page-nav__link page-nav__link--is-active" href="#logo">Logo</a></li>
         <li class="page-nav__item"><a class="page-nav__link" href="#colors">Farben</a></li>
         <li class="page-nav__item"><a class="page-nav__link" href="#layout">Layout</a></li>
-        <li class="page-nav__item"><a class="page-nav__link" href="#campaigns">Kampagnen</a></li>
-        <li class="page-nav__item"><a class="page-nav__link" href="#visuals">Bildsprache</a></li>
+        <li class="page-nav__item"><a class="page-nav__link" href="#icons">Icons</a></li>
         <li class="page-nav__item"><a class="page-nav__link" href="#typo">Typographie</a></li>
-        <li class="page-nav__item"><a class="page-nav__link" href="#tone">Unsere Sprache</a></li>
       </ul>
     </nav>
   </div>
   <div class="l-sidebar__main l-stack--large">
-    <section id="logo" class="l-stack">
+    <section id="logo" class="l-stack waypoint" data-title="Logo">
       <h2>Logo</h2>
       <picture>
         <img src="{{ baseurl }}_assets/img/logo--huk24.svg" alt="Das HUK24 Logo">
       </picture>
     </section>
-    <section id="colors" class="l-stack">
+    <section id="colors" class="l-stack waypoint" data-title="Farben">
       <h2>Farben</h2>
       <h3>Primärfarben</h3>
       <ul>
@@ -116,7 +114,7 @@ baseurl: ../
         </li>
       </ul>
     </section>
-    <section id="layout">
+    <section id="layout" class="l-stack waypoint" data-title="Layout">
       <h2>Layout</h2>
       <h3>Größen</h3>
       <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
@@ -125,7 +123,10 @@ baseurl: ../
       <h3>Breakpoints</h3>
       <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
     </section>
-    <section id="typo">
+    <section id="icons" class="l-stack waypoint" data-title="Icons">
+      <h2>Icons</h2>
+    </section>
+    <section id="typo" class="l-stack waypoint" data-title="Typographie">
       <h2>Typographie</h2>
       <h3><span class="font-400">Moderat Regulär und</span> Fett</h3>
       <h4>Überschriften</h4>
@@ -145,8 +146,6 @@ baseurl: ../
         <li>Desktop 19px</li>
       </ul>
     </section>
-    <section id="tone">
-      <h2>Unsere Sprache</h2>
-    </section>
   </div>
 </main>
+<script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/waypoints.min.js"></script>

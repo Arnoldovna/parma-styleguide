@@ -1,0 +1,8 @@
+
+.waypoint {
+  padding: 4rem 0;
+}
+
+.waypoint:first-child {
+  padding-top: 2rem;
+}

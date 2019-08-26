@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // ------------------------------------------------------------- //
 
   let $body = document.querySelector('body')
+  let $navEls = document.querySelectorAll('.page-nav__link')
+  let waypoints = []
 
   document.querySelector('#js-nav-label').addEventListener('click', (e) => {
     e.target.classList.toggle('nav-label--is-active')
@@ -15,8 +17,46 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleScrollLock($body)
   })
 
+  document.querySelectorAll('.page-nav__link').forEach((link, i) => {
+    link.addEventListener('click', (e) => {
+      Waypoint.disableAll()
+      document.getElementById('js-page-nav__toggle').checked = false
+      toggleScrollLock($body)
+      setActiveNavEl(i)
+      setTimeout(() => {
+        Waypoint.enableAll()
+      }, 66)
+    })
+  })
+
   function toggleScrollLock(target) {
     target.classList.toggle('l-scroll-lock')
+  }
+
+  function setActiveNavEl(index, section) {
+    $navEls.forEach((el, i) => {
+      el.classList.remove('page-nav__link--is-active')
+      if(i === index) {
+        el.classList.add('page-nav__link--is-active')
+      }
+    })
+
+    let theSection =  section || document.querySelectorAll('.waypoint').item(index)
+    document.getElementById('js-page-nav__label__content').textContent = theSection.dataset.title
+  }
+
+  if(Waypoint) {
+    let sections = document.querySelectorAll('.waypoint')
+
+    sections.forEach((section, index) => {
+      waypoints.push(new Waypoint({
+        element: section,
+        handler: (direction) => {
+          setActiveNavEl(index, section)
+        },
+        offset: 48
+      }))
+    })
   }
 
   //
@@ -43,7 +83,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const entry of entries) {
       // Toggle class if intersects
       entry.target.classList.toggle('in-view', entry.isIntersecting)
-      console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
+      // console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
 
       // Handle page header intersection
       if (entry.target.classList.contains('page-header')) {
