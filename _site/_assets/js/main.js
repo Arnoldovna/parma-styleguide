@@ -8,8 +8,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   document.querySelector('#js-nav-label').addEventListener('click', (e) => {
     e.target.classList.toggle('nav-label--is-active')
-    $body.classList.toggle('is-scroll-locked')
+    toggleScrollLock($body)
   })
+
+  document.querySelector('#js-page-nav__label').addEventListener('click', (e) => {
+    toggleScrollLock($body)
+  })
+
+  function toggleScrollLock(target) {
+    target.classList.toggle('l-scroll-lock')
+  }
 
   //
   // Page header
@@ -17,13 +25,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function pageHeaderIntersectionHandler(visible) {
 
-    if(!window.matchMedia('(min-width: 32rem)').matches) return
+    // if(!window.matchMedia('(min-width: 32rem)').matches) return
 
     if(!visible) {
-      document.querySelector('.page-nav').classList.add('page-nav--is-fixed');
+      document.querySelector('.l-sidebar').classList.add('page-nav--is-fixed');
     }
     else {
-      document.querySelector('.page-nav').classList.remove('page-nav--is-fixed');
+      document.querySelector('.l-sidebar').classList.remove('page-nav--is-fixed');
     }
   }
 

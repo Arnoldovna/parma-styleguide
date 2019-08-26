@@ -1,12 +1,37 @@
 
 .page-nav {
-  position: relative;
-  background-color: var(--c-white);
+  position: absolute;
+  top: 7rem;
+  width: 100%;
+  height: calc(100vh - 3rem);
+  padding: .5rem 0;
+  background: var(--c-orange-300);
+  color: var(--c-white);
+  transition: transform .2s ease-out;
+  transform: translateY(-100vh);
+}
+
+:checked ~ div .page-nav {
+transform: translateY(0);
 }
 
 .page-nav--is-fixed {
+  margin-top: 3rem;
+}
+
+.page-nav--is-fixed .page-nav__label {
   position: fixed;
-  top: calc(var(--s3) - 3px);
+  top: 0;
+  width: 100%;
+}
+
+.page-nav--is-fixed .page-nav {
+  position: fixed;
+  top: 3vh;
+}
+
+.page-nav--is-fixed :checked ~ div .page-nav {
+  top: 3rem
 }
 
 .page-nav__toggle {
@@ -14,36 +39,33 @@
 }
 
 .page-nav__label {
-  position: absolute;
-  z-index: 300;
-  width: 100%;
-  padding: .5rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 700;
+  padding: .5rem 2rem .5rem 1rem;
   line-height: 2rem;
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
+  background-color: var(--c-white);
+}
+
+.page-nav__arrow {
+  transition: transform .4s ease-in-out;
+}
+
+:checked ~ .page-nav__label .page-nav__arrow {
+  transform: rotateX(180deg);
 }
 
 .page-nav__items {
   margin: 0;
   padding: 0;
-  height: 3rem;
   list-style-type: none;
 }
 
 .page-nav__link {
   display: block;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
   padding: .5rem 1rem;
   line-height: 2rem;
-  color: var(--c-neutral-900);
+  color: inherit;
   text-decoration: none;
-  opacity: 0;
-}
-
-.page-nav__link--is-active {
-  z-index: 200;
-  opacity: 1;
 }

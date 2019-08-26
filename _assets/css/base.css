@@ -5,10 +5,13 @@
 @import "_modules/site-nav.css";
 @import "_modules/page-nav.css";
 @import "_layouts/l-sidebar.css";
+@import "_layouts/l-stack.css";
+@import "_layouts/l-scroll-block.css";
 
 * {
   box-sizing: border-box;
   max-width: var(--measure);
+  -webkit-tap-highlight-color: transparent;
 }
 
 html,
@@ -23,12 +26,17 @@ footer {
   max-width: none;
 }
 
+picture {
+  display: block;
+}
+
 body {
   margin: 0;
-  padding-top: var(--s4);
+  padding-top: 4rem;
   font-family: var(--base-font);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
+  hyphens: auto;
 }
 
 .h1--large,

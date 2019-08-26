@@ -24,7 +24,7 @@
   background: var(--c-neutral-900);
   border-radius: 999rem;
   transform-origin: center;
-  transition: transform .2s ease-out;
+  transition: transform .3s ease-in;
 }
 
 .nav-label:before {
@@ -44,12 +44,12 @@
 }
 
 .site-nav {
-  padding: calc(3rem + var(--base-font-size)) var(--base-font-size) var(--base-font-size);
-  margin-top: -3rem;
-  background: var(--c-orange-300);
-  box-shadow: 0 1px 4px rgba(0,0,0,.12);
+  height: calc(100vh - 3rem);
+  padding: .5rem 0;
+  background: var(--c-mint-300);
+  color: var(--c-white);
   transform: translateY(-150%);
-  transition: .2s .2s ease-in;
+  transition: .3s ease-in;
   transform-origin: bottom;
 }
 
@@ -59,13 +59,11 @@
   list-style-type: none;
 }
 
-.site-nav__item + .site-nav__item {
-  margin-top: calc(var(--base-font-size));
-}
-
 .site-nav__link {
-  font-weight: 700;
-  color: var(--c-white);
+  display: block;
+  padding: .5rem 1rem;
+  font-size: var(--h5-size);
+  color: inherit;
   text-decoration: none;
 }
 
@@ -73,7 +71,7 @@
   transform: translateY(-30%);
 }
 
-.site-nav__item:nth-child(1) {
+/* .site-nav__item:nth-child(1) {
   transition: transform .2s .05s ease-in;
 }
 
@@ -83,19 +81,19 @@
 
 .site-nav__item:nth-child(3) {
   transition: transform .2s .15s ease-in;
-}
+} */
 
 /* SHOW nav when input is checked */
 :checked ~ .site-nav {
   transform: translateY(0);
-  transition: .4s cubic-bezier(0.110, 1.650, 0.535, 0.855);
+  transition: .3s ease-out;
 }
 
 :checked ~ .site-nav .site-nav__item {
   transform: translateY(0);
 }
 
-:checked ~ .site-nav .site-nav__item:first-child {
+/* :checked ~ .site-nav .site-nav__item:first-child {
   transition: transform .3s .08s cubic-bezier(0.110, 1.650, 0.535, 0.855);
 }
 
@@ -105,7 +103,7 @@
 
 :checked ~ .site-nav .site-nav__item:nth-child(3) {
   transition: transform .3s .14s cubic-bezier(0.110, 1.650, 0.535, 0.855);
-}
+} */
 
 @media (min-width: 32rem) {
 
@@ -117,7 +115,7 @@
     display: block;
     margin-left: auto;
     background: transparent;
-    box-shadow: none;
+    /* box-shadow: none; */
     transform: translateY(0);
   }
 

@@ -1,0 +1,8 @@
+
+.l-stack > * + * {
+  margin-top: 2.5rem;
+}
+
+.l-stack--large > * + * {
+  margin-top: 5rem;
+}

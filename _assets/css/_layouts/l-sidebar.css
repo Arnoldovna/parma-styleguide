@@ -1,4 +1,24 @@
 
+.l-sidebar__main {
+  padding: 2rem 1rem;
+}
+
+/* .l-sidebar__aside {
+  position: fixed;
+  top: 7rem;
+  width: 100%;
+  transform: translateY(-34rem);
+  transition: transform .2s ease-out;
+}
+
+.page-nav--is-fixed .l-sidebar__main {
+  top: 4rem;
+} */
+
+/* :checked ~ .l-sidebar__aside {
+  transform: translateY(0);
+} */
+
 
 @media (min-width: 36rem) {
 
@@ -9,6 +29,6 @@
 
   .l-sidebar__main,
   .l-sidebar__aside {
-    padding: 0 calc(var(--base-font-size) * 1.5);
+    padding: 0 1.5rem;
   }
 }
