@@ -4,7 +4,9 @@
   top: 0;
   z-index: 800;
   width: 100%;
+  max-width: 90rem;
   height: 4rem;
+  margin: 0 auto;
 }
 
 .page-header__bar {
@@ -30,12 +32,15 @@
 
   .page-header {
     display: flex;
-    box-shadow: 0 1px 4px rgba(0,0,0,.12);
+    padding: 0 .5rem;
+    background: var(--c-white);
   }
 
   .page-header__bar {
+    display: flex;
+    align-items: center;
     position: static;
-    padding: 1.5rem);
+    padding: 1rem;
     overflow: hidden;
   }
 
