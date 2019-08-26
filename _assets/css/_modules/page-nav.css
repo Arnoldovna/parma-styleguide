@@ -1,19 +1,49 @@
 
+.page-nav {
+  position: relative;
+  background-color: var(--c-white);
+}
 
 .page-nav--is-fixed {
   position: fixed;
   top: calc(var(--s3) - 3px);
 }
 
+.page-nav__toggle {
+  display: none;
+}
+
+.page-nav__label {
+  position: absolute;
+  z-index: 300;
+  width: 100%;
+  padding: .5rem 1rem;
+  line-height: 2rem;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .page-nav__items {
   margin: 0;
   padding: 0;
+  height: 3rem;
   list-style-type: none;
 }
 
 .page-nav__link {
   display: block;
-  height: 3rem;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  padding: .5rem 1rem;
+  line-height: 2rem;
   color: var(--c-neutral-900);
   text-decoration: none;
+  opacity: 0;
+}
+
+.page-nav__link--is-active {
+  z-index: 200;
+  opacity: 1;
 }
