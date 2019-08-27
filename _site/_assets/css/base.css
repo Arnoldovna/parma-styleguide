@@ -65,14 +65,29 @@ h2, .h2 {
   line-height: var(--h2-line-height);
 }
 
+.h2--adaptive {
+  font-size: calc(var(--h2-size) + 1.5vw);
+  line-height: calc(var(--h2-line-height) + 1.5vw);
+}
+
 h3, .h3 {
   font-size: var(--h3-size);
   line-height: var(--h3-line-height);
 }
 
+.h3--adaptive {
+  font-size: calc(var(--h3-size) + .25vw);
+  line-height: calc(var(--h3-line-height) + .25vw);
+}
+
 h4, .h4 {
   font-size: var(--h4-size);
   line-height: var(--h4-line-height);
+}
+
+.h4--adaptive {
+  font-size: calc(var(--h4-size) + .1vw);
+  line-height: calc(var(--h4-line-height) + .1vw);
 }
 
 h5, .h5 {
