@@ -32,7 +32,6 @@ picture {
 }
 
 body {
-  max-width: 90rem;
   margin: 0 auto;
   padding-top: 4rem;
   font-family: var(--base-font);
