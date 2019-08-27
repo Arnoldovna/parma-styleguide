@@ -11,11 +11,11 @@
 
 * {
   box-sizing: border-box;
-  max-width: var(--measure);
+  /* max-width: var(--measure); */
   -webkit-tap-highlight-color: transparent;
 }
 
-html,
+/* html,
 body,
 div,
 header,
@@ -25,7 +25,7 @@ section,
 aside,
 footer {
   max-width: none;
-}
+} */
 
 picture {
   display: block;
