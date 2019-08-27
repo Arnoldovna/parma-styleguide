@@ -38,6 +38,7 @@ body {
   font-family: var(--base-font);
   font-size: var(--base-font-size);
   line-height: var(--base-line-height);
+  color: var(--c-neutral-800);
   hyphens: auto;
 }
 
@@ -46,6 +47,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
   font-weight: bold;
+  color: var(--c-neutral-800);
 }
 
 .h1--large {
