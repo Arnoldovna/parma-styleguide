@@ -1,0 +1,44 @@
+[
+  {
+    "type": "Sekundärfarbe",
+    "name": "Grün",
+    "number": "100",
+    "hex": "EBFDEB",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Grün",
+    "number": "200",
+    "hex": "94F3AF",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Grün",
+    "number": "300",
+    "hex": "12E64E",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Grün",
+    "number": "400",
+    "hex": "00BF3B",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Grün",
+    "number": "500",
+    "hex": "097929",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  }
+]

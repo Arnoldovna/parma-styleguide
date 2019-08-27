@@ -1,0 +1,45 @@
+[
+  {
+    "type": "Sekundärfarbe",
+    "name": "Rot",
+    "number": "100",
+    "hex": "FFE1E6",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Rot",
+    "number": "200",
+    "hex": "FFA3A3",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Rot",
+    "number": "300",
+    "hex": "FF3535",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Rot",
+    "number": "400",
+    "hex": "C92A2A",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Sekundärfarbe",
+    "name": "Rot",
+    "number": "500",
+    "hex": "871C1C",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  }
+]

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "Primärfarbe",
+    "name": "Mint",
+    "number": "100",
+    "hex": "E0F7F8",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Mint",
+    "number": "200",
+    "hex": "80DDE4",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Mint",
+    "number": "300",
+    "hex": "00ABBA",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Mint",
+    "number": "400",
+    "hex": "0395A1",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Mint",
+    "number": "500",
+    "hex": "055E5F",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  }
+]

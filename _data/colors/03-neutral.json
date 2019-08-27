@@ -1,0 +1,89 @@
+[
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "50",
+    "hex": "F7F7F8",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "100",
+    "hex": "E7E9EA",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "200",
+    "hex": "CBCFD2",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "300",
+    "hex": "B0B6BA",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "400",
+    "hex": "97A0A5",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "500",
+    "hex": "808A90",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "600",
+    "hex": "68747A",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "700",
+    "hex": "4F5D65",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "800",
+    "hex": "35444C",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Grauton",
+    "name": "Neutral",
+    "number": "900",
+    "hex": "263238",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  }
+]

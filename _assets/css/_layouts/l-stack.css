@@ -1,4 +1,12 @@
 
+.l-stack--tiny > * + * {
+  margin-top: .25rem;
+}
+
+.l-stack--small > * + * {
+  margin-top: .5rem;
+}
+
 .l-stack > * + * {
   margin-top: 2.5rem;
 }

@@ -1,0 +1,29 @@
+<section id="colors" class="l-stack--small waypoint" data-title="Farben">
+  <h2 class="h2--adaptive">Farben</h2>
+    {%- for color in colors -%}
+    <div class="l-colors">
+      <ul class="l-colors__items">
+        {%- for shade in color[1] -%}
+        <li class="l-colors__item">
+          <div class="color {% if shade.dark %}color--is-dark{% endif %}">
+            <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+              <polygon points="0,0 90,0 100,50 90,100 0,100 10,50" fill="#{{ shade.hex }}"></polygon>
+            </svg>
+            <div class="color__body">
+              <div class="color__type">{{ shade.type }}</div>
+              <div class="color__name">{{ shade.name }}</div>
+              <div class="color__number">{{ shade.number }}</div>
+              <div class="color__codes">
+                <span class="color__label">HEX</span> <span class="color__value">{{ shade.hex }}</span>
+                <span class="color__label">HSL</span> <span class="color__value">{{ shade.hsl }}</span>
+                <span class="color__label">RGB</span> <span class="color__value">{{ shade.rgb }}</span>
+              </div>
+            </div>
+          </div>
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+  {%- endfor -%}
+</section>

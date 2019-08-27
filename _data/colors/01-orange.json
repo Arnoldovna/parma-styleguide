@@ -1,0 +1,45 @@
+[
+  {
+    "type": "Primärfarbe",
+    "name": "Orange",
+    "number": "100",
+    "hex": "FEF1DA",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Orange",
+    "number": "200",
+    "hex": "FFD385",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Orange",
+    "number": "300",
+    "hex": "FBA308",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Orange",
+    "number": "400",
+    "hex": "FB9105",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  },
+  {
+    "type": "Primärfarbe",
+    "name": "Orange",
+    "number": "500",
+    "hex": "F0670A",
+    "hsl": "38 97 51",
+    "rgb": "251 163 8",
+    "dark": "true"
+  }
+]
