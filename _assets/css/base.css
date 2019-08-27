@@ -8,6 +8,7 @@
 @import "_layouts/l-sidebar.css";
 @import "_layouts/l-stack.css";
 @import "_layouts/l-scroll-block.css";
+@import "_layouts/l-full-page.css";
 
 * {
   box-sizing: border-box;
