@@ -2,7 +2,7 @@
 .page-header {
   position: absolute;
   top: 0;
-  z-index: 800;
+  z-index: 904;
   width: 100%;
   max-width: 90rem;
   height: 4rem;
@@ -15,7 +15,7 @@
   justify-content: space-between;
   padding: .5rem 1rem;
   background: white;
-  z-index: 100;
+  z-index: 900;
 }
 
 .logo--huk {

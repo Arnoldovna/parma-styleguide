@@ -23,6 +23,7 @@
 
 .color {
   position: relative;
+  z-index: 100;
   padding: 1.5rem 1rem 1.5rem 3rem;
   hyphens: none;
 }
@@ -33,6 +34,7 @@
 
 .color__bg-svg {
   position: absolute;
+  z-index: 100;
   top: 0;
   right: 0;
   width: 100%;
@@ -44,6 +46,7 @@
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto auto 1fr;
   position: relative;
+  z-index: 100;
 }
 
 .color__type,

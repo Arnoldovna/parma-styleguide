@@ -2,6 +2,7 @@
 .page-nav {
   position: absolute;
   top: 7rem;
+  z-index: 800;
   width: 100%;
   height: calc(100vh - 3rem);
   padding: .5rem 0;
@@ -12,7 +13,7 @@
 }
 
 :checked ~ div .page-nav {
-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .page-nav--is-fixed {
@@ -22,12 +23,14 @@ transform: translateY(0);
 .page-nav--is-fixed .page-nav__label {
   position: fixed;
   top: 0;
+  z-index: 901;
   width: 100%;
 }
 
 .page-nav--is-fixed .page-nav {
   position: fixed;
   top: 3rem;
+  z-index: 900;
 }
 
 .page-nav--is-fixed :checked ~ div .page-nav {
@@ -42,7 +45,7 @@ transform: translateY(0);
   display: flex;
   justify-content: space-between;
   position: relative;
-  z-index: 700;
+  z-index: 901;
   padding: .5rem 2rem .5rem 1rem;
   line-height: 2rem;
   background-color: var(--c-white);
