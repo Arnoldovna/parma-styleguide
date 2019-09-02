@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+  let gridVisible = false
   //
   // Animate Logo in
   // ------------------------------------------------------------- //
@@ -14,7 +15,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
       transformOrigin:"50% 0%"
     }
 
-    tlLogo.set('.letter', { opacity: "0" })
+    tlLogo.set('.cell', { opacity: "0" })
+          .set('.letter', { opacity: "0" })
           .set('#claim', { opacity: "0", y: '-15%' })
           .set('#letter--klammer--links', { x: "-90%" })
           .set('#letter--klammer--rechts', { x: "-310%" })
@@ -48,6 +50,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
         $body.classList.add(e.target.dataset.class)
       }
     })
+  })
+
+  document.querySelector('.js-toggle-grid').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (gridVisible) {
+      TweenMax.staggerTo('.cell', .02, { opacity: 0, ease: Power2.easeOut }, .002)
+    }
+    else {
+      TweenMax.staggerTo('.cell', .02, { opacity: 1, ease: Power2.easeOut }, .002)
+    }
+
+    gridVisible = !gridVisible
   })
 
 
