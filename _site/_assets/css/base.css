@@ -5,6 +5,7 @@
 @import "_modules/site-nav.css";
 @import "_modules/page-nav.css";
 @import "_modules/waypoint.css";
+@import "_modules/logo.css";
 @import "_layouts/l-sidebar.css";
 @import "_layouts/l-stack.css";
 @import "_layouts/l-scroll-block.css";
@@ -40,6 +41,15 @@ body {
   line-height: var(--base-line-height);
   color: var(--c-neutral-800);
   hyphens: auto;
+  transition: background-color .2s linear;
+}
+
+.page--is-dark {
+  color: var(--c-white);
+}
+
+.page--is-colored {
+  color: var(--c-black);
 }
 
 .h1--large,
@@ -47,7 +57,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0;
   font-weight: bold;
-  color: var(--c-neutral-800);
+  color: inherit;
 }
 
 .h1--large {

@@ -74,7 +74,7 @@
 }
 
 .page-nav__link--is-active {
-  color: var(--c-neutral-900);
+  color: inherit;
 }
 
 @media (min-width: 36rem) {
@@ -94,6 +94,14 @@
     transform: translateY(0);
   }
 
+  .page--is-dark .page-nav {
+    color: var(--c-white);
+  }
+
+  .page--is-colored .page-nav {
+    color: var(--c-black);
+  }
+
   .page-nav--is-fixed .page-nav {
     top: 0;
   }
@@ -104,5 +112,9 @@
 
   .page-nav__link--is-active {
     color: var(--c-orange-300);
+  }
+
+  .page--is-colored .page-nav__link--is-active {
+    color: var(--c-white);
   }
 }

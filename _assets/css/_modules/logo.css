@@ -1,0 +1,28 @@
+
+.page--is-dark {
+  background-color: var(--c-neutral-900);
+}
+
+.page--is-dark .letter,
+.page--is-dark .claim {
+  fill: var(--c-white);
+}
+
+.page--is-dark .letter--2,
+.page--is-dark .letter--4 {
+  fill: var(--c-orange-300);
+}
+
+.page--is-colored {
+  background-color: var(--c-orange-300);
+}
+
+.page--is-colored .letter,
+.page--is-colored .claim {
+  fill: var(--c-black);
+}
+
+.page--is-colored .letter--2,
+.page--is-colored .letter--4 {
+  fill: var(--c-white);
+}
