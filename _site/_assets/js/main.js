@@ -1,6 +1,42 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
   //
+  // Animate Logo in
+  // ------------------------------------------------------------- //
+
+  let tlLogo = new TimelineMax()
+  // tlLogo.staggerFrom('.letter', 10, { x: -300, opacity: 0 , ease: Elastic.easeOut }, .2)
+  //       .fromTo('#claim', .3, { opacity: 0 }, { opacity: 1 })
+
+  let commonAniParams = {
+    ease: Back.easeOut.config(1.4),
+    transformOrigin:"50% 0%"
+  }
+
+  tlLogo.set('.letter', { opacity: "0" })
+        .set('#claim', { opacity: "0" })
+        .set('#letter--klammer--links', { x: "-90%" })
+        .set('#letter--klammer--rechts', { x: "-310%" })
+        .set('#letter--2', { x: "-205%" })
+        .set('#letter--4', { x: "-180%" })
+        .to('#letter--klammer--links', .5, { opacity: 1 }, .5, 'first')
+        .to('#letter--klammer--rechts', .5, { opacity: 1 }, .5, 'first')
+        .to('#letter--klammer--links', .5, { x: "-200%", ...commonAniParams }, 'second')
+        .to('#letter--klammer--rechts', .5, { x: "-200%", ...commonAniParams }, 'second')
+        .to('#letter--2', .5, { opacity: 1}, 'third')
+        .to('#letter--4', .5, { opacity: 1}, 'third')
+        .to('#letter--klammer--links', .5, { x: "0%", ...commonAniParams }, 'fourth')
+        .to('#letter--klammer--rechts', .5, { x: "0%", ...commonAniParams }, 'fourth')
+        .to('#letter--2', .5, { x: "0%", ...commonAniParams }, 'fourth')
+        .to('#letter--4', .5, { x: "0%", ...commonAniParams }, 'fourth')
+        .to('#letter--h', .5, { opacity: 1 }, 'fifth')
+        .to('#letter--u', .5, { opacity: 1 }, 'fifth')
+        .to('#letter--k', .5, { opacity: 1 }, 'fifth')
+        .to('#letter--klammer--links', .5, { opacity: 0 }, 'sixth')
+        .to('#claim', .5, { opacity: 1 }, 'sixth')
+
+
+  //
   // Site navigation toggle
   // ------------------------------------------------------------- //
 

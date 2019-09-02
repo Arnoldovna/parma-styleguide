@@ -16,6 +16,9 @@
   <body>
     {% include partials/header.html %}
     {{ content }}
+    <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/TimelineMax.min.js"></script>
+    <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/TweenMax.min.js"></script>
     <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/main.js"></script>
   </body>
 </html>
