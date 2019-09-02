@@ -23,3 +23,7 @@
 .page--is-colored .letter--4 {
   fill: var(--c-white);
 }
+
+.page--is-colored .cell {
+  stroke: var(--c-white);
+}
