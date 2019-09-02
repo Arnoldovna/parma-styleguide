@@ -45,6 +45,7 @@ body {
 }
 
 .page--is-dark {
+  background-color: var(--c-neutral-900);
   color: var(--c-white);
 }
 
