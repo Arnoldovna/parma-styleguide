@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   tlLogo.set('.letter', { opacity: "0" })
-        .set('#claim', { opacity: "0" })
+        .set('#claim', { opacity: "0", y: '-15%' })
         .set('#letter--klammer--links', { x: "-90%" })
         .set('#letter--klammer--rechts', { x: "-310%" })
         .set('#letter--2', { x: "-205%" })
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         .to('#letter--u', .5, { opacity: 1 }, 'fifth')
         .to('#letter--k', .5, { opacity: 1 }, 'fifth')
         .to('#letter--klammer--links', .5, { opacity: 0 }, 'sixth')
-        .to('#claim', .5, { opacity: 1 }, 'sixth')
+        .to('#claim', .5, { opacity: 1, y: "0%", ...commonAniParams }, 'sixth')
 
 
   //
