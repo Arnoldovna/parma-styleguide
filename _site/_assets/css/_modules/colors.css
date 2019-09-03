@@ -1,8 +1,5 @@
 .l-colors {
-  margin: 0 -1rem;
-  padding-left: 1rem;
   overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .l-colors__items {

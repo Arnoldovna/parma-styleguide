@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
+  // const pageNav = document.querySelector("#js-page-nav")
   let gridVisible = false
+
   //
   // Animate Logo in
   // ------------------------------------------------------------- //
 
   const animateLogo = () => {
     let tlLogo = new TimelineMax()
-    // tlLogo.staggerFrom('.letter', 10, { x: -300, opacity: 0 , ease: Elastic.easeOut }, .2)
-    //       .fromTo('#claim', .3, { opacity: 0 }, { opacity: 1 })
 
     let commonAniParams = {
       ease: Back.easeOut.config(1.4),
@@ -80,6 +80,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
 
   document.querySelector('#js-page-nav__label').addEventListener('click', (e) => {
+
+    // if(document.querySelector('#js-page-nav__toggle').checked) {
+    //   console.log('body locked')
+    //   bodyScrollLock.disableBodyScroll(targetElement)
+    // }
+    // else {
+    //   console.log('body unlocked')
+    //   bodyScrollLock.enableBodyScroll(targetElement)
+    // }
     toggleScrollLock($body)
   })
 
@@ -87,7 +96,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     link.addEventListener('click', (e) => {
       Waypoint.disableAll()
       document.getElementById('js-page-nav__toggle').checked = false
-      toggleScrollLock($body)
+      setScrollLock($body, false)
       setActiveNavEl(i)
       setTimeout(() => {
         Waypoint.enableAll()
@@ -95,7 +104,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   })
 
+  function setScrollLock(target, setLock) {
+
+    if(setLock) {
+      target.classList.add('l-scroll-lock')
+      // document.querySelector('body').ontouchstart = (e) => { e.preventDefault() }
+    }
+    else {
+      target.classList.remove('l-scroll-lock')
+    }
+  }
+
   function toggleScrollLock(target) {
+    // document.querySelector('body').ontouchstart = (e) => { e.preventDefault() }
     target.classList.toggle('l-scroll-lock')
   }
 

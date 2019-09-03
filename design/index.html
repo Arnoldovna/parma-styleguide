@@ -10,10 +10,10 @@ baseurl: ../
     <img class="page-nav__arrow" src="{{ baseurl }}_assets/img/arrow--down.svg" alt="Pfeil nach unten">
   </label>
   <div class="l-sidebar__aside">
-    <nav class="page-nav">
+    <nav id="js-page-nav" class="page-nav">
       <ul class="page-nav__items">
         <li class="page-nav__item">
-          <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
+          <div class="page-nav__icon page-nav__icon--is-active">{% include ../_assets/img/klammer--rechts.svg %}</div>
           <a class="page-nav__link page-nav__link--is-active" href="#logo">Logo</a>
           <ul class="page-subnav">
             <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 1</a></li>
@@ -32,6 +32,13 @@ baseurl: ../
         <li class="page-nav__item">
           <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
           <a class="page-nav__link" href="#icons">Icons</a>
+          <ul class="page-subnav">
+            <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 1</a></li>
+            <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 2</a></li>
+            <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 3</a></li>
+            <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 4</a></li>
+            <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 5</a></li>
+          </ul>
         </li>
         <li class="page-nav__item">
           <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>

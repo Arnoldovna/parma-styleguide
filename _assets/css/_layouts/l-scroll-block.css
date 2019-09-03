@@ -1,4 +1,8 @@
-.l-scroll-lock {
-  height: 100vh;
-  overflow: hidden;
+
+@media (max-width: 35.999rem) {
+
+  .l-scroll-lock {
+    height: 100vh;
+    overflow: hidden;
+  }
 }

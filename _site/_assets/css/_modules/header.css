@@ -4,7 +4,7 @@
   top: 0;
   z-index: 904;
   width: 100%;
-  height: 4rem;
+  height: calc(4rem + var(--growthRatio));
   margin: 0 auto;
 }
 
@@ -12,16 +12,17 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: .5rem 1rem;
+  align-items: center;
+  padding: calc(.5rem + var(--growthRatio)) calc(1rem + var(--growthRatio));
   background: white;
   z-index: 900;
 }
 
 .logo--huk {
-  max-height: 1.5rem;
-  margin: .75rem 0 0;
+  max-height: calc(1.5rem + var(--growthRatio));
   background: url(../../img/logo--huk24.svg) top left no-repeat;
   background-size: contain;
+  background-position: left center;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -31,19 +32,50 @@
 
   .page-header {
     display: flex;
-    padding: 0 .5rem;
     background: var(--c-white);
   }
 
   .page-header__bar {
     display: flex;
-    align-items: center;
     position: static;
-    padding: 1rem;
+    padding: calc(1rem + var(--growthRatio));
     overflow: hidden;
   }
 
   .logo--huk {
     margin: 0;
+  }
+}
+
+@media (min-width: 36rem) {
+
+  .page-header {
+    height: calc(6rem + var(--growthRatio));
+  }
+
+  .page-header__bar {
+    padding-left: calc(1.5rem + var(--growthRatio));
+  }
+}
+
+@media (min-width: 48rem) {
+
+  .page-header {
+    height: calc(8rem + var(--growthRatio));
+  }
+
+  .page-header__bar {
+    padding-left: calc(3rem + var(--growthRatio));
+  }
+}
+
+@media (min-width: 75rem) {
+
+  .page-header {
+    height: calc(10rem + var(--growthRatio));
+  }
+
+  .page-header__bar {
+    padding-left: calc(5rem + var(--growthRatio));
   }
 }
