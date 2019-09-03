@@ -2,8 +2,9 @@
 
   /* TYPOGRAPHY
   ---------------------------------------- */
+  --growthRatio: .3vw;
   --base-font: "moderat";
-  --base-font-size: calc(1rem + .08vw);
+  --base-font-size: calc(1rem + var(--growthRatio));
   --base-line-height: 1.5;
   --measure: 60ch;
   --h1--large-size: 3.5625rem;     /* 57px */

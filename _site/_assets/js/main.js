@@ -102,8 +102,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   function setActiveNavEl(index, section) {
     $navEls.forEach((el, i) => {
       el.classList.remove('page-nav__link--is-active')
+      el.previousElementSibling.classList.remove('page-nav__icon--is-active')
       if(i === index) {
         el.classList.add('page-nav__link--is-active')
+        el.previousElementSibling.classList.add('page-nav__icon--is-active')
       }
     })
 
