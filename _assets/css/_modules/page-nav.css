@@ -74,9 +74,10 @@
 
 .page-nav__icon {
   display: inline-block;
-  width: calc(1rem + var(--growthRatio));
+  width: calc(.5rem + var(--growthRatio));
+  max-width: .7rem;
   height: auto;
-  padding-right: calc(.5rem + var(--growthRatio));
+  margin-right: calc(.25rem + var(--growthRatio));
   opacity: 0;
   transition: opacity .2s linear;
 }
@@ -152,7 +153,9 @@
   .page-nav {
     position: absolute;
     top: calc(6rem + var(--growthRatio));
+    bottom: 0;
     width: auto;
+    height: auto;
     padding: calc(2rem + var(--growthRatio)) 0 0;
     background: transparent;
     color: var(--c-neutral-900);
