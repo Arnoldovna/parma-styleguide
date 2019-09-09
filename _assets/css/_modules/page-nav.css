@@ -13,6 +13,10 @@
   overflow-y: scroll;
 }
 
+.page-nav--is-top-animatable {
+  transition: top .3s ease-in-out;
+}
+
 :checked ~ div .page-nav {
   transform: translateY(0);
 }
@@ -120,6 +124,12 @@
   color: inherit;
 }
 
+.subnav-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height .2s ease-in-out;
+}
+
 .page-subnav {
   margin: 0 0 0 calc(calc(1.75rem + var(--growthRatio) + 1px));
   padding: 0;
@@ -160,6 +170,7 @@
     background: transparent;
     color: var(--c-neutral-900);
     transform: translateY(0);
+    /* transition: top .2s ease-in-out; */
   }
 
   .page--is-dark .page-nav {

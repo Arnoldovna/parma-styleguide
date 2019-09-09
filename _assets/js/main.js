@@ -79,6 +79,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleScrollLock($body)
   })
 
+
+  //
+  // Page navigation
+  // ------------------------------------------------------------- //
+
+  // Attach menu toggle event listener
   document.querySelector('#js-page-nav__label').addEventListener('click', (e) => {
 
     // if(document.querySelector('#js-page-nav__toggle').checked) {
@@ -89,21 +95,47 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //   console.log('body unlocked')
     //   bodyScrollLock.enableBodyScroll(targetElement)
     // }
+
+    // Add scroll lock to body
     toggleScrollLock($body)
   })
 
+  // Attach menu items event listeners
   document.querySelectorAll('.page-nav__link').forEach((link, i) => {
     link.addEventListener('click', (e) => {
+      // Temporarily disable Waypoint to avoid conflicts
       Waypoint.disableAll()
+
+      // Uncheck the checkbox in order to close the navigation
+      // (affects mobile only)
       document.getElementById('js-page-nav__toggle').checked = false
+
+      // Set a scroll lock on the body element.
       setScrollLock($body, false)
+
+      // Set the current active navigation element
       setActiveNavEl(i)
+
+      // If page nav is not fixed, make it animatable
+      let pageNav = document.querySelector('.page-nav')
+      if(!document.querySelector('.page-nav--is-fixed')) {
+        pageNav.classList.add('page-nav--is-top-animatable')
+        pageNav.addEventListener('transitionend', transitionEndHandler)
+      }
+
+      // Wait briefly before enabling Waypoint again
       setTimeout(() => {
         Waypoint.enableAll()
       }, 66)
     })
   })
 
+  function transitionEndHandler(e) {
+    e.target.classList.remove('page-nav--is-top-animatable')
+    e.target.removeEventListener('transitionend', transitionEndHandler)
+  }
+
+  // TODO: fix this for iOS where it still doesn't work
   function setScrollLock(target, setLock) {
 
     if(setLock) {
@@ -122,14 +154,34 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function setActiveNavEl(index, section) {
     $navEls.forEach((el, i) => {
+
+      const subnavWrapper = el.parentNode.querySelector('.subnav-wrapper')
+
+      // console.log(el.parentNode.querySelector('.page-subnav').offsetHeight)
+      // Remove active classes from every element
       el.classList.remove('page-nav__link--is-active')
       el.previousElementSibling.classList.remove('page-nav__icon--is-active')
+
+      // if loop indices don't match and subnav exists collapse the subnav
+      if(i !== index && subnavWrapper) {
+        subnavWrapper.style.height = 0
+      }
+
+      // If the passed index equals the current loop index
+      // we have the currenylt active element and need to set the active classes
       if(i === index) {
         el.classList.add('page-nav__link--is-active')
         el.previousElementSibling.classList.add('page-nav__icon--is-active')
+
+        // If a subnav exists, expand it
+        if(subnavWrapper) {
+          subnavWrapper.style.height = subnavWrapper.querySelector('.page-subnav').offsetHeight + "px"
+        }
       }
     })
 
+    // Update the label content that reflects
+    // the currently active section on mobile
     let theSection =  section || document.querySelectorAll('.waypoint').item(index)
     document.getElementById('js-page-nav__label__content').textContent = theSection.dataset.title
   }
@@ -154,8 +206,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function pageHeaderIntersectionHandler(visible) {
 
-    // if(!window.matchMedia('(min-width: 32rem)').matches) return
-
     if(!visible) {
       document.querySelector('.l-sidebar').classList.add('page-nav--is-fixed');
     }
@@ -172,6 +222,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     for (const entry of entries) {
       // Toggle class if intersects
       entry.target.classList.toggle('in-view', entry.isIntersecting)
+      // console.log(entry.target)
       // console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
 
       // Handle page header intersection

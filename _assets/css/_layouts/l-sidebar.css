@@ -9,6 +9,7 @@
   .l-sidebar {
     display: grid;
     grid-template-columns: minmax(calc(7rem + var(--growthRatio)), calc(15rem + var(--growthRatio))) minmax(calc(25rem + var(--growthRatio)), 1fr);
+    margin-top: .5rem;
   }
 
   .l-sidebar__main,
