@@ -1,12 +1,21 @@
-<section id="logo" class="l-full-page l-stack waypoint" data-title="Logo">
+<section id="logo" class="l-full-page l-stack waypoint section--logo" data-title="Logo">
   <!-- <h2 class="h2--adaptive">Logo</h2> -->
+
+  <!-- <div class="grid-toggle">
+    <a href="#" class="js-toggle-grid grid-toggle__link">Grid</a>
+  </div> -->
 
   {% include ../_assets/img/logo--claim--2.svg %}
 
-  <ul class="li"><a class="js-toggle-page-bg" href="">Weiß</a></ul>
-  <ul class="li"><a class="js-toggle-page-bg" data-class="page--is-dark" href="">Schwarz</a></ul>
-  <ul class="li"><a class="js-toggle-page-bg" data-class="page--is-colored" href="">Orange</a></ul>
-  <ul class="li"><a class="js-toggle-grid" href="">Grid</a></ul>
+
+  <div class="color-switcher">
+    <ul class="color-switcher__items">
+      <li class="color-switcher__item"><a href="#" class="js-toggle-page-bg color-switcher__link">Auf Weiß</a></li>
+      <li class="color-switcher__item"><a href="#" data-class="page--is-dark" class="js-toggle-page-bg color-switcher__link color-switcher__link--is-dark">Auf Schwarz</a></li>
+      <li class="color-switcher__item"><a href="#" data-class="page--is-colored" class="js-toggle-page-bg color-switcher__link color-switcher__link--is-colored">Auf Orange</a></li>
+      <li class="color-switcher__item"><a href="#" class="js-toggle-grid grid-toggle__link">Grid</a></li>
+    </ul>
+  </div>
 
   <!-- <svg viewBox="0 0 320 48" preserveAspectRatio="none">
     <polygon points="256,0 320,0 320,48 256,48" fill="#fef1da"></polygon>

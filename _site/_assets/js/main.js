@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           .set('#letter--klammer--rechts', { x: "-310%" })
           .set('#letter--2', { x: "-205%" })
           .set('#letter--4', { x: "-180%" })
+          .set('.color-switcher__item', { y: "20px", opacity: 0 })
           .to('#letter--klammer--links', .5, { opacity: 1 }, .5, 'first')
           .to('#letter--klammer--rechts', .5, { opacity: 1 }, .5, 'first')
           .to('#letter--klammer--links', .5, { x: "-200%", ...commonAniParams }, 'second')
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           .to('#letter--k', .5, { opacity: 1 }, 'fifth')
           .to('#letter--klammer--links', .5, { opacity: 0 }, 'sixth')
           .to('#claim', .5, { opacity: 1, y: "0%", ...commonAniParams }, 'sixth')
+          .staggerTo('.color-switcher__item', .3, { opacity: 1, y: 0, ...commonAniParams }, .1, 'sixth')
   }
 
   animateLogo();
