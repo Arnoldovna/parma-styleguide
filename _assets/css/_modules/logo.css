@@ -28,7 +28,7 @@
   stroke: var(--c-white);
 }
 
-.section--logo.waypoint {
+.section--logo {
   display: flex;
   flex-direction: column;
   justify-content: center;

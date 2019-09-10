@@ -15,13 +15,6 @@ baseurl: ../
         <li class="page-nav__item">
           <div class="page-nav__icon page-nav__icon--is-active">{% include ../_assets/img/klammer--rechts.svg %}</div>
           <a class="page-nav__link page-nav__link--is-active" href="#logo">Logo</a>
-          <div class="subnav-wrapper">
-            <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 1</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 2</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 3</a></li>
-            </ul>
-          </div>
         </li>
         <li class="page-nav__item">
           <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
@@ -30,6 +23,13 @@ baseurl: ../
         <li class="page-nav__item">
           <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
           <a class="page-nav__link" href="#layout">Layout</a>
+          <div class="subnav-wrapper">
+            <ul class="page-subnav">
+              <li class="page-subnav__item"><a href="#layout" class="page-subnav__link">Abstände</a></li>
+              <li class="page-subnav__item"><a href="#breakpoints" class="page-subnav__link">Breakpoints</a></li>
+              <li class="page-subnav__item"><a href="#page-grid" class="page-subnav__link">Grid</a></li>
+            </ul>
+          </div>
         </li>
         <li class="page-nav__item">
           <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
@@ -55,16 +55,9 @@ baseurl: ../
 
     {% include partials/logo.html %}
     {% include partials/colors.html %}
+    {% include partials/layout.html %}
 
-    <section id="layout" class="l-full-page l-stack waypoint" data-title="Layout">
-      <h2 class="h2--adaptive">Layout</h2>
-      <h3 class="h3--adaptive">Größen</h3>
-      <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
-      <h3 class="h3--adaptive">Grid</h3>
-      <p></p>
-      <h3 class="h3--adaptive">Breakpoints</h3>
-      <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
-    </section>
+
     <section id="icons" class="l-full-page l-stack waypoint" data-title="Icons">
       <h2 class="h1--adaptive">Icons</h2>
     </section>

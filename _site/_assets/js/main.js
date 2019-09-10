@@ -236,3 +236,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   document.querySelectorAll('.js-io').forEach(el => { io.observe(el) })
 })
+
+let currentWireframe = 0
+const wireframesSVG = document.querySelector('#js-wireframes svg')
+
+document.querySelector('#js-wireframes').addEventListener('click', (e) => {
+
+  let newPos = ((--currentWireframe * 100) % 300) + "%"
+  let tl = new TimelineMax()
+
+
+  tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
+    .set(wireframesSVG, { marginLeft: newPos })
+    .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
+})
