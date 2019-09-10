@@ -1,30 +1,59 @@
 <section id="colors" class="l-stack--small waypoint" data-title="Farben">
-  
+
   <h2 class="h2--adaptive">Farben</h2>
-    {%- for color in colors -%}
-    <div class="l-colors">
-      <ul class="l-colors__items">
-        {%- for shade in color[1] -%}
-        <li class="l-colors__item">
-          <div class="color {% if shade.dark %}color--is-dark{% endif %}">
-            <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-              <polygon points="0,0 90,0 100,50 90,100 0,100 10,50" fill="#{{ shade.hex }}"></polygon>
-            </svg>
-            <div class="color__body">
-              <div class="color__type">{{ shade.type }}</div>
-              <div class="color__name">{{ shade.name }}</div>
-              <div class="color__number">{{ shade.number }}</div>
-              <div class="color__codes">
-                <span class="color__label">HEX</span> <span class="color__value">{{ shade.hex }}</span>
-                <span class="color__label">HSL</span> <span class="color__value">{{ shade.hsl }}</span>
-                <span class="color__label">RGB</span> <span class="color__value">{{ shade.rgb }}</span>
+
+  <h3>Primärfarben</h3>
+  <ul class="palette">
+    {%- for color in colors.primary -%}
+    <li class="palette__item">
+      <div class="palette__content">
+        <ul class="palette palette--sub">
+          {%- for shade in color[1] -%}
+          <li class="palette--sub__item">
+            <div class="color {% if shade.dark %}color--is-dark{% endif %}">
+              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <rect width="100%" height="100%" fill="#{{ shade.hex }}"/>
+              </svg>
+              <div class="color__body">
+                <div class="color__type">{{ shade.type }}</div>
+                <div class="color__name">{{ shade.name }} {{ shade.number }}</div>
+                <div class="color__codes">
+                  <span class="color__label">HEX</span> <span class="color__value">{{ shade.hex }}</span>
+                  <span class="color__label">HSL</span> <span class="color__value">{{ shade.hsl }}</span>
+                  <span class="color__label">RGB</span> <span class="color__value">{{ shade.rgb }}</span>
+                </div>
               </div>
             </div>
-          </div>
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </li>
+    {%- endfor -%}
+  </ul>
 
-  {%- endfor -%}
+  <!-- <h3>Grautöne</h3>
+  <ul>
+    {%- for color in colors.neutral -%}
+      {%- for shade in color[1] -%}
+      <li>
+        <div class="color {% if shade.dark %}color--is-dark{% endif %}">
+          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100%" height="100%" fill="#{{ shade.hex }}"/>
+          </svg>
+          <div class="color__body">
+            <div class="color__type">{{ shade.type }}</div>
+            <div class="color__name">{{ shade.name }}</div>
+            <div class="color__number">{{ shade.number }}</div>
+            <div class="color__codes">
+              <span class="color__label">HEX</span> <span class="color__value">{{ shade.hex }}</span>
+              <span class="color__label">HSL</span> <span class="color__value">{{ shade.hsl }}</span>
+              <span class="color__label">RGB</span> <span class="color__value">{{ shade.rgb }}</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      {%- endfor -%}
+    {%- endfor -%}
+  </ul> -->
 </section>
