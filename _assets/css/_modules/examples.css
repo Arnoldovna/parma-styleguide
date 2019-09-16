@@ -1,0 +1,11 @@
+
+@media (min-width: 36em) {
+
+  .examples {
+    display: flex;
+  }
+
+  .examples__example + .examples__example {
+    margin-left: calc(2rem + var(--growthRatio));
+  }
+}

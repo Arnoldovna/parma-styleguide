@@ -1,0 +1,24 @@
+
+.principles {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 48rem) {
+
+  .principles {
+    display: flex;
+  }
+
+  .principles__item + .principles__item {
+    margin: 0 0 0 calc(4rem + var(--growthRatio));
+  }
+}
+
+@media (min-width: 75rem) {
+
+  .principles__item + .principles__item {
+    margin: 0 0 0 calc(12rem + var(--growthRatio));
+  }
+}
