@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // const pageNav = document.querySelector("#js-page-nav")
   let gridVisible = false
+  let safeZoneVisible = false
+  let claimVisible = true
+  let logoReduced = false
+
+  let commonAniParams = {
+    ease: Back.easeOut.config(1.4),
+    transformOrigin:"50% 0%"
+  }
 
   //
   // Animate Logo in
@@ -9,11 +17,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const animateLogo = () => {
     let tlLogo = new TimelineMax()
-
-    let commonAniParams = {
-      ease: Back.easeOut.config(1.4),
-      transformOrigin:"50% 0%"
-    }
 
     tlLogo.set('.cell', { opacity: "0" })
           .set('.letter', { opacity: "0" })
@@ -41,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           .staggerTo('.color-switcher__item', .3, { opacity: 1, y: 0, ...commonAniParams }, .1, 'sixth')
   }
 
-  animateLogo();
+  animateLogo()
 
   document.querySelectorAll('.js-toggle-page-bg').forEach((link, i) => {
     link.addEventListener('click', (e) => {
@@ -54,20 +57,132 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   })
 
+  function showGrid() {
+    TweenMax.staggerTo('.cell:not(.cell--safety)', .02, { opacity: 1, ease: Power2.easeOut }, .002)
+    document.querySelector('.js-toggle-grid').classList.add('switcher__link--is-active')
+    gridVisible = true
+  }
+
+  function hideGrid() {
+    TweenMax.staggerTo('.cell:not(.cell--safety)', .02, { opacity: 0, ease: Power2.easeOut }, .002)
+    document.querySelector('.js-toggle-grid').classList.remove('switcher__link--is-active')
+    gridVisible = false
+  }
+
+  function showSafeZone() {
+    TweenMax.staggerTo('.cell--safety', .1, { opacity: 1, ease: Power2.easeOut }, .02)
+    document.querySelector('.js-toggle-safe-zone').classList.add('switcher__link--is-active')
+    safeZoneVisible = true
+  }
+
+  function hideSafeZone() {
+    TweenMax.staggerTo('.cell--safety', .1, { opacity: 0, ease: Power2.easeOut }, .02)
+    document.querySelector('.js-toggle-safe-zone').classList.remove('switcher__link--is-active')
+    safeZoneVisible = false
+  }
+
+  function showClaim() {
+    TweenMax.to('.claim', .5, { y: 0, opacity: 1, ease: Power2.easeOut })
+    document.querySelector('.js-toggle-claim').classList.add('switcher__link--is-active')
+    claimVisible = true
+  }
+
+  function hideClaim() {
+    TweenMax.to('.claim', .5, { y: "-15%", opacity: 0, ease: Power2.easeOut })
+    document.querySelector('.js-toggle-claim').classList.remove('switcher__link--is-active')
+    claimVisible = false
+  }
+
+  function expandLogo() {
+
+    let tlLogo = new TimelineMax()
+
+    tlLogo.to('#letter--klammer--links', .5, { x: "0%", ...commonAniParams }, 'fourth')
+          .to('#letter--klammer--rechts', .5, { x: "0%", ...commonAniParams }, 'fourth')
+          .to('#letter--2', .5, { x: "0%", ...commonAniParams }, 'fourth')
+          .to('#letter--4', .5, { x: "0%", ...commonAniParams }, 'fourth')
+          .to('#letter--h', .5, { opacity: 1 }, 'fifth')
+          .to('#letter--u', .5, { opacity: 1 }, 'fifth')
+          .to('#letter--k', .5, { opacity: 1 }, 'fifth')
+          .to('#letter--klammer--links', .5, { opacity: 0 }, 'sixth')
+    logoReduced = false
+    document.querySelector('.js-toggle-reduced').classList.remove('switcher__link--is-active')
+    showClaim()
+  }
+
+  function reduceLogo() {
+    hideClaim()
+    hideGrid()
+    hideSafeZone()
+
+    let tlLogo = new TimelineMax()
+
+    tlLogo.to('#letter--klammer--links', .5, { opacity: 1 }, 'first')
+          .to('#letter--h', .5, { opacity: 0 }, 'second')
+          .to('#letter--u', .5, { opacity: 0 }, 'second')
+          .to('#letter--k', .5, { opacity: 0 }, 'second')
+          .to('#letter--klammer--links', .5, { x: "-200%", ...commonAniParams }, 'third')
+          .to('#letter--klammer--rechts', .5, { x: "-200%", ...commonAniParams }, 'third')
+          .to('#letter--2', .5, { x: "-205%", ...commonAniParams }, 'third')
+          .to('#letter--4', .5, { x: "-180%", ...commonAniParams }, 'third')
+
+    logoReduced = true
+    document.querySelector('.js-toggle-reduced').classList.add('switcher__link--is-active')
+  }
+
   if(document.querySelector('.js-toggle-grid')) {
     document.querySelector('.js-toggle-grid').addEventListener('click', (e) => {
-      e.preventDefault();
+      e.preventDefault()
 
-      if (gridVisible) {
-        TweenMax.staggerTo('.cell', .02, { opacity: 0, ease: Power2.easeOut }, .002)
-      }
-      else {
-        TweenMax.staggerTo('.cell', .02, { opacity: 1, ease: Power2.easeOut }, .002)
-      }
-
-      gridVisible = !gridVisible
+      if (logoReduced) expandLogo()
+      if (safeZoneVisible) hideSafeZone()
+      if (!claimVisible) showClaim()
+      gridVisible ? hideGrid() : showGrid()
     })
   }
+
+  if(document.querySelector('.js-toggle-safe-zone')) {
+    document.querySelector('.js-toggle-safe-zone').addEventListener('click', (e) => {
+      e.preventDefault()
+
+      if (logoReduced) expandLogo()
+      if (gridVisible) hideGrid()
+      if (claimVisible) hideClaim()
+      safeZoneVisible ? hideSafeZone() : showSafeZone()
+    })
+  }
+
+  if(document.querySelector('.js-toggle-claim')) {
+    document.querySelector('.js-toggle-claim').addEventListener('click', (e) => {
+      e.preventDefault()
+
+      if (!claimVisible) {
+        logoReduced ? expandLogo() : showClaim()
+      }
+      else {
+        hideClaim()
+      }
+    })
+  }
+
+  if(document.querySelector('.js-toggle-reduced')) {
+    document.querySelector('.js-toggle-reduced').addEventListener('click', (e) => {
+      e.preventDefault()
+
+      logoReduced ? expandLogo() : reduceLogo()
+    })
+  }
+
+  // if(document.querySelector('.switcher__link')) {
+  //   document.querySelectorAll('.switcher__link').forEach((el) => {
+  //     el.addEventListener('click', (e) => {
+  //       e.preventDefault()
+  //
+  //       document.querySelectorAll('.switcher__link').forEach((link) => { link.classList.remove('switcher__link--is-active') })
+  //       e.target.classList.add('switcher__link--is-active')
+  //     })
+  //   })
+  // }
 
 
   //

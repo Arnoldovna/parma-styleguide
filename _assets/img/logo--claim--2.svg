@@ -183,5 +183,21 @@
         <polygon class="cell" points="428.82 102.84 408.4 102.84 408.4 123.26 428.82 123.26"></polygon>
         <polygon class="cell" points="428.82 123.26 408.4 123.26 408.4 143.68 428.82 143.68"></polygon>
         <polygon class="cell" points="428.82 143.68 408.4 143.68 408.4 164.1 428.82 164.1"></polygon>
+        <polygon class="cell cell--safety" points="408.4 102.84 387.98 102.84 387.98 123.26 408.4 123.26"></polygon>
+        <polygon class="cell cell--safety" points="408.4 123.26 387.98 123.26 387.98 143.68 408.4 143.68"></polygon>
+        <polygon class="cell cell--safety" points="20.42 21.16 7.10542736e-15 21.16 7.10542736e-15 41.58 20.42 41.58"></polygon>
+        <polygon class="cell cell--safety" points="20.42 0.74 7.10542736e-15 0.74 7.10542736e-15 21.16 20.42 21.16"></polygon>
+        <polygon class="cell cell--safety" points="20.42 123.26 7.10542736e-15 123.26 7.10542736e-15 143.68 20.42 143.68"></polygon>
+        <polygon class="cell cell--safety" points="40.84 21.16 20.42 21.16 20.42 41.58 40.84 41.58"></polygon>
+        <polygon class="cell cell--safety" points="40.84 0.74 20.42 0.74 20.42 21.16 40.84 21.16"></polygon>
+        <polygon class="cell cell--safety" points="20.42 102.84 7.10542736e-15 102.84 7.10542736e-15 123.26 20.42 123.26"></polygon>
+        <polygon class="cell cell--safety" points="40.84 123.26 20.42 123.26 20.42 143.68 40.84 143.68"></polygon>
+        <polygon class="cell cell--safety" points="40.84 102.84 20.42 102.84 20.42 123.26 40.84 123.26"></polygon>
+        <polygon class="cell cell--safety" points="428.82 102.84 408.4 102.84 408.4 123.26 428.82 123.26"></polygon>
+        <polygon class="cell cell--safety" points="428.82 123.26 408.4 123.26 408.4 143.68 428.82 143.68"></polygon>
+        <polygon class="cell cell--safety" points="408.4 21.16 387.98 21.16 387.98 41.58 408.4 41.58"></polygon>
+        <polygon class="cell cell--safety" points="408.4 0.74 387.98 0.74 387.98 21.16 408.4 21.16"></polygon>
+        <polygon class="cell cell--safety" points="428.82 21.16 408.4 21.16 408.4 41.58 428.82 41.58"></polygon>
+        <polygon class="cell cell--safety" points="428.82 0.74 408.4 0.74 408.4 21.16 428.82 21.16"></polygon>
     </g>
 </svg>
