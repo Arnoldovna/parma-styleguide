@@ -4,6 +4,7 @@
 @import "_modules/header.css";
 @import "_modules/footer.css";
 @import "_modules/wrapper.css";
+@import "_modules/section.css";
 @import "_modules/hero.css";
 @import "_modules/product-imgs.css";
 @import "_modules/brand-personality.css";
@@ -12,7 +13,6 @@
 @import "_modules/examples.css";
 @import "_modules/site-nav.css";
 @import "_modules/page-nav.css";
-@import "_modules/waypoint.css";
 @import "_modules/logo.css";
 @import "_modules/wireframes.css";
 @import "_layouts/l-sidebar.css";

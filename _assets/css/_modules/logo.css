@@ -33,7 +33,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem calc(1rem + var(--growthRatio)) 0 0;
 }
 
 .grid-toggle {
