@@ -4,6 +4,7 @@
 @import "_modules/header.css";
 @import "_modules/footer.css";
 @import "_modules/wrapper.css";
+@import "_modules/product-imgs.css";
 @import "_modules/principles.css";
 @import "_modules/highlight.css";
 @import "_modules/examples.css";
@@ -133,6 +134,11 @@ a:active {
 
 img {
   max-width: 100%;
+}
+
+.pos-rel {
+  position: relative;
+  z-index: 800;
 }
 
 @media (min-width: 36rem) {

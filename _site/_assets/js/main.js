@@ -54,18 +54,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   })
 
-  document.querySelector('.js-toggle-grid').addEventListener('click', (e) => {
-    e.preventDefault();
+  if(document.querySelector('.js-toggle-grid')) {
+    document.querySelector('.js-toggle-grid').addEventListener('click', (e) => {
+      e.preventDefault();
 
-    if (gridVisible) {
-      TweenMax.staggerTo('.cell', .02, { opacity: 0, ease: Power2.easeOut }, .002)
-    }
-    else {
-      TweenMax.staggerTo('.cell', .02, { opacity: 1, ease: Power2.easeOut }, .002)
-    }
+      if (gridVisible) {
+        TweenMax.staggerTo('.cell', .02, { opacity: 0, ease: Power2.easeOut }, .002)
+      }
+      else {
+        TweenMax.staggerTo('.cell', .02, { opacity: 1, ease: Power2.easeOut }, .002)
+      }
 
-    gridVisible = !gridVisible
-  })
+      gridVisible = !gridVisible
+    })
+  }
 
 
   //
@@ -87,20 +89,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // ------------------------------------------------------------- //
 
   // Attach menu toggle event listener
-  document.querySelector('#js-page-nav__label').addEventListener('click', (e) => {
+  if (document.querySelector('#js-page-nav__label')) {
+    document.querySelector('#js-page-nav__label').addEventListener('click', (e) => {
 
-    // if(document.querySelector('#js-page-nav__toggle').checked) {
-    //   console.log('body locked')
-    //   bodyScrollLock.disableBodyScroll(targetElement)
-    // }
-    // else {
-    //   console.log('body unlocked')
-    //   bodyScrollLock.enableBodyScroll(targetElement)
-    // }
+      // if(document.querySelector('#js-page-nav__toggle').checked) {
+        //   console.log('body locked')
+        //   bodyScrollLock.disableBodyScroll(targetElement)
+        // }
+        // else {
+          //   console.log('body unlocked')
+          //   bodyScrollLock.enableBodyScroll(targetElement)
+          // }
 
-    // Add scroll lock to body
-    toggleScrollLock($body)
-  })
+          // Add scroll lock to body
+          toggleScrollLock($body)
+        })
+  }
 
   // Attach menu items event listeners
   document.querySelectorAll('.page-nav__link').forEach((link, i) => {
@@ -188,7 +192,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('js-page-nav__label__content').textContent = theSection.dataset.title
   }
 
-  if(Waypoint) {
+  if(typeof Waypoint !== undefined) {
     let sections = document.querySelectorAll('.waypoint')
 
     sections.forEach((section, index) => {
@@ -207,6 +211,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // ------------------------------------------------------------- //
 
   function pageHeaderIntersectionHandler(visible) {
+
+    if(!document.querySelector('.l-sidebar')) return
 
     if(!visible) {
       document.querySelector('.l-sidebar').classList.add('page-nav--is-fixed');
@@ -234,19 +240,35 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   })
 
-  document.querySelectorAll('.js-io').forEach(el => { io.observe(el) })
+  if(document.querySelector('.js-io')) {
+    document.querySelectorAll('.js-io').forEach(el => { io.observe(el) })
+  }
 })
 
 let currentWireframe = 0
 const wireframesSVG = document.querySelector('#js-wireframes svg')
 
-document.querySelector('#js-wireframes').addEventListener('click', (e) => {
+if(document.querySelector('#js-wireframes')) {
+  document.querySelector('#js-wireframes').addEventListener('click', (e) => {
 
-  let newPos = ((--currentWireframe * 100) % 300) + "%"
-  let tl = new TimelineMax()
+    let newPos = ((--currentWireframe * 100) % 300) + "%"
+    let tl = new TimelineMax()
 
 
-  tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
+    tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
     .set(wireframesSVG, { marginLeft: newPos })
     .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
-})
+  })
+}
+
+if(document.querySelector('.product-img')) {
+
+  let pics = document.querySelectorAll('.product-img')
+
+  let master = Array.from(pics).reduce(function(tl, pic, i) {
+    let start = !i ? 0 : "-=0.3"
+  	return tl.fromTo(pic, .3, { autoAlpha: 0, x: '-70%'}, { autoAlpha: 1, x: '0%' }, start)
+             .to(pic, 4, { x: '10%', ease: Linear.easeNone })
+             .to(pic, .3, { autoAlpha: 0, x: '80%' })
+  }, new TimelineMax())
+}
