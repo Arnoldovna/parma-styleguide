@@ -4,7 +4,9 @@
 @import "_modules/header.css";
 @import "_modules/footer.css";
 @import "_modules/wrapper.css";
+@import "_modules/hero.css";
 @import "_modules/product-imgs.css";
+@import "_modules/brand-personality.css";
 @import "_modules/principles.css";
 @import "_modules/highlight.css";
 @import "_modules/examples.css";
@@ -17,7 +19,7 @@
 @import "_layouts/l-stack.css";
 @import "_layouts/l-scroll-block.css";
 @import "_layouts/l-full-page.css";
-@import "_layouts/l-vertical-center.css";
+/* @import "_layouts/l-vertical-center.css"; */
 
 * {
   box-sizing: border-box;

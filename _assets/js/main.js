@@ -267,8 +267,10 @@ if(document.querySelector('.product-img')) {
 
   let master = Array.from(pics).reduce(function(tl, pic, i) {
     let start = !i ? 0 : "-=0.3"
-  	return tl.fromTo(pic, .3, { autoAlpha: 0, x: '-70%'}, { autoAlpha: 1, x: '0%' }, start)
-             .to(pic, 4, { x: '10%', ease: Linear.easeNone })
-             .to(pic, .3, { autoAlpha: 0, x: '80%' })
+  	return tl.fromTo(pic, .3, { autoAlpha: 0, x: '-110%', y: '-50%'}, { autoAlpha: 1, x: '-40%' }, start)
+             .to(pic, 4, { x: '-30%', y: '-50%', ease: Linear.easeNone })
+             .to(pic, .3, { autoAlpha: 0, x: '30%', y: '-50%' })
   }, new TimelineMax())
+
+  master.repeat(-1)
 }
