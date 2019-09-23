@@ -1,6 +1,6 @@
 
 .l-sidebar__main {
-  padding: 0 0 0 calc(1rem + var(--growthRatio));
+  /* padding: 0 0 0 calc(1rem + var(--growthRatio)); */
 }
 
 

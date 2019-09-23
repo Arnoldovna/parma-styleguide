@@ -32,11 +32,11 @@
   stroke: var(--c-orange-300);
 }
 
-.section--logo {
+/* .section--logo {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .grid-toggle {
   display: flex;
@@ -63,91 +63,6 @@
 
 .grid-toggle__link:active {
   transform: scale(.98);
-}
-
-.switcher {
-  padding: calc(2rem + var(--growthRatio)) calc(2rem + var(--growthRatio));
-  background: var(--c-white);
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,.1),
-              0 10px 20px rgba(0,0,0,.08);
-}
-
-.switcher__items {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.switcher__item + .switcher__item {
-  margin-left: calc(2rem + var(--growthRatio));
-}
-
-.switcher__link,
-.switcher__link:focus {
-  padding: calc(.25rem + var(--growthRatio)) calc(1rem + var(--growthRatio));
-  border-radius: 4px;
-  color: var(--c-neutral-800);
-  text-transform: uppercase;
-  font-weight: bold;
-  white-space: nowrap;
-  transition: .2s ease-out;
-}
-
-.switcher__link:hover {
-  background: var(--c-mint-100);
-  color: var(--c-mint-500)
-}
-
-.switcher__link--is-active,
-.switcher__link--is-active:focus {
-  background: var(--c-mint-300);
-  color: var(--c-white);
-}
-
-.switcher__link--color {
-  display: block;
-  width: calc(1.5rem + var(--growthRatio));
-  height: calc(1.5rem + var(--growthRatio));
-  background-color: var(--c-white);
-  border-radius: 50%;
-  border: 1px solid var(--c-neutral-100);
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: .1s transform ease-out;
-  transform-origin: 50% 50%;
-}
-
-.switcher__link--color:hover {
-  transform: scale(1.05);
-}
-
-.switcher__link--color:active {
-  transform: scale(.98);
-}
-
-.switcher__link--is-dark,
-.switcher__link--is-colored {
-  border-color: transparent;
-}
-
-.page--is-dark .switcher__link--is-dark {
-  border-color: var(--c-neutral-700);
-}
-
-.page--is-colored .switcher__link--is-colored {
-  border-color: var(--c-orange-200);
-}
-
-.switcher__link--is-dark {
-  background-color: var(--c-neutral-900);
-}
-
-.switcher__link--is-colored {
-  background-color: var(--c-orange-300);
 }
 
 .section__typo {

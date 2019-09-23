@@ -1,0 +1,19 @@
+
+.sandbox {
+  padding: calc(2rem + var(--growthRatio));
+  background: var(--c-neutral-50);
+}
+
+@media (min-width: 48rem) {
+
+  .sandbox {
+    padding: calc(4rem + var(--growthRatio));
+  }
+}
+
+@media (min-width: 50rem) {
+
+  .sandbox {
+    padding: calc(8rem + var(--growthRatio));
+  }
+}
