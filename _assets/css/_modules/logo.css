@@ -1,7 +1,8 @@
 
 
 .page--is-dark .letter,
-.page--is-dark .claim {
+.page--is-dark .claim,
+.page--is-dark .logo--reduced__klammer {
   fill: var(--c-white);
 }
 
@@ -15,12 +16,14 @@
 }
 
 .page--is-colored .letter,
-.page--is-colored .claim {
+.page--is-colored .claim,
+.page--is-colored .logo--reduced__klammer {
   fill: var(--c-black);
 }
 
 .page--is-colored .letter--2,
-.page--is-colored .letter--4 {
+.page--is-colored .letter--4,
+.page--is-colored .logo--reduced__zahl {
   fill: var(--c-white);
 }
 
