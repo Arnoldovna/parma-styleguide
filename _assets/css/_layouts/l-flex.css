@@ -22,4 +22,12 @@
   .l-flex--tablet-up > .l-flex__child + .l-flex__child {
     margin: 0 calc(2rem + var(--growthRatio));
   }
+
+  .l-flex--tablet-up .sandbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+  }
 }
