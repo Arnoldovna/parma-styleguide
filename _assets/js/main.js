@@ -173,17 +173,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
   }
 
-  // if(document.querySelector('.switcher__link')) {
-  //   document.querySelectorAll('.switcher__link').forEach((el) => {
-  //     el.addEventListener('click', (e) => {
-  //       e.preventDefault()
-  //
-  //       document.querySelectorAll('.switcher__link').forEach((link) => { link.classList.remove('switcher__link--is-active') })
-  //       e.target.classList.add('switcher__link--is-active')
-  //     })
-  //   })
-  // }
-
 
   //
   // Site navigation toggle
@@ -360,19 +349,28 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 })
 
-let currentWireframe = 0
 const wireframesSVG = document.querySelector('#js-wireframes svg')
 
-if(document.querySelector('#js-wireframes')) {
-  document.querySelector('#js-wireframes').addEventListener('click', (e) => {
+if(document.querySelector('.js-switcher')) {
+  document.querySelectorAll('.js-switcher').forEach(el => {
+    el.addEventListener('click', (e) => {
 
-    let newPos = ((--currentWireframe * 100) % 300) + "%"
-    let tl = new TimelineMax()
+      e.preventDefault()
 
+      // Remove active class from all switcher links
+      document.querySelectorAll('.js-switcher').forEach(link => {
 
-    tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
-    .set(wireframesSVG, { marginLeft: newPos })
-    .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
+        link.classList.remove('switcher__link--is-active')
+      })
+      // Add active class to current switcher link
+      e.target.classList.add('switcher__link--is-active')
+
+      let tl = new TimelineMax()
+
+      tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
+      .set(wireframesSVG, { marginLeft: e.target.dataset.offset })
+      .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
+    })
   })
 }
 
