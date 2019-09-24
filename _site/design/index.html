@@ -47,11 +47,22 @@
           <div class="page-nav__icon page-nav__icon--is-active"><svg viewBox="0 0 46 62"><path d="M24.38.53H.09l23.09 30.32L.96 61.71H25.4l20.43-30.86z" fill="#35444C" fill-rule="nonzero"/></svg>
 </div>
           <a class="page-nav__link page-nav__link--is-active" href="#logo">Logo</a>
+          <div class="subnav-wrapper">
+            <ul class="page-subnav">
+              <li class="page-subnav__item"><a href="#logo__variations" class="page-subnav__link">Variationen</a></li>
+            </ul>
+          </div>
         </li>
         <li class="page-nav__item">
           <div class="page-nav__icon"><svg viewBox="0 0 46 62"><path d="M24.38.53H.09l23.09 30.32L.96 61.71H25.4l20.43-30.86z" fill="#35444C" fill-rule="nonzero"/></svg>
 </div>
           <a class="page-nav__link" href="#colors">Farben</a>
+          <div class="subnav-wrapper">
+            <ul class="page-subnav">
+              <li class="page-subnav__item"><a href="#colors__primary" class="page-subnav__link">Primärfarben</a></li>
+              <li class="page-subnav__item"><a href="#colors__neutrals" class="page-subnav__link">Grautöne</a></li>
+            </ul>
+          </div>
         </li>
         <li class="page-nav__item">
           <div class="page-nav__icon"><svg viewBox="0 0 46 62"><path d="M24.38.53H.09l23.09 30.32L.96 61.71H25.4l20.43-30.86z" fill="#35444C" fill-rule="nonzero"/></svg>
@@ -59,9 +70,9 @@
           <a class="page-nav__link" href="#layout">Layout</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#grid" class="page-subnav__link">Grid</a></li>
-              <li class="page-subnav__item"><a href="#spacing" class="page-subnav__link">Abstände</a></li>
-              <li class="page-subnav__item"><a href="#buttons" class="page-subnav__link">Buttons</a></li>
+              <li class="page-subnav__item"><a href="#layout__grid" class="page-subnav__link">Grid</a></li>
+              <li class="page-subnav__item"><a href="#layout__spacing" class="page-subnav__link">Abstände</a></li>
+              <li class="page-subnav__item"><a href="#layout__buttons" class="page-subnav__link">Buttons</a></li>
             </ul>
           </div>
         </li>
@@ -71,11 +82,9 @@
           <a class="page-nav__link" href="#icons">Icons</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 1</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 2</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 3</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 4</a></li>
-              <li class="page-subnav__item"><a href="#" class="page-subnav__link">Subnav 5</a></li>
+              <li class="page-subnav__item"><a href="#icons__taxonomy" class="page-subnav__link">Taxonomie</a></li>
+              <li class="page-subnav__item"><a href="#icons__isometric" class="page-subnav__link">Isometrisch</a></li>
+              <li class="page-subnav__item"><a href="#icons__ui-icons" class="page-subnav__link">UI-Icons</a></li>
             </ul>
           </div>
         </li>
@@ -94,7 +103,7 @@
 
     <div class="l-stack--100">
       <div class="l-stack--50">
-        <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T10:06:35.119Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+        <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T15:47:09.774Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
@@ -324,14 +333,13 @@
             <li class="switcher__item"><a href="#" class="switcher__link js-toggle-grid">Raster</a></li>
             <li class="switcher__item"><a href="#" class="switcher__link js-toggle-safe-zone">Schutzzone</a></li>
             <li class="switcher__item"><a href="#" class="switcher__link switcher__link--is-active js-toggle-claim">Claim</a></li>
-            <!-- <li class="switcher__item"><a href="#" class="switcher__link js-toggle-reduced">Reduziert</a></li> -->
           </ul>
         </div>
       </div>
     </div>
 
     <div class="l-stack--75">
-      <h2>Variationen</h2>
+      <h2 id="logo__variations">Variationen</h2>
       <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
     </div>
 
@@ -368,7 +376,7 @@
 
   <div class="l-stack--100">
     <div class="l-stack--50">
-      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T10:06:35.119Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T15:47:09.774Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
@@ -381,7 +389,7 @@
   </div>
 
   <div class="l-stack--100">
-    <h2>Primärfarben</h2>
+    <h2 id="colors__primary">Primärfarben</h2>
     <div><ul class="palette"><li class="color">
           <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <rect width="100%" height="100%" fill="#E0F7F8"/>
@@ -449,7 +457,7 @@
         </li></ul></div>
   </div>
   <div class="l-stack--100">
-    <h3>Grautöne</h3><ul class="palette"><li class="color">
+    <h2 id="colors__neutrals">Grautöne</h2><ul class="palette"><li class="color">
         <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
           <rect width="100%" height="100%" fill="#F7F7F8"/>
         </svg>
@@ -545,7 +553,7 @@
     <section id="layout" class="l-stack--300 waypoint wrapper" data-title="Layout">
   <div class="l-stack--100">
     <div class="l-stack--50">
-      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T10:06:35.119Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T15:47:09.774Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
@@ -556,7 +564,7 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
   </div>
   <div class="l-stack--100">
-    <h2 id="grid">Grid</h2>
+    <h2 id="layout__grid">Grid</h2>
     <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
     <button class="btn btn--primary">Download</button>
     <div class="sandbox">
@@ -778,7 +786,7 @@
     </div>
   </div>
   <div class="l-stack--100">
-    <h2 id="spacing">Abstände</h2>
+    <h2 id="layout__spacing">Abstände</h2>
     <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
     <div class="sandbox">
       <svg viewBox="0 0 512 86" version="1.1">
@@ -822,7 +830,7 @@
     </div>
   </div>
   <div class="l-stack--100">
-    <h2>Buttons</h2>
+    <h2 id="layout__buttons">Buttons</h2>
     <div class="l-stack--75">
       <p>Es gibt zwei Button-Varianten. Die Höhe des Buttons orientiert sich an der gewählten Base Fontsize:</p>
       <p>Kleine Variante bei Schriftgröße 16px <br>Große Variante bei Schriftgröße 19px</p>
@@ -1130,7 +1138,7 @@
 <section id="icons" class="l-stack--300 wrapper waypoint" data-title="Icons">
   <div class="l-stack--100">
     <div class="l-stack--50">
-      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T10:06:35.119Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T15:47:09.774Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
@@ -1142,7 +1150,7 @@
   </div>
 
   <div class="l-stack--100">
-    <h2>Taxonomie</h2>
+    <h2 id="icons__taxonomy">Taxonomie</h2>
     <div class="l-stack--100 l-flex--tablet-up">
       <div class="l-flex__child l-stack--75">
         <h3>Isometrisch</h3>
@@ -1159,12 +1167,12 @@
     </div>
   </div>
   <div class="l-stack--100">
-    <h2 id="spacing">Isometrisch</h2>
+    <h2 id="icons__isometric">Isometrisch</h2>
     <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
     <button class="btn btn--primary">Download</button>
   </div>
   <div class="l-stack--100">
-    <h2 id="spacing">UI-Icons</h2>
+    <h2 id="icons__ui-icons">UI-Icons</h2>
     <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
     <button class="btn btn--primary">Download</button>
   </div>
@@ -1175,7 +1183,7 @@
 <section id="typo" class="l-stack--300 wrapper waypoint" data-title="Typographie">
   <div class="l-stack--100">
     <div class="l-stack--50">
-      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T10:06:35.119Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+      <a href="" class="anchor">Aktualisiert am <time datetime="2019-09-24T15:47:09.774Z">24. September 2019</time> <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
