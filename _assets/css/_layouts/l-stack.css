@@ -16,5 +16,17 @@
 }
 
 .l-stack--300 > * + * {
+  margin-top: calc(4rem + 2vw);
+}
+
+.l-stack--400 > * + * {
+  margin-top: calc(6rem + 2vw);
+}
+
+.l-stack--500 > * + * {
+  margin-top: calc(8rem + 2vw);
+}
+
+.l-stack--600 > * + * {
   margin-top: calc(12rem + 3vw);
 }
