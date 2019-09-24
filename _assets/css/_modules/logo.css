@@ -58,21 +58,7 @@
 .grid-toggle__link:active {
   transform: scale(.98);
 }
-/* 
-.section__typo {
-  max-width: 60ch;
-}
 
-.section__title {
-  margin: 0 0 1rem;
-  font-size: var(--h6-size);
-  line-height: var(--h6-height);
-  text-transform: uppercase;
+.app-icon {
+  margin: calc(.5rem + var(--growthRatio));
 }
-
-.section__hero {
-  margin: 0;
-  font-size: calc(var(--h5-size) + 1vw);
-  line-height: calc(var(--h5-line-height) + 1vw);
-  font-weight: bold;
-} */
