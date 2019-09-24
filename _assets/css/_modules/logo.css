@@ -32,12 +32,6 @@
   stroke: var(--c-orange-300);
 }
 
-/* .section--logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
-
 .grid-toggle {
   display: flex;
   justify-content: flex-end;
@@ -64,7 +58,7 @@
 .grid-toggle__link:active {
   transform: scale(.98);
 }
-
+/* 
 .section__typo {
   max-width: 60ch;
 }
@@ -81,4 +75,4 @@
   font-size: calc(var(--h5-size) + 1vw);
   line-height: calc(var(--h5-line-height) + 1vw);
   font-weight: bold;
-}
+} */

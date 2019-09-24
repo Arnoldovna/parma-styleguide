@@ -1,19 +1,32 @@
 
 .sandbox {
-  padding: calc(2rem + var(--growthRatio));
+  padding: calc(2rem + 3vw);
+  position: relative;
   background: var(--c-neutral-50);
 }
 
-@media (min-width: 48rem) {
+.sandbox__popover {
+  margin: calc(2rem + var(--growthRatio)) calc(-1.5rem - 3vw) calc(-1.5rem - 3vw);
+}
+
+@media (min-width: 64rem) {
 
   .sandbox {
     padding: calc(4rem + var(--growthRatio));
   }
+
+  .sandbox__popover {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 
-@media (min-width: 50rem) {
+/* @media (min-width: 50rem) {
 
   .sandbox {
     padding: calc(8rem + var(--growthRatio));
   }
-}
+} */

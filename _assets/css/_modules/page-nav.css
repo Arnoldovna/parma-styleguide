@@ -153,7 +153,7 @@
   color: inherit;
 }
 
-@media (min-width: 36rem) {
+@media (min-width: 48rem) {
 
   .page-nav__toggle,
   .page-nav__label {
@@ -200,9 +200,6 @@
   .page--is-colored .page-nav__link--is-active {
     color: var(--c-white);
   }
-}
-
-@media (min-width: 48rem) {
   .page-nav {
     top: calc(8rem + var(--growthRatio));
   }

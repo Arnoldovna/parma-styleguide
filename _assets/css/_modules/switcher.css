@@ -1,14 +1,15 @@
 
 .switcher {
-  padding: calc(2rem + var(--growthRatio)) calc(2rem + var(--growthRatio));
-  background: var(--c-white);
+  padding: calc(1rem + .5vw) calc(1rem + 1vw);
+  background: var(--c-neutral-900);
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,.1),
               0 10px 20px rgba(0,0,0,.08);
+  color: var(--c-white);
 }
 
 .switcher__items + .switcher__items {
-  margin-top: calc(2rem + var(--growthRatio));
+  margin-top: calc(1rem + var(--growthRatio));
 }
 
 .switcher__items {
@@ -25,7 +26,7 @@
 }
 
 .switcher__item + .switcher__item {
-  margin-top: calc(2rem + var(--growthRatio));
+  margin-top: calc(.5rem + var(--growthRatio));
 }
 
 .switcher__items--color .switcher__item + .switcher__item {
@@ -34,9 +35,9 @@
 
 .switcher__link,
 .switcher__link:focus {
-  padding: calc(.25rem + var(--growthRatio)) calc(1rem + var(--growthRatio));
-  border-radius: 4px;
-  color: var(--c-neutral-800);
+  padding: calc(.05rem + var(--growthRatio)) calc(1.25rem + var(--growthRatio)) calc(.2rem + var(--growthRatio));
+  border-radius: 900rem;
+  color: inherit;
   text-transform: uppercase;
   font-weight: bold;
   white-space: nowrap;
@@ -44,14 +45,13 @@
 }
 
 .switcher__link:hover {
-  background: var(--c-mint-100);
-  color: var(--c-mint-500)
+  background: var(--c-neutral-700);
+  color: var(--c-white);
 }
 
 .switcher__link--is-active,
 .switcher__link--is-active:focus {
-  background: var(--c-mint-300);
-  color: var(--c-white);
+  background: var(--c-orange-300);
 }
 
 .switcher__link--color {
@@ -82,7 +82,7 @@
   border-color: transparent;
 }
 
-.page--is-dark .switcher__link--is-dark {
+.switcher__link--is-dark {
   border-color: var(--c-neutral-700);
 }
 
@@ -98,36 +98,27 @@
   background-color: var(--c-orange-300);
 }
 
-@media (min-width: 48rem) {
-
-  .switcher,
-  .switcher__items {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .switcher__items--color .switcher__item + .switcher__item {
-    margin-left: calc(1rem + var(--growthRatio));
-  }
-
-  .switcher__items:not(.switcher__items--color) .switcher__item {
-    margin: 0 calc(1rem + var(--growthRatio)) calc(1rem + var(--growthRatio)) 0;
-  }
-
-}
-
-@media (min-width: 50rem) {
+@media (min-width: 64rem) {
 
   .switcher {
+    display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+
+  .switcher__items {
+    display: flex;
   }
 
   .switcher__items + .switcher__items {
     margin: 0;
   }
 
+  .switcher__items--color .switcher__item + .switcher__item {
+    margin-left: calc(.25rem + var(--growthRatio));
+  }
+
   .switcher__items:not(.switcher__items--color) .switcher__item {
-    margin: 0 calc(1rem var(--growthRatio));
+    margin: 0 calc(.25rem + var(--growthRatio));
   }
 }

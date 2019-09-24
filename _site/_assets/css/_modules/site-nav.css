@@ -72,17 +72,17 @@
   transform: translateY(-30%);
 }
 
-.site-nav__link #left,
-.site-nav__link #right {
+a #left,
+a #right {
   transition: transform .2s ease-out;
   transform-origin: 50% 50%;
 }
 
-.site-nav__link:hover #left {
+a:hover #left {
   transform: translate(-2px, 0);
 }
 
-.site-nav__link:hover #right {
+a:hover #right {
   transform: translate(2px, 0);
 }
 
@@ -149,12 +149,12 @@
     text-transform: uppercase;
   }
 
-  .site-nav__link .icon {
+  a .icon {
     display: inline-block;
     transform: translateY(5px);
   }
 
-  .site-nav__link svg {
+  a svg {
     width: calc(20px + var(--growthRatio));
     height: calc(20px + var(--growthRatio));
   }

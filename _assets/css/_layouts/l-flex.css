@@ -1,0 +1,25 @@
+
+.l-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-flex__child {
+  flex: 1;
+}
+
+.l-flex > .l-flex__child + .l-flex__child {
+  margin-left: calc(1rem + var(--growthRatio));
+}
+
+@media (min-width: 48rem) {
+
+  .l-flex--tablet-up {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .l-flex--tablet-up > .l-flex__child + .l-flex__child {
+    margin: 0 calc(2rem + var(--growthRatio));
+  }
+}

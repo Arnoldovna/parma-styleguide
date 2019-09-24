@@ -1,16 +1,20 @@
 
-.l-stack--tiny > * + * {
-  margin-top: .25rem;
+.l-stack--50 > * + * {
+  margin-top: calc(.5rem + 1vw);
 }
 
-.l-stack--small > * + * {
-  margin-top: .5rem;
+.l-stack--75 > * + * {
+  margin-top: calc(.75rem + 1vw);
 }
 
-.l-stack > * + * {
-  margin-top: 2.5rem;
+.l-stack--100 > * + * {
+  margin-top: calc(1rem + 1vw);
 }
 
-.l-stack--large > * + * {
-  margin-top: 5rem;
+.l-stack--200 > * + * {
+  margin-top: calc(2rem + 1vw);
+}
+
+.l-stack--300 > * + * {
+  margin-top: calc(12rem + 3vw);
 }

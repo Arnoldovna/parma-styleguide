@@ -59,9 +59,9 @@
           <a class="page-nav__link" href="#layout">Layout</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#layout" class="page-subnav__link">Abstände</a></li>
-              <li class="page-subnav__item"><a href="#breakpoints" class="page-subnav__link">Breakpoints</a></li>
-              <li class="page-subnav__item"><a href="#page-grid" class="page-subnav__link">Grid</a></li>
+              <li class="page-subnav__item"><a href="#grid" class="page-subnav__link">Grid</a></li>
+              <li class="page-subnav__item"><a href="#spacing" class="page-subnav__link">Abstände</a></li>
+              <li class="page-subnav__item"><a href="#buttons" class="page-subnav__link">Buttons</a></li>
             </ul>
           </div>
         </li>
@@ -87,21 +87,24 @@
       </ul>
     </nav>
   </div>
-  <div class="l-sidebar__main">
+  <div class="l-sidebar__main l-stack--300">
 
-    <section id="logo" class="l-full-page l-stack--large waypoint wrapper wrapper--padded section--logo" data-title="Logo">
+    
+<section id="logo" class="l-stack--200 waypoint wrapper section--logo" data-title="Logo">
 
-  <div class="l-stack">
-
-    <a href="" class="anchor">Updated Yesterday <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+    <div class="l-stack--100">
+      <div>
+        <a href="" class="anchor">Updated Tue Sep 24 2019 11:10:04 GMT+0200 (Central European Summer Time) <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
   <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
   <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
   <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
 </svg>
 </span></a>
-    <h1 class="h1--adaptive">Logo</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
-    <button class="btn btn--primary">Download</button>
+        <h1 class="h1--600">Logo</h1>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
+      <button class="btn btn--primary">Download</button>
+    </div>
 
     <div class="sandbox">
       <svg id="logo--claim" viewBox="0 0 431 165">
@@ -309,430 +312,256 @@
 </svg>
 
 
-      <div class="switcher">
-        <ul class="switcher__items switcher__items--color">
-          <li class="switcher__item"><a href="#" class="js-toggle-page-bg switcher__link--color">Auf Weiß</a></li>
-          <li class="switcher__item"><a href="#" data-class="page--is-dark" class="js-toggle-page-bg switcher__link--color switcher__link--is-dark">Auf Schwarz</a></li>
-          <li class="switcher__item"><a href="#" data-class="page--is-colored" class="js-toggle-page-bg switcher__link--color switcher__link--is-colored">Auf Orange</a></li>
-        </ul>
+      <div class="sandbox__popover">
+        <div class="switcher">
+          <ul class="switcher__items switcher__items--color">
+            <li class="switcher__item"><a href="#" class="js-toggle-page-bg switcher__link--color">Auf Weiß</a></li>
+            <li class="switcher__item"><a href="#" data-class="page--is-dark" class="js-toggle-page-bg switcher__link--color switcher__link--is-dark">Auf Schwarz</a></li>
+            <li class="switcher__item"><a href="#" data-class="page--is-colored" class="js-toggle-page-bg switcher__link--color switcher__link--is-colored">Auf Orange</a></li>
+          </ul>
 
-        <ul class="switcher__items">
-          <li class="switcher__item"><a href="#" class="switcher__link js-toggle-grid">Raster</a></li>
-          <li class="switcher__item"><a href="#" class="switcher__link js-toggle-safe-zone">Schutzzone</a></li>
-          <li class="switcher__item"><a href="#" class="switcher__link switcher__link--is-active js-toggle-claim">Claim</a></li>
-          <li class="switcher__item"><a href="#" class="switcher__link js-toggle-reduced">Reduziert</a></li>
-        </ul>
+          <ul class="switcher__items">
+            <li class="switcher__item"><a href="#" class="switcher__link js-toggle-grid">Raster</a></li>
+            <li class="switcher__item"><a href="#" class="switcher__link js-toggle-safe-zone">Schutzzone</a></li>
+            <li class="switcher__item"><a href="#" class="switcher__link switcher__link--is-active js-toggle-claim">Claim</a></li>
+            <!-- <li class="switcher__item"><a href="#" class="switcher__link js-toggle-reduced">Reduziert</a></li> -->
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div class="section__typo">
-      <h1 class="section__title">Variationen</h1>
-      <div class="section__body">
-        <p class="section__hero">Kompakte & geometrische Form</p>
-        <p class="section__addendum">Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+    <div class="l-stack--75">
+      <h2>Variationen</h2>
+      <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+    </div>
+
+    <div class="l-stack--100 l-flex--tablet-up">
+      <div class="l-flex__child l-stack--75">
+        <h3>Reduziert</h3>
+        <div class="sandbox">
+          <svg width="192" height="62" xmlns="http://www.w3.org/2000/svg"><g fill-rule="nonzero" fill="none"><path fill="#35444C" d="M170.38.532h-24.29l23.09 30.32-22.22 30.86h24.44l20.43-30.86zM21.45.532h24.29l-23.09 30.32 22.22 30.86H20.43L0 30.852z"/><path d="M141.9.692v35.42h6.1v16.28h-6.09v9.32h-19v-9.32H96.39v-15.7l25.25-36h20.26zm-17.46 21.42l-9.15 14h9.15v-14zM86.6 33.812a25.24 25.24 0 0 0 5.4-15.4 18.38 18.38 0 0 0-5-13.08C83.667 1.779 78.37.002 71.11.002a26.43 26.43 0 0 0-11.35 2.41 19.5 19.5 0 0 0-8.39 7.59c-2.153 3.44-3.317 7.827-3.49 13.16h18.5c0-2.747.243-4.623.73-5.63a2.52 2.52 0 0 1 2.45-1.53c2 0 3 1.44 3 4.3 0 3.5-2.197 7.46-6.59 11.88a170.24 170.24 0 0 1-17.85 15.14v14.37H92.6v-15.4H72.9a51.07 51.07 0 0 0 13.7-12.48z" fill="#F49B08"/></g></svg>
+        </div>
+      </div>
+      <div class="l-flex__child l-stack--75">
+        <h3>App Icon</h3>
+        <div class="sandbox">
+          <div class="l-flex">
+            <svg width="128" height="128" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M38.458 0h51.084c13.373 0 18.222 1.392 23.11 4.007 4.89 2.615 8.726 6.451 11.341 11.34 2.615 4.89 4.007 9.738 4.007 23.111v51.084c0 13.373-1.392 18.222-4.007 23.11-2.615 4.89-6.451 8.726-11.34 11.341-4.89 2.615-9.738 4.007-23.111 4.007H38.458c-13.373 0-18.222-1.392-23.11-4.007-4.89-2.615-8.726-6.451-11.341-11.34C1.392 107.763 0 102.915 0 89.542V38.458c0-13.373 1.392-18.222 4.007-23.11 2.615-4.89 6.451-8.726 11.34-11.341C20.237 1.392 25.085 0 38.458 0z" fill="#FFF"/><g fill-rule="nonzero"><path fill="#35444C" d="M103.745 48H91l12.115 16.354L91.456 81h12.824L115 64.354zM24.255 48H37L24.885 64.354 36.544 81H23.72L13 64.354z"/><path d="M87.809 49v18.575H91v8.537h-3.186V81h-9.94v-4.888H64V67.88L77.21 49h10.599zm-9.135 11.233l-4.786 7.342h4.786v-7.342zM58.78 66.087a13.473 13.473 0 0 0 2.898-8.238 9.814 9.814 0 0 0-2.683-6.997c-1.79-1.9-4.632-2.851-8.528-2.851a14.224 14.224 0 0 0-6.091 1.29 10.453 10.453 0 0 0-4.503 4.06c-1.156 1.84-1.78 4.186-1.873 7.039h9.928c0-1.47.131-2.473.392-3.012.223-.52.748-.848 1.315-.818 1.073 0 1.61.77 1.61 2.3 0 1.872-1.179 3.99-3.537 6.355a91.287 91.287 0 0 1-9.58 8.098V81H62v-8.238H51.428a27.376 27.376 0 0 0 7.352-6.675z" fill="#F49B08"/></g></g></svg>
+            <svg width="128" height="128" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M38.458 0h51.084c13.373 0 18.222 1.392 23.11 4.007 4.89 2.615 8.726 6.451 11.341 11.34 2.615 4.89 4.007 9.738 4.007 23.111v51.084c0 13.373-1.392 18.222-4.007 23.11-2.615 4.89-6.451 8.726-11.34 11.341-4.89 2.615-9.738 4.007-23.111 4.007H38.458c-13.373 0-18.222-1.392-23.11-4.007-4.89-2.615-8.726-6.451-11.341-11.34C1.392 107.763 0 102.915 0 89.542V38.458c0-13.373 1.392-18.222 4.007-23.11 2.615-4.89 6.451-8.726 11.34-11.341C20.237 1.392 25.085 0 38.458 0z" fill="#F49B08"/><g fill-rule="nonzero"><path fill="#000" d="M103.745 48H91l12.115 16.354L91.456 81h12.824L115 64.354zM24.255 48H37L24.885 64.354 36.544 81H23.72L13 64.354z"/><path d="M87.809 49v18.575H91v8.537h-3.186V81h-9.94v-4.888H64V67.88L77.21 49h10.599zm-9.135 11.233l-4.786 7.342h4.786v-7.342zM58.78 66.087a13.473 13.473 0 0 0 2.898-8.238 9.814 9.814 0 0 0-2.683-6.997c-1.79-1.9-4.632-2.851-8.528-2.851a14.224 14.224 0 0 0-6.091 1.29 10.453 10.453 0 0 0-4.503 4.06c-1.156 1.84-1.78 4.186-1.873 7.039h9.928c0-1.47.131-2.473.392-3.012.223-.52.748-.848 1.315-.818 1.073 0 1.61.77 1.61 2.3 0 1.872-1.179 3.99-3.537 6.355a91.287 91.287 0 0 1-9.58 8.098V81H62v-8.238H51.428a27.376 27.376 0 0 0 7.352-6.675z" fill="#FFF"/></g></g></svg>
+            <svg width="128" height="128" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M38.458 0h51.084c13.373 0 18.222 1.392 23.11 4.007 4.89 2.615 8.726 6.451 11.341 11.34 2.615 4.89 4.007 9.738 4.007 23.111v51.084c0 13.373-1.392 18.222-4.007 23.11-2.615 4.89-6.451 8.726-11.34 11.341-4.89 2.615-9.738 4.007-23.111 4.007H38.458c-13.373 0-18.222-1.392-23.11-4.007-4.89-2.615-8.726-6.451-11.341-11.34C1.392 107.763 0 102.915 0 89.542V38.458c0-13.373 1.392-18.222 4.007-23.11 2.615-4.89 6.451-8.726 11.34-11.341C20.237 1.392 25.085 0 38.458 0z" fill="#000"/><g fill-rule="nonzero"><path fill="#FFF" d="M103.745 48H91l12.115 16.354L91.456 81h12.824L115 64.354zM24.255 48H37L24.885 64.354 36.544 81H23.72L13 64.354z"/><path d="M87.809 49v18.575H91v8.537h-3.186V81h-9.94v-4.888H64V67.88L77.21 49h10.599zm-9.135 11.233l-4.786 7.342h4.786v-7.342zM58.78 66.087a13.473 13.473 0 0 0 2.898-8.238 9.814 9.814 0 0 0-2.683-6.997c-1.79-1.9-4.632-2.851-8.528-2.851a14.224 14.224 0 0 0-6.091 1.29 10.453 10.453 0 0 0-4.503 4.06c-1.156 1.84-1.78 4.186-1.873 7.039h9.928c0-1.47.131-2.473.392-3.012.223-.52.748-.848 1.315-.818 1.073 0 1.61.77 1.61 2.3 0 1.872-1.179 3.99-3.537 6.355a91.287 91.287 0 0 1-9.58 8.098V81H62v-8.238H51.428a27.376 27.376 0 0 0 7.352-6.675z" fill="#F49B08"/></g></g></svg>
+          </div>
+        </div>
       </div>
     </div>
 
+</section>
+
+    <section id="colors" class="l-stack--200 waypoint wrapper" data-title="Farben">
+
+  <div class="l-stack--100">
     <div>
-      <h3>Reduziert</h3>
-      <div class="sandbox">
-
-      </div>
-      <h3>App Icon</h3>
-      <div class="sandbox">
-
-      </div>
-    </div>
-  </div>
-
-</section>
-
-    <section id="colors" class="l-stack--small waypoint wrapper" data-title="Farben">
-
-  <h2 class="h2--adaptive">Farben</h2>
-
-  <h3>Primärfarben</h3>
-  <ul class="palette"><li class="palette__item">
-      <div class="palette__content">
-        <ul class="palette palette--sub"><li class="palette--sub__item">
-            <div class="color ">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#FEF1DA"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Orange 100</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">FEF1DA</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color ">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#FFD385"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Orange 200</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">FFD385</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#FBA308"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Orange 300</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">FBA308</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#FB9105"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Orange 400</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">FB9105</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#F0670A"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Orange 500</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">F0670A</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li></ul>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <ul class="palette palette--sub"><li class="palette--sub__item">
-            <div class="color ">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#E0F7F8"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Mint 100</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">E0F7F8</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color ">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#80DDE4"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Mint 200</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">80DDE4</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#00ABBA"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Mint 300</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">00ABBA</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#0395A1"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Mint 400</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">0395A1</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li><li class="palette--sub__item">
-            <div class="color color--is-dark">
-              <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <rect width="100%" height="100%" fill="#055E5F"/>
-              </svg>
-              <div class="color__body">
-                <div class="color__type">Primärfarbe</div>
-                <div class="color__name">Mint 500</div>
-                <div class="color__codes">
-                  <span class="color__label">HEX</span> <span class="color__value">055E5F</span>
-                  <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-                  <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-                </div>
-              </div>
-            </div>
-          </li></ul>
-      </div>
-    </li></ul>
-  <h3>Grautöne</h3>
-  <!-- <ul class="palette palette--alt"><li class="palette__item">
-      <div class="palette__content">
-        <div class="color ">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#F7F7F8"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 50</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">F7F7F8</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color ">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#E7E9EA"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 100</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">E7E9EA</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color ">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#CBCFD2"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 200</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">CBCFD2</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#B0B6BA"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 300</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">B0B6BA</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#97A0A5"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 400</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">97A0A5</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#808A90"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 500</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">808A90</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#68747A"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 600</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">68747A</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#4F5D65"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 700</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">4F5D65</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#35444C"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 800</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">35444C</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li class="palette__item">
-      <div class="palette__content">
-        <div class="color color--is-dark">
-          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <rect width="100%" height="100%" fill="#263238"/>
-          </svg>
-          <div class="color__body">
-            <div class="color__type">Grauton</div>
-            <div class="color__name">Neutral 900</div>
-            <div class="color__codes">
-              <span class="color__label">HEX</span> <span class="color__value">263238</span>
-              <span class="color__label">HSL</span> <span class="color__value">38 97 51</span>
-              <span class="color__label">RGB</span> <span class="color__value">251 163 8</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li></ul> -->
-</section>
-
-    <section id="layout" class="l-stack waypoint wrapper" data-title="Layout">
-
-  <div id="layout" class="l-full-page section--logo">
-    <div class="section__typo">
-      <h1 class="section__title">Ein ehrlicher Charakter</h1>
-      <div class="section__body l-stack">
-        <p class="section__hero">Lineare und geradlinige Abstände</p>
-        <svg viewBox="0 0 512 86" version="1.1">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD" transform="translate(-604.000000, -344.000000)">
-            <g id="spacing" transform="translate(604.000000, 344.000000)">
-                <path d="M477.094,79.683 C477.761337,79.683 478.357164,79.9343308 478.8815,80.437 C479.405836,80.9396692 479.668,81.5896627 479.668,82.387 C479.668,83.193004 479.401503,83.8408309 478.8685,84.3305 C478.335497,84.8201691 477.692004,85.065 476.938,85.065 C476.183996,85.065 475.540503,84.8201691 475.0075,84.3305 C474.474497,83.8408309 474.208,83.1800042 474.208,82.348 C474.208,81.8886644 474.311999,81.4336689 474.52,80.983 C474.832002,80.3156633 475.64666,78.877011 476.964,76.667 L478.329,76.667 L476.288,79.878 C476.461334,79.7479994 476.729998,79.683 477.094,79.683 Z M476.938,83.999 C477.406002,83.999 477.787332,83.8516681 478.082,83.557 C478.376668,83.2623319 478.524,82.8723358 478.524,82.387 C478.524,81.9016642 478.374501,81.5095015 478.0755,81.2105 C477.776499,80.9114985 477.397336,80.762 476.938,80.762 C476.478664,80.762 476.099501,80.9114985 475.8005,81.2105 C475.501499,81.5095015 475.352,81.9016642 475.352,82.387 C475.352,82.8723358 475.501499,83.2623319 475.8005,83.557 C476.099501,83.8516681 476.478664,83.999 476.938,83.999 Z M485.5635,82.283 L486.9545,82.283 L486.9545,83.31 L485.5635,83.31 L485.5635,85 L484.4455,85 L484.4455,83.31 L480.7795,83.31 L480.7795,82.517 L483.8085,76.667 L485.5635,76.667 L485.5635,82.283 Z M482.1185,82.283 L484.4455,82.283 L484.4455,77.902 L484.3285,77.902 L482.1185,82.283 Z" id="64" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M385.0745,79.449 C385.889171,79.449 386.547831,79.7003308 387.0505,80.203 C387.553169,80.7056692 387.8045,81.3946623 387.8045,82.27 C387.8045,83.1453377 387.548836,83.8299975 387.0375,84.324 C386.526164,84.8180025 385.867504,85.065 385.0615,85.065 C384.186162,85.065 383.508002,84.7941694 383.027,84.2525 C382.545998,83.7108306 382.3055,83.1150033 382.3055,82.465 L383.4365,82.465 C383.4365,82.8376685 383.590332,83.1864984 383.898,83.5115 C384.205668,83.8365016 384.606498,83.999 385.1005,83.999 C385.568502,83.999 385.949832,83.8451682 386.2445,83.5375 C386.539168,83.2298318 386.6865,82.8030027 386.6865,82.257 C386.6865,81.7369974 386.543501,81.305835 386.2575,80.9635 C385.971499,80.621165 385.53817,80.45 384.9575,80.45 C384.203496,80.45 383.683501,80.7273306 383.3975,81.282 L382.4745,80.983 L382.8645,76.667 L387.4145,76.667 L387.4145,77.759 L383.8005,77.759 L383.5665,79.891 C383.921835,79.5963319 384.424497,79.449 385.0745,79.449 Z M392.218,79.683 C392.885337,79.683 393.481164,79.9343308 394.0055,80.437 C394.529836,80.9396692 394.792,81.5896627 394.792,82.387 C394.792,83.193004 394.525503,83.8408309 393.9925,84.3305 C393.459497,84.8201691 392.816004,85.065 392.062,85.065 C391.307996,85.065 390.664503,84.8201691 390.1315,84.3305 C389.598497,83.8408309 389.332,83.1800042 389.332,82.348 C389.332,81.8886644 389.435999,81.4336689 389.644,80.983 C389.956002,80.3156633 390.77066,78.877011 392.088,76.667 L393.453,76.667 L391.412,79.878 C391.585334,79.7479994 391.853998,79.683 392.218,79.683 Z M392.062,83.999 C392.530002,83.999 392.911332,83.8516681 393.206,83.557 C393.500668,83.2623319 393.648,82.8723358 393.648,82.387 C393.648,81.9016642 393.498501,81.5095015 393.1995,81.2105 C392.900499,80.9114985 392.521336,80.762 392.062,80.762 C391.602664,80.762 391.223501,80.9114985 390.9245,81.2105 C390.625499,81.5095015 390.476,81.9016642 390.476,82.387 C390.476,82.8723358 390.625499,83.2623319 390.9245,83.557 C391.223501,83.8516681 391.602664,83.999 392.062,83.999 Z" id="56" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M302.6345,82.283 L304.0255,82.283 L304.0255,83.31 L302.6345,83.31 L302.6345,85 L301.5165,85 L301.5165,83.31 L297.8505,83.31 L297.8505,82.517 L300.8795,76.667 L302.6345,76.667 L302.6345,82.283 Z M299.1895,82.283 L301.5165,82.283 L301.5165,77.902 L301.3995,77.902 L299.1895,82.283 Z M309.44,80.489 C309.864669,80.6190007 310.217832,80.8746648 310.4995,81.256 C310.781168,81.6373352 310.922,82.0923307 310.922,82.621 C310.922,83.3490036 310.662003,83.9383311 310.142,84.389 C309.621997,84.8396689 308.941671,85.065 308.101,85.065 C307.260329,85.065 306.584336,84.8396689 306.073,84.389 C305.561664,83.9383311 305.306,83.3533369 305.306,82.634 C305.306,82.0879973 305.448999,81.6265019 305.735,81.2495 C306.021001,80.8724981 306.371998,80.6190007 306.788,80.489 L306.788,80.385 C306.458665,80.2463326 306.192168,80.0210016 305.9885,79.709 C305.784832,79.3969984 305.683,79.046002 305.683,78.656 C305.683,78.057997 305.921331,77.5661686 306.398,77.1805 C306.874669,76.7948314 307.446663,76.602 308.114,76.602 C308.781337,76.602 309.353331,76.7948314 309.83,77.1805 C310.306669,77.5661686 310.545,78.057997 310.545,78.656 C310.545,79.046002 310.443168,79.3969984 310.2395,79.709 C310.035832,80.0210016 309.769335,80.2463326 309.44,80.385 L309.44,80.489 Z M309.05,77.876 C308.807332,77.6593323 308.495335,77.551 308.114,77.551 C307.732665,77.551 307.418501,77.6593323 307.1715,77.876 C306.924499,78.0926678 306.801,78.3786649 306.801,78.734 C306.801,79.1066685 306.933165,79.4056655 307.1975,79.631 C307.461835,79.8563345 307.762998,79.969 308.101,79.969 C308.439002,79.969 308.744499,79.8563345 309.0175,79.631 C309.290501,79.4056655 309.427,79.1066685 309.427,78.734 C309.427,78.3786649 309.301335,78.0926678 309.05,77.876 Z M306.905,83.635 C307.191001,83.9470016 307.585331,84.103 308.088,84.103 C308.590669,84.103 308.991499,83.9448349 309.2905,83.6285 C309.589501,83.3121651 309.739,82.9676685 309.739,82.595 C309.739,82.2223315 309.596001,81.8800016 309.31,81.568 C309.023999,81.2559984 308.621003,81.1 308.101,81.1 C307.580997,81.1 307.182335,81.2559984 306.905,81.568 C306.627665,81.8800016 306.489,82.2266648 306.489,82.608 C306.489,82.9806685 306.627665,83.3229984 306.905,83.635 Z" id="48" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M226.537,82.283 L227.928,82.283 L227.928,83.31 L226.537,83.31 L226.537,85 L225.419,85 L225.419,83.31 L221.753,83.31 L221.753,82.517 L224.782,76.667 L226.537,76.667 L226.537,82.283 Z M223.092,82.283 L225.419,82.283 L225.419,77.902 L225.302,77.902 L223.092,82.283 Z M232.0815,85.065 C231.171495,85.065 230.434836,84.6750039 229.8715,83.895 C229.308164,83.1149961 229.0265,82.0923397 229.0265,80.827 C229.0265,79.5616603 229.308164,78.5411705 229.8715,77.7655 C230.434836,76.9898295 231.167162,76.602 232.0685,76.602 C232.978505,76.602 233.72383,76.9919961 234.3045,77.772 C234.88517,78.5520039 235.1755,79.5746603 235.1755,80.84 C235.1755,82.0966729 234.88517,83.1149961 234.3045,83.895 C233.72383,84.6750039 232.982838,85.065 232.0815,85.065 Z M232.0685,83.947 C232.683836,83.947 233.169165,83.6523363 233.5245,83.063 C233.879835,82.4736637 234.0575,81.7370044 234.0575,80.853 C234.0575,79.9516622 233.877668,79.2041696 233.518,78.6105 C233.158332,78.0168304 232.67517,77.72 232.0685,77.72 C231.470497,77.72 231.002502,78.0146637 230.6645,78.604 C230.326498,79.1933363 230.1575,79.9386622 230.1575,80.84 C230.1575,81.7500045 230.326498,82.4953304 230.6645,83.076 C231.002502,83.6566696 231.470497,83.947 232.0685,83.947 Z" id="40" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M157.985,80.593 C158.340335,80.7403341 158.632832,80.9938315 158.8625,81.3535 C159.092168,81.7131685 159.207,82.1183311 159.207,82.569 C159.207,83.2536701 158.955669,83.8408309 158.453,84.3305 C157.950331,84.8201691 157.287337,85.065 156.464,85.065 C155.657996,85.065 155.005836,84.833169 154.5075,84.3695 C154.009164,83.905831 153.76,83.3403367 153.76,82.673 L154.865,82.673 C154.891,83.0110017 155.042665,83.3164986 155.32,83.5895 C155.597335,83.8625014 155.974331,83.999 156.451,83.999 C156.945002,83.999 157.328499,83.8495015 157.6015,83.5505 C157.874501,83.2514985 158.011,82.8983354 158.011,82.491 C158.011,82.1009981 157.881001,81.7673347 157.621,81.49 C157.360999,81.2126653 156.975336,81.074 156.464,81.074 L156.035,81.074 L156.035,80.099 L156.412,80.099 C156.810669,80.099 157.137832,79.9863345 157.3935,79.761 C157.649168,79.5356655 157.777,79.2410018 157.777,78.877 C157.777,78.5389983 157.662168,78.2551678 157.4325,78.0255 C157.202832,77.7958322 156.884335,77.681 156.477,77.681 C156.130332,77.681 155.831335,77.7676658 155.58,77.941 C155.328665,78.1143342 155.185667,78.3439986 155.151,78.63 L154.072,78.63 C154.072,78.0406637 154.310331,77.5553352 154.787,77.174 C155.263669,76.7926648 155.835663,76.602 156.503,76.602 C157.18767,76.602 157.757498,76.803498 158.2125,77.2065 C158.667502,77.609502 158.895,78.1186636 158.895,78.734 C158.895,79.1066685 158.810501,79.4424985 158.6415,79.7415 C158.472499,80.0405015 158.253668,80.2723325 157.985,80.437 L157.985,80.593 Z M163.8935,81.906 C163.20883,82.3306688 162.717001,82.6838319 162.418,82.9655 C162.118999,83.2471681 161.9695,83.5613316 161.9695,83.908 L166.0125,83.908 L166.0125,85 L160.7475,85 L160.7475,84.337 C160.7475,83.9729982 160.790833,83.6436681 160.8775,83.349 C160.964167,83.0543319 161.065999,82.8116676 161.183,82.621 C161.300001,82.4303324 161.464666,82.2440009 161.677,82.062 C161.889334,81.8799991 162.069166,81.7413338 162.2165,81.646 C162.363834,81.5506662 162.567499,81.4293341 162.8275,81.282 L162.9055,81.243 C162.922833,81.2343333 162.935833,81.2256667 162.9445,81.217 C163.282502,81.0263324 163.540332,80.8746672 163.718,80.762 C163.895668,80.6493328 164.090666,80.5020009 164.303,80.32 C164.515334,80.1379991 164.669166,79.9473343 164.7645,79.748 C164.859834,79.5486657 164.9075,79.3276679 164.9075,79.085 C164.9075,78.694998 164.781835,78.3700013 164.5305,78.11 C164.279165,77.8499987 163.945502,77.72 163.5295,77.72 C163.035498,77.72 162.643335,77.8933316 162.353,78.24 C162.062665,78.5866684 161.9175,78.9549981 161.9175,79.345 L160.7605,79.345 C160.7605,79.0503319 160.814666,78.7491682 160.923,78.4415 C161.031334,78.1338318 161.191666,77.8391681 161.404,77.5575 C161.616334,77.2758319 161.906665,77.0461676 162.275,76.8685 C162.643335,76.6908324 163.057164,76.602 163.5165,76.602 C164.261837,76.602 164.874998,76.8186645 165.356,77.252 C165.837002,77.6853355 166.0775,78.2746629 166.0775,79.02 C166.0775,79.3753351 166.021167,79.7003319 165.9085,79.995 C165.795833,80.2896681 165.624668,80.5518322 165.395,80.7815 C165.165332,81.0111678 164.959501,81.193166 164.7775,81.3275 C164.595499,81.461834 164.357168,81.6199991 164.0625,81.802 C164.027833,81.8280001 163.9975,81.8474999 163.9715,81.8605 C163.9455,81.8735001 163.9195,81.8886666 163.8935,81.906 Z" id="32" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M97.5425,81.906 C96.8578299,82.3306688 96.3660015,82.6838319 96.067,82.9655 C95.7679985,83.2471681 95.6185,83.5613316 95.6185,83.908 L99.6615,83.908 L99.6615,85 L94.3965,85 L94.3965,84.337 C94.3965,83.9729982 94.4398329,83.6436681 94.5265,83.349 C94.6131671,83.0543319 94.7149994,82.8116676 94.832,82.621 C94.9490006,82.4303324 95.1136656,82.2440009 95.326,82.062 C95.5383344,81.8799991 95.7181659,81.7413338 95.8655,81.646 C96.0128341,81.5506662 96.2164987,81.4293341 96.4765,81.282 L96.5545,81.243 C96.5718334,81.2343333 96.5848333,81.2256667 96.5935,81.217 C96.9315017,81.0263324 97.1893324,80.8746672 97.367,80.762 C97.5446676,80.6493328 97.7396656,80.5020009 97.952,80.32 C98.1643344,80.1379991 98.3181662,79.9473343 98.4135,79.748 C98.5088338,79.5486657 98.5565,79.3276679 98.5565,79.085 C98.5565,78.694998 98.4308346,78.3700013 98.1795,78.11 C97.9281654,77.8499987 97.5945021,77.72 97.1785,77.72 C96.6844975,77.72 96.2923348,77.8933316 96.002,78.24 C95.7116652,78.5866684 95.5665,78.9549981 95.5665,79.345 L94.4095,79.345 C94.4095,79.0503319 94.4636661,78.7491682 94.572,78.4415 C94.6803339,78.1338318 94.8406656,77.8391681 95.053,77.5575 C95.2653344,77.2758319 95.5556648,77.0461676 95.924,76.8685 C96.2923352,76.6908324 96.7061644,76.602 97.1655,76.602 C97.9108371,76.602 98.5239976,76.8186645 99.005,77.252 C99.4860024,77.6853355 99.7265,78.2746629 99.7265,79.02 C99.7265,79.3753351 99.6701672,79.7003319 99.5575,79.995 C99.4448328,80.2896681 99.2736678,80.5518322 99.044,80.7815 C98.8143322,81.0111678 98.6085009,81.193166 98.4265,81.3275 C98.2444991,81.461834 98.0061681,81.6199991 97.7115,81.802 C97.6768332,81.8280001 97.6465001,81.8474999 97.6205,81.8605 C97.5944999,81.8735001 97.5685001,81.8886666 97.5425,81.906 Z M105.635,82.283 L107.026,82.283 L107.026,83.31 L105.635,83.31 L105.635,85 L104.517,85 L104.517,83.31 L100.851,83.31 L100.851,82.517 L103.88,76.667 L105.635,76.667 L105.635,82.283 Z M102.19,82.283 L104.517,82.283 L104.517,77.902 L104.4,77.902 L102.19,82.283 Z" id="24" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M44.607,85 L44.607,78.916 L43.021,78.916 L43.021,77.993 L43.97,77.993 C44.178001,77.993 44.349166,77.925834 44.4835,77.7915 C44.617834,77.657166 44.685,77.4816677 44.685,77.265 L44.685,76.68 L45.751,76.68 L45.764,85 L44.607,85 Z M50.5025,79.683 C51.1698367,79.683 51.765664,79.9343308 52.29,80.437 C52.814336,80.9396692 53.0765,81.5896627 53.0765,82.387 C53.0765,83.193004 52.8100027,83.8408309 52.277,84.3305 C51.7439973,84.8201691 51.1005038,85.065 50.3465,85.065 C49.5924962,85.065 48.9490027,84.8201691 48.416,84.3305 C47.8829973,83.8408309 47.6165,83.1800042 47.6165,82.348 C47.6165,81.8886644 47.720499,81.4336689 47.9285,80.983 C48.2405016,80.3156633 49.0551601,78.877011 50.3725,76.667 L51.7375,76.667 L49.6965,79.878 C49.8698342,79.7479994 50.1384982,79.683 50.5025,79.683 Z M50.3465,83.999 C50.8145023,83.999 51.1958319,83.8516681 51.4905,83.557 C51.7851681,83.2623319 51.9325,82.8723358 51.9325,82.387 C51.9325,81.9016642 51.7830015,81.5095015 51.484,81.2105 C51.1849985,80.9114985 50.8058356,80.762 50.3465,80.762 C49.8871644,80.762 49.5080015,80.9114985 49.209,81.2105 C48.9099985,81.5095015 48.7605,81.9016642 48.7605,82.387 C48.7605,82.8723358 48.9099985,83.2623319 49.209,83.557 C49.5080015,83.8516681 49.8871644,83.999 50.3465,83.999 Z" id="16" fill="#34444D" fill-rule="nonzero"></path>
-                <path d="M5.40725,80.489 C5.83191879,80.6190007 6.18508192,80.8746648 6.46675,81.256 C6.74841808,81.6373352 6.88925,82.0923307 6.88925,82.621 C6.88925,83.3490036 6.6292526,83.9383311 6.10925,84.389 C5.5892474,84.8396689 4.90892087,85.065 4.06825,85.065 C3.22757913,85.065 2.55158589,84.8396689 2.04025,84.389 C1.52891411,83.9383311 1.27325,83.3533369 1.27325,82.634 C1.27325,82.0879973 1.41624857,81.6265019 1.70225,81.2495 C1.98825143,80.8724981 2.33924792,80.6190007 2.75525,80.489 L2.75525,80.385 C2.42591502,80.2463326 2.15941768,80.0210016 1.95575,79.709 C1.75208231,79.3969984 1.65025,79.046002 1.65025,78.656 C1.65025,78.057997 1.88858095,77.5661686 2.36525,77.1805 C2.84191905,76.7948314 3.41391333,76.602 4.08125,76.602 C4.74858667,76.602 5.32058095,76.7948314 5.79725,77.1805 C6.27391905,77.5661686 6.51225,78.057997 6.51225,78.656 C6.51225,79.046002 6.41041769,79.3969984 6.20675,79.709 C6.00308232,80.0210016 5.73658498,80.2463326 5.40725,80.385 L5.40725,80.489 Z M5.01725,77.876 C4.77458212,77.6593323 4.46258524,77.551 4.08125,77.551 C3.69991476,77.551 3.38575123,77.6593323 3.13875,77.876 C2.89174876,78.0926678 2.76825,78.3786649 2.76825,78.734 C2.76825,79.1066685 2.90041534,79.4056655 3.16475,79.631 C3.42908465,79.8563345 3.73024831,79.969 4.06825,79.969 C4.40625169,79.969 4.71174863,79.8563345 4.98475,79.631 C5.25775136,79.4056655 5.39425,79.1066685 5.39425,78.734 C5.39425,78.3786649 5.26858459,78.0926678 5.01725,77.876 Z M2.87225,83.635 C3.15825143,83.9470016 3.55258082,84.103 4.05525,84.103 C4.55791918,84.103 4.9587485,83.9448349 5.25775,83.6285 C5.5567515,83.3121651 5.70625,82.9676685 5.70625,82.595 C5.70625,82.2223315 5.56325143,81.8800016 5.27725,81.568 C4.99124857,81.2559984 4.5882526,81.1 4.06825,81.1 C3.5482474,81.1 3.14958472,81.2559984 2.87225,81.568 C2.59491528,81.8800016 2.45625,82.2266648 2.45625,82.608 C2.45625,82.9806685 2.59491528,83.3229984 2.87225,83.635 Z" id="8" fill="#34444D" fill-rule="nonzero"></path>
-                <rect id="r--64" fill="#EBFEFF" x="448" y="0" width="64" height="64" rx="2"></rect>
-                <rect id="r--56" fill="#E0F7F8" x="360" y="8" width="56" height="56" rx="2"></rect>
-                <rect id="r--48" fill="#80DDE4" x="280" y="16" width="48" height="48" rx="2"></rect>
-                <rect id="r--40" fill="#00ABBA" x="208" y="24" width="40" height="40" rx="2"></rect>
-                <rect id="r--32" fill="#00ABBA" x="144" y="32" width="32" height="32" rx="2"></rect>
-                <rect id="r--24" fill="#00ABBA" x="88" y="40" width="24" height="24" rx="2"></rect>
-                <rect id="r--16" fill="#0395A1" x="40" y="48" width="16" height="16" rx="2"></rect>
-                <rect id="r--8" fill="#055E5F" x="0" y="56" width="8" height="8" rx="2"></rect>
-                <path d="M4,60 L480,32" id="line" stroke="#FB9105" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
-            </g>
-        </g>
-    </g>
+      <a href="" class="anchor">Updated Yesterday <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+  <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
+  <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
+  <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
 </svg>
-
-        <p class="section__addendum">Die Makrotypografie (Layout, Textgestaltung) legt den optischen Gesamteindruck der Seite fest. Hier werden der Aufbau und das Format sowie die Anordnung aller textlichen und grafischen Elemente innerhalb des Satzspiegels bestimmt. Auch die Wahl der Schriftart(en) und das Festlegen der Größenverhältnisse von Texten zu Bildern ist Teil der Makrotypografie.</p>
-      </div>
+</span></a>
+      <h1 class="h1--600">Farben</h1>
     </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
+    <button class="btn btn--primary">Download</button>
   </div>
 
-  <div id="breakpoints" class="l-full-page section--logo">
-    <div class="section__typo">
-      <h1 class="section__title">Im richtigen Moment schalten</h1>
-      <div class="section__body l-stack">
-        <p class="section__hero">Breakpoints</p>
-        <p class="section__addendum">Die Makrotypografie (Layout, Textgestaltung) legt den optischen Gesamteindruck der Seite fest. Hier werden der Aufbau und das Format sowie die Anordnung aller textlichen und grafischen Elemente innerhalb des Satzspiegels bestimmt. Auch die Wahl der Schriftart(en) und das Festlegen der Größenverhältnisse von Texten zu Bildern ist Teil der Makrotypografie.</p>
+  <div class="l-stack--100">
+    <h2>Primärfarben</h2><ul class="palette"><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#FEF1DA"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Orange 100</div>
+          <div class="color__value">#FEF1DA
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#FFD385"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Orange 200</div>
+          <div class="color__value">#FFD385
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#FBA308"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Orange 300</div>
+          <div class="color__value">#FBA308
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#FB9105"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Orange 400</div>
+          <div class="color__value">#FB9105
+          </div>
+        </div>
+      </li></ul><ul class="palette"><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#E0F7F8"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Mint 100</div>
+          <div class="color__value">#E0F7F8
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#80DDE4"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Mint 200</div>
+          <div class="color__value">#80DDE4
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#00ABBA"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Mint 300</div>
+          <div class="color__value">#00ABBA
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#0395A1"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Mint 400</div>
+          <div class="color__value">#0395A1
+          </div>
+        </div>
+      </li></ul></div>
+  <div class="l-stack--100">
+    <h3>Grautöne</h3><ul class="palette"><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#F7F7F8"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 50</div>
+          <div class="color__value">#F7F7F8
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#E7E9EA"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 100</div>
+          <div class="color__value">#E7E9EA
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#CBCFD2"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 200</div>
+          <div class="color__value">#CBCFD2
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#B0B6BA"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 300</div>
+          <div class="color__value">#B0B6BA
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#97A0A5"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 400</div>
+          <div class="color__value">#97A0A5
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#808A90"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 500</div>
+          <div class="color__value">#808A90
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#68747A"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 600</div>
+          <div class="color__value">#68747A
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#4F5D65"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 700</div>
+          <div class="color__value">#4F5D65
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#35444C"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 800</div>
+          <div class="color__value">#35444C
+          </div>
+        </div>
+      </li><li class="color">
+        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <rect width="100%" height="100%" fill="#263238"/>
+        </svg>
+        <div class="color__body">
+          <div class="color__name">Neutral 900</div>
+          <div class="color__value">#263238
+          </div>
+        </div>
+      </li></ul></div>
+</section>
+
+    <section id="layout" class="l-stack--200 waypoint wrapper" data-title="Layout">
+
+  <div class="l-stack--200">
+    <div class="l-stack--100">
+      <div>
+        <a href="" class="anchor">Updated Yesterday <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+  <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
+  <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
+  <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
+</svg>
+</span></a>
+        <h1 class="h1--600">Layout</h1>
       </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
     </div>
-    <div id="js-wireframes" class="wireframes">
-      <?xml version="1.0" encoding="UTF-8"?>
+    <div class="l-stack--100">
+      <h2 id="grid">Grid</h2>
+      <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+      <button class="btn btn--primary">Download</button>
+      <div class="sandbox">
+        <div id="js-wireframes" class="wireframes">
+          <?xml version="1.0" encoding="UTF-8"?>
 <svg width="300%" viewBox="0 0 4740 1210" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
     <title>wireframe--all</title>
@@ -936,51 +765,134 @@
     </g>
 </svg>
 
+        </div>
+        <div class="sandbox__popover">
+          <div class="switcher">
+            <ul class="switcher__items">
+              <li class="switcher__item"><a href="#" class="switcher__link switcher__link--is-active">Mobile</a></li>
+              <li class="switcher__item"><a href="#" class="switcher__link">Tablet</a></li>
+              <li class="switcher__item"><a href="#" class="switcher__link">Desktop</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+    <div class="l-stack--100">
+      <h2 id="spacing">Abstände</h2>
+      <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+      <div class="sandbox">
+        <svg viewBox="0 0 512 86" version="1.1">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-604.000000, -344.000000)">
+            <g id="spacing" transform="translate(604.000000, 344.000000)">
+                <path d="M477.094,79.683 C477.761337,79.683 478.357164,79.9343308 478.8815,80.437 C479.405836,80.9396692 479.668,81.5896627 479.668,82.387 C479.668,83.193004 479.401503,83.8408309 478.8685,84.3305 C478.335497,84.8201691 477.692004,85.065 476.938,85.065 C476.183996,85.065 475.540503,84.8201691 475.0075,84.3305 C474.474497,83.8408309 474.208,83.1800042 474.208,82.348 C474.208,81.8886644 474.311999,81.4336689 474.52,80.983 C474.832002,80.3156633 475.64666,78.877011 476.964,76.667 L478.329,76.667 L476.288,79.878 C476.461334,79.7479994 476.729998,79.683 477.094,79.683 Z M476.938,83.999 C477.406002,83.999 477.787332,83.8516681 478.082,83.557 C478.376668,83.2623319 478.524,82.8723358 478.524,82.387 C478.524,81.9016642 478.374501,81.5095015 478.0755,81.2105 C477.776499,80.9114985 477.397336,80.762 476.938,80.762 C476.478664,80.762 476.099501,80.9114985 475.8005,81.2105 C475.501499,81.5095015 475.352,81.9016642 475.352,82.387 C475.352,82.8723358 475.501499,83.2623319 475.8005,83.557 C476.099501,83.8516681 476.478664,83.999 476.938,83.999 Z M485.5635,82.283 L486.9545,82.283 L486.9545,83.31 L485.5635,83.31 L485.5635,85 L484.4455,85 L484.4455,83.31 L480.7795,83.31 L480.7795,82.517 L483.8085,76.667 L485.5635,76.667 L485.5635,82.283 Z M482.1185,82.283 L484.4455,82.283 L484.4455,77.902 L484.3285,77.902 L482.1185,82.283 Z" id="64" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M385.0745,79.449 C385.889171,79.449 386.547831,79.7003308 387.0505,80.203 C387.553169,80.7056692 387.8045,81.3946623 387.8045,82.27 C387.8045,83.1453377 387.548836,83.8299975 387.0375,84.324 C386.526164,84.8180025 385.867504,85.065 385.0615,85.065 C384.186162,85.065 383.508002,84.7941694 383.027,84.2525 C382.545998,83.7108306 382.3055,83.1150033 382.3055,82.465 L383.4365,82.465 C383.4365,82.8376685 383.590332,83.1864984 383.898,83.5115 C384.205668,83.8365016 384.606498,83.999 385.1005,83.999 C385.568502,83.999 385.949832,83.8451682 386.2445,83.5375 C386.539168,83.2298318 386.6865,82.8030027 386.6865,82.257 C386.6865,81.7369974 386.543501,81.305835 386.2575,80.9635 C385.971499,80.621165 385.53817,80.45 384.9575,80.45 C384.203496,80.45 383.683501,80.7273306 383.3975,81.282 L382.4745,80.983 L382.8645,76.667 L387.4145,76.667 L387.4145,77.759 L383.8005,77.759 L383.5665,79.891 C383.921835,79.5963319 384.424497,79.449 385.0745,79.449 Z M392.218,79.683 C392.885337,79.683 393.481164,79.9343308 394.0055,80.437 C394.529836,80.9396692 394.792,81.5896627 394.792,82.387 C394.792,83.193004 394.525503,83.8408309 393.9925,84.3305 C393.459497,84.8201691 392.816004,85.065 392.062,85.065 C391.307996,85.065 390.664503,84.8201691 390.1315,84.3305 C389.598497,83.8408309 389.332,83.1800042 389.332,82.348 C389.332,81.8886644 389.435999,81.4336689 389.644,80.983 C389.956002,80.3156633 390.77066,78.877011 392.088,76.667 L393.453,76.667 L391.412,79.878 C391.585334,79.7479994 391.853998,79.683 392.218,79.683 Z M392.062,83.999 C392.530002,83.999 392.911332,83.8516681 393.206,83.557 C393.500668,83.2623319 393.648,82.8723358 393.648,82.387 C393.648,81.9016642 393.498501,81.5095015 393.1995,81.2105 C392.900499,80.9114985 392.521336,80.762 392.062,80.762 C391.602664,80.762 391.223501,80.9114985 390.9245,81.2105 C390.625499,81.5095015 390.476,81.9016642 390.476,82.387 C390.476,82.8723358 390.625499,83.2623319 390.9245,83.557 C391.223501,83.8516681 391.602664,83.999 392.062,83.999 Z" id="56" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M302.6345,82.283 L304.0255,82.283 L304.0255,83.31 L302.6345,83.31 L302.6345,85 L301.5165,85 L301.5165,83.31 L297.8505,83.31 L297.8505,82.517 L300.8795,76.667 L302.6345,76.667 L302.6345,82.283 Z M299.1895,82.283 L301.5165,82.283 L301.5165,77.902 L301.3995,77.902 L299.1895,82.283 Z M309.44,80.489 C309.864669,80.6190007 310.217832,80.8746648 310.4995,81.256 C310.781168,81.6373352 310.922,82.0923307 310.922,82.621 C310.922,83.3490036 310.662003,83.9383311 310.142,84.389 C309.621997,84.8396689 308.941671,85.065 308.101,85.065 C307.260329,85.065 306.584336,84.8396689 306.073,84.389 C305.561664,83.9383311 305.306,83.3533369 305.306,82.634 C305.306,82.0879973 305.448999,81.6265019 305.735,81.2495 C306.021001,80.8724981 306.371998,80.6190007 306.788,80.489 L306.788,80.385 C306.458665,80.2463326 306.192168,80.0210016 305.9885,79.709 C305.784832,79.3969984 305.683,79.046002 305.683,78.656 C305.683,78.057997 305.921331,77.5661686 306.398,77.1805 C306.874669,76.7948314 307.446663,76.602 308.114,76.602 C308.781337,76.602 309.353331,76.7948314 309.83,77.1805 C310.306669,77.5661686 310.545,78.057997 310.545,78.656 C310.545,79.046002 310.443168,79.3969984 310.2395,79.709 C310.035832,80.0210016 309.769335,80.2463326 309.44,80.385 L309.44,80.489 Z M309.05,77.876 C308.807332,77.6593323 308.495335,77.551 308.114,77.551 C307.732665,77.551 307.418501,77.6593323 307.1715,77.876 C306.924499,78.0926678 306.801,78.3786649 306.801,78.734 C306.801,79.1066685 306.933165,79.4056655 307.1975,79.631 C307.461835,79.8563345 307.762998,79.969 308.101,79.969 C308.439002,79.969 308.744499,79.8563345 309.0175,79.631 C309.290501,79.4056655 309.427,79.1066685 309.427,78.734 C309.427,78.3786649 309.301335,78.0926678 309.05,77.876 Z M306.905,83.635 C307.191001,83.9470016 307.585331,84.103 308.088,84.103 C308.590669,84.103 308.991499,83.9448349 309.2905,83.6285 C309.589501,83.3121651 309.739,82.9676685 309.739,82.595 C309.739,82.2223315 309.596001,81.8800016 309.31,81.568 C309.023999,81.2559984 308.621003,81.1 308.101,81.1 C307.580997,81.1 307.182335,81.2559984 306.905,81.568 C306.627665,81.8800016 306.489,82.2266648 306.489,82.608 C306.489,82.9806685 306.627665,83.3229984 306.905,83.635 Z" id="48" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M226.537,82.283 L227.928,82.283 L227.928,83.31 L226.537,83.31 L226.537,85 L225.419,85 L225.419,83.31 L221.753,83.31 L221.753,82.517 L224.782,76.667 L226.537,76.667 L226.537,82.283 Z M223.092,82.283 L225.419,82.283 L225.419,77.902 L225.302,77.902 L223.092,82.283 Z M232.0815,85.065 C231.171495,85.065 230.434836,84.6750039 229.8715,83.895 C229.308164,83.1149961 229.0265,82.0923397 229.0265,80.827 C229.0265,79.5616603 229.308164,78.5411705 229.8715,77.7655 C230.434836,76.9898295 231.167162,76.602 232.0685,76.602 C232.978505,76.602 233.72383,76.9919961 234.3045,77.772 C234.88517,78.5520039 235.1755,79.5746603 235.1755,80.84 C235.1755,82.0966729 234.88517,83.1149961 234.3045,83.895 C233.72383,84.6750039 232.982838,85.065 232.0815,85.065 Z M232.0685,83.947 C232.683836,83.947 233.169165,83.6523363 233.5245,83.063 C233.879835,82.4736637 234.0575,81.7370044 234.0575,80.853 C234.0575,79.9516622 233.877668,79.2041696 233.518,78.6105 C233.158332,78.0168304 232.67517,77.72 232.0685,77.72 C231.470497,77.72 231.002502,78.0146637 230.6645,78.604 C230.326498,79.1933363 230.1575,79.9386622 230.1575,80.84 C230.1575,81.7500045 230.326498,82.4953304 230.6645,83.076 C231.002502,83.6566696 231.470497,83.947 232.0685,83.947 Z" id="40" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M157.985,80.593 C158.340335,80.7403341 158.632832,80.9938315 158.8625,81.3535 C159.092168,81.7131685 159.207,82.1183311 159.207,82.569 C159.207,83.2536701 158.955669,83.8408309 158.453,84.3305 C157.950331,84.8201691 157.287337,85.065 156.464,85.065 C155.657996,85.065 155.005836,84.833169 154.5075,84.3695 C154.009164,83.905831 153.76,83.3403367 153.76,82.673 L154.865,82.673 C154.891,83.0110017 155.042665,83.3164986 155.32,83.5895 C155.597335,83.8625014 155.974331,83.999 156.451,83.999 C156.945002,83.999 157.328499,83.8495015 157.6015,83.5505 C157.874501,83.2514985 158.011,82.8983354 158.011,82.491 C158.011,82.1009981 157.881001,81.7673347 157.621,81.49 C157.360999,81.2126653 156.975336,81.074 156.464,81.074 L156.035,81.074 L156.035,80.099 L156.412,80.099 C156.810669,80.099 157.137832,79.9863345 157.3935,79.761 C157.649168,79.5356655 157.777,79.2410018 157.777,78.877 C157.777,78.5389983 157.662168,78.2551678 157.4325,78.0255 C157.202832,77.7958322 156.884335,77.681 156.477,77.681 C156.130332,77.681 155.831335,77.7676658 155.58,77.941 C155.328665,78.1143342 155.185667,78.3439986 155.151,78.63 L154.072,78.63 C154.072,78.0406637 154.310331,77.5553352 154.787,77.174 C155.263669,76.7926648 155.835663,76.602 156.503,76.602 C157.18767,76.602 157.757498,76.803498 158.2125,77.2065 C158.667502,77.609502 158.895,78.1186636 158.895,78.734 C158.895,79.1066685 158.810501,79.4424985 158.6415,79.7415 C158.472499,80.0405015 158.253668,80.2723325 157.985,80.437 L157.985,80.593 Z M163.8935,81.906 C163.20883,82.3306688 162.717001,82.6838319 162.418,82.9655 C162.118999,83.2471681 161.9695,83.5613316 161.9695,83.908 L166.0125,83.908 L166.0125,85 L160.7475,85 L160.7475,84.337 C160.7475,83.9729982 160.790833,83.6436681 160.8775,83.349 C160.964167,83.0543319 161.065999,82.8116676 161.183,82.621 C161.300001,82.4303324 161.464666,82.2440009 161.677,82.062 C161.889334,81.8799991 162.069166,81.7413338 162.2165,81.646 C162.363834,81.5506662 162.567499,81.4293341 162.8275,81.282 L162.9055,81.243 C162.922833,81.2343333 162.935833,81.2256667 162.9445,81.217 C163.282502,81.0263324 163.540332,80.8746672 163.718,80.762 C163.895668,80.6493328 164.090666,80.5020009 164.303,80.32 C164.515334,80.1379991 164.669166,79.9473343 164.7645,79.748 C164.859834,79.5486657 164.9075,79.3276679 164.9075,79.085 C164.9075,78.694998 164.781835,78.3700013 164.5305,78.11 C164.279165,77.8499987 163.945502,77.72 163.5295,77.72 C163.035498,77.72 162.643335,77.8933316 162.353,78.24 C162.062665,78.5866684 161.9175,78.9549981 161.9175,79.345 L160.7605,79.345 C160.7605,79.0503319 160.814666,78.7491682 160.923,78.4415 C161.031334,78.1338318 161.191666,77.8391681 161.404,77.5575 C161.616334,77.2758319 161.906665,77.0461676 162.275,76.8685 C162.643335,76.6908324 163.057164,76.602 163.5165,76.602 C164.261837,76.602 164.874998,76.8186645 165.356,77.252 C165.837002,77.6853355 166.0775,78.2746629 166.0775,79.02 C166.0775,79.3753351 166.021167,79.7003319 165.9085,79.995 C165.795833,80.2896681 165.624668,80.5518322 165.395,80.7815 C165.165332,81.0111678 164.959501,81.193166 164.7775,81.3275 C164.595499,81.461834 164.357168,81.6199991 164.0625,81.802 C164.027833,81.8280001 163.9975,81.8474999 163.9715,81.8605 C163.9455,81.8735001 163.9195,81.8886666 163.8935,81.906 Z" id="32" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M97.5425,81.906 C96.8578299,82.3306688 96.3660015,82.6838319 96.067,82.9655 C95.7679985,83.2471681 95.6185,83.5613316 95.6185,83.908 L99.6615,83.908 L99.6615,85 L94.3965,85 L94.3965,84.337 C94.3965,83.9729982 94.4398329,83.6436681 94.5265,83.349 C94.6131671,83.0543319 94.7149994,82.8116676 94.832,82.621 C94.9490006,82.4303324 95.1136656,82.2440009 95.326,82.062 C95.5383344,81.8799991 95.7181659,81.7413338 95.8655,81.646 C96.0128341,81.5506662 96.2164987,81.4293341 96.4765,81.282 L96.5545,81.243 C96.5718334,81.2343333 96.5848333,81.2256667 96.5935,81.217 C96.9315017,81.0263324 97.1893324,80.8746672 97.367,80.762 C97.5446676,80.6493328 97.7396656,80.5020009 97.952,80.32 C98.1643344,80.1379991 98.3181662,79.9473343 98.4135,79.748 C98.5088338,79.5486657 98.5565,79.3276679 98.5565,79.085 C98.5565,78.694998 98.4308346,78.3700013 98.1795,78.11 C97.9281654,77.8499987 97.5945021,77.72 97.1785,77.72 C96.6844975,77.72 96.2923348,77.8933316 96.002,78.24 C95.7116652,78.5866684 95.5665,78.9549981 95.5665,79.345 L94.4095,79.345 C94.4095,79.0503319 94.4636661,78.7491682 94.572,78.4415 C94.6803339,78.1338318 94.8406656,77.8391681 95.053,77.5575 C95.2653344,77.2758319 95.5556648,77.0461676 95.924,76.8685 C96.2923352,76.6908324 96.7061644,76.602 97.1655,76.602 C97.9108371,76.602 98.5239976,76.8186645 99.005,77.252 C99.4860024,77.6853355 99.7265,78.2746629 99.7265,79.02 C99.7265,79.3753351 99.6701672,79.7003319 99.5575,79.995 C99.4448328,80.2896681 99.2736678,80.5518322 99.044,80.7815 C98.8143322,81.0111678 98.6085009,81.193166 98.4265,81.3275 C98.2444991,81.461834 98.0061681,81.6199991 97.7115,81.802 C97.6768332,81.8280001 97.6465001,81.8474999 97.6205,81.8605 C97.5944999,81.8735001 97.5685001,81.8886666 97.5425,81.906 Z M105.635,82.283 L107.026,82.283 L107.026,83.31 L105.635,83.31 L105.635,85 L104.517,85 L104.517,83.31 L100.851,83.31 L100.851,82.517 L103.88,76.667 L105.635,76.667 L105.635,82.283 Z M102.19,82.283 L104.517,82.283 L104.517,77.902 L104.4,77.902 L102.19,82.283 Z" id="24" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M44.607,85 L44.607,78.916 L43.021,78.916 L43.021,77.993 L43.97,77.993 C44.178001,77.993 44.349166,77.925834 44.4835,77.7915 C44.617834,77.657166 44.685,77.4816677 44.685,77.265 L44.685,76.68 L45.751,76.68 L45.764,85 L44.607,85 Z M50.5025,79.683 C51.1698367,79.683 51.765664,79.9343308 52.29,80.437 C52.814336,80.9396692 53.0765,81.5896627 53.0765,82.387 C53.0765,83.193004 52.8100027,83.8408309 52.277,84.3305 C51.7439973,84.8201691 51.1005038,85.065 50.3465,85.065 C49.5924962,85.065 48.9490027,84.8201691 48.416,84.3305 C47.8829973,83.8408309 47.6165,83.1800042 47.6165,82.348 C47.6165,81.8886644 47.720499,81.4336689 47.9285,80.983 C48.2405016,80.3156633 49.0551601,78.877011 50.3725,76.667 L51.7375,76.667 L49.6965,79.878 C49.8698342,79.7479994 50.1384982,79.683 50.5025,79.683 Z M50.3465,83.999 C50.8145023,83.999 51.1958319,83.8516681 51.4905,83.557 C51.7851681,83.2623319 51.9325,82.8723358 51.9325,82.387 C51.9325,81.9016642 51.7830015,81.5095015 51.484,81.2105 C51.1849985,80.9114985 50.8058356,80.762 50.3465,80.762 C49.8871644,80.762 49.5080015,80.9114985 49.209,81.2105 C48.9099985,81.5095015 48.7605,81.9016642 48.7605,82.387 C48.7605,82.8723358 48.9099985,83.2623319 49.209,83.557 C49.5080015,83.8516681 49.8871644,83.999 50.3465,83.999 Z" id="16" fill="#34444D" fill-rule="nonzero"></path>
+                <path d="M5.40725,80.489 C5.83191879,80.6190007 6.18508192,80.8746648 6.46675,81.256 C6.74841808,81.6373352 6.88925,82.0923307 6.88925,82.621 C6.88925,83.3490036 6.6292526,83.9383311 6.10925,84.389 C5.5892474,84.8396689 4.90892087,85.065 4.06825,85.065 C3.22757913,85.065 2.55158589,84.8396689 2.04025,84.389 C1.52891411,83.9383311 1.27325,83.3533369 1.27325,82.634 C1.27325,82.0879973 1.41624857,81.6265019 1.70225,81.2495 C1.98825143,80.8724981 2.33924792,80.6190007 2.75525,80.489 L2.75525,80.385 C2.42591502,80.2463326 2.15941768,80.0210016 1.95575,79.709 C1.75208231,79.3969984 1.65025,79.046002 1.65025,78.656 C1.65025,78.057997 1.88858095,77.5661686 2.36525,77.1805 C2.84191905,76.7948314 3.41391333,76.602 4.08125,76.602 C4.74858667,76.602 5.32058095,76.7948314 5.79725,77.1805 C6.27391905,77.5661686 6.51225,78.057997 6.51225,78.656 C6.51225,79.046002 6.41041769,79.3969984 6.20675,79.709 C6.00308232,80.0210016 5.73658498,80.2463326 5.40725,80.385 L5.40725,80.489 Z M5.01725,77.876 C4.77458212,77.6593323 4.46258524,77.551 4.08125,77.551 C3.69991476,77.551 3.38575123,77.6593323 3.13875,77.876 C2.89174876,78.0926678 2.76825,78.3786649 2.76825,78.734 C2.76825,79.1066685 2.90041534,79.4056655 3.16475,79.631 C3.42908465,79.8563345 3.73024831,79.969 4.06825,79.969 C4.40625169,79.969 4.71174863,79.8563345 4.98475,79.631 C5.25775136,79.4056655 5.39425,79.1066685 5.39425,78.734 C5.39425,78.3786649 5.26858459,78.0926678 5.01725,77.876 Z M2.87225,83.635 C3.15825143,83.9470016 3.55258082,84.103 4.05525,84.103 C4.55791918,84.103 4.9587485,83.9448349 5.25775,83.6285 C5.5567515,83.3121651 5.70625,82.9676685 5.70625,82.595 C5.70625,82.2223315 5.56325143,81.8800016 5.27725,81.568 C4.99124857,81.2559984 4.5882526,81.1 4.06825,81.1 C3.5482474,81.1 3.14958472,81.2559984 2.87225,81.568 C2.59491528,81.8800016 2.45625,82.2266648 2.45625,82.608 C2.45625,82.9806685 2.59491528,83.3229984 2.87225,83.635 Z" id="8" fill="#34444D" fill-rule="nonzero"></path>
+                <rect id="r--64" fill="#EBFEFF" x="448" y="0" width="64" height="64" rx="2"></rect>
+                <rect id="r--56" fill="#E0F7F8" x="360" y="8" width="56" height="56" rx="2"></rect>
+                <rect id="r--48" fill="#80DDE4" x="280" y="16" width="48" height="48" rx="2"></rect>
+                <rect id="r--40" fill="#00ABBA" x="208" y="24" width="40" height="40" rx="2"></rect>
+                <rect id="r--32" fill="#00ABBA" x="144" y="32" width="32" height="32" rx="2"></rect>
+                <rect id="r--24" fill="#00ABBA" x="88" y="40" width="24" height="24" rx="2"></rect>
+                <rect id="r--16" fill="#0395A1" x="40" y="48" width="16" height="16" rx="2"></rect>
+                <rect id="r--8" fill="#055E5F" x="0" y="56" width="8" height="8" rx="2"></rect>
+                <path d="M4,60 L480,32" id="line" stroke="#FB9105" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
 
-  <div id="page-grid" class="l-full-page section--logo">
-    <div class="section__typo">
-      <h1 class="section__title">Ein ehrlicher Charakter</h1>
-      <div class="section__body l-stack">
-        <p class="section__hero">Grid</p>
+      </div>
+    </div>
+    <div class="l-stack--100">
+      <h3>Website</h3>
+      <div class="sandbox">
+        website pic
+      </div>
+    </div>
+    <div class="l-stack--100">
+      <h3>Tarifrechner</h3>
+      <div class="sandbox">
+        Tarifrechner
       </div>
     </div>
   </div>
-  <!-- <h2 class="h2--adaptive">Layout</h2>
-  <h3 class="h3--adaptive">Größen</h3>
-  <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p>
-  <h3 class="h3--adaptive">Grid</h3>
-  <p></p>
-  <h3 class="h3--adaptive">Breakpoints</h3>
-  <p>Das HUK24 Layout basiert auf der magischen Zahl 8. Alle Größen und Abstände entsprechen einem Vielfachen von 8px.</p> -->
+</section>
+
+    
+
+<section id="icons" class="l-stack--200 wrapper waypoint" data-title="Icons">
+  <div class="l-stack--100">
+    <div>
+      <a href="" class="anchor">Updated Yesterday <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+  <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
+  <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
+  <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
+</svg>
+</span></a>
+      <h1 class="h1--600">Icons</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
+  </div>
+
+  <div class="l-stack--100">
+    <h2>Taxonomie</h2>
+    <div class="l-stack--100 l-flex--tablet-up">
+      <div class="l-flex__child l-stack--75">
+        <h3>Isometrisch</h3>
+        <div class="sandbox">
+
+        </div>
+      </div>
+      <div class="l-flex__child l-stack--75">
+        <h3>UI-Icons</h3>
+        <div class="sandbox">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="l-stack--100">
+    <h2 id="spacing">Isometrisch</h2>
+    <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+    <button class="btn btn--primary">Download</button>
+  </div>
+  <div class="l-stack--100">
+    <h2 id="spacing">UI-Icons</h2>
+    <p>Die  Pfeilklammer steht für Sicherheit, Innovation, Digitalität und Differenzierung. Kurz: sie steht für den Anspruch der Marke, die digitale Speerspitze im HUK- Verbund zu sein.</p>
+    <button class="btn btn--primary">Download</button>
+  </div>
+</section>
+
+    
+
+<section id="typo" class="l-stack--200 wrapper waypoint" data-title="Typographie">
+  <div class="l-stack--100">
+    <div>
+      <a href="" class="anchor">Updated Yesterday <span class="icon"><svg class="i--chain" width="20px" height="20px" viewBox="0 0 20 20">
+  <path d="M13.6618182,13 L11,13 L11,14.5 L13.6618182,14.5 C16.0538182,14.5 18,12.5307692 18,10 C18,7.46923077 16.0538182,5.5 13.6618182,5.5 L11,5.5 L11,7 L13.6618182,7 C15.2516364,7 16.5454545,8.31769231 16.5454545,10 C16.5454545,11.6823077 15.2516364,13 13.6618182,13 Z" id="right" fill="#35444C"></path>
+  <rect id="mid" fill="#35444C" x="6" y="9" width="8" height="2"></rect>
+  <path d="M6.33818182,7 L9,7 L9,5.5 L6.33818182,5.5 C3.94618182,5.5 2,7.46923077 2,10 C2,12.5307692 3.94618182,14.5 6.33818182,14.5 L9,14.5 L9,13 L6.33818182,13 C4.74836364,13 3.45454545,11.6823077 3.45454545,10 C3.45454545,8.31769231 4.74836364,7 6.33818182,7 Z" id="left" fill="#35444C"></path>
+</svg>
+</span></a>
+      <h1 class="h1--600">Typographie</h1>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae possimus beatae praesentium ad quos quibusdam placeat vero doloribus inventore eum adipisci aut nulla voluptatem laudantium quidem explicabo nesciunt, laboriosam, necessitatibus?</p>
+  </div>
+  <div class="l-stack--100">
+    <h2>Beispiel</h2>
+    <div class="sandbox">
+      Beispiel
+    </div>
+  </div>
 </section>
 
 
-
-    <section id="icons" class="l-full-page l-stack waypoint" data-title="Icons">
-      <h2 class="h1--adaptive">Icons</h2>
-    </section>
-    <section id="typo" class="l-full-page l-stack waypoint" data-title="Typographie">
-      <h2 class="h2--adaptive">Typographie</h2>
-      <h3 class="h3--adaptive"><span class="font-400">Moderat Regulär und</span> Fett</h3>
-      <h4 class="h4--adaptive">Überschriften</h4>
-      <p>Moderat ist eine zeitgenössische Sans-Serif-Schrift, die sich durch eine charakteristische Kombination aus geometrischen Formen und einigen kantigen Akzenten auszeichnet. Für die KD-Lounge, eine von Studenten initiierte und getragene Vortragsreihe an der HTWG Konstanz, die sich mit Design und allen angrenzenden Disziplinen beschäftigt, wurde eine Schrift entworfen, die nicht nur auf Einladungen und Plakaten für die Lounge Verwendung fand, sondern auch zur Refinanzierung ebendieser dient. Unter den bisherigen Gästen der KD-Lounge waren Gestalter wie Kurt Weidemann, David Carson, Ruedi Baur, Erich Brechbühl, Götz Gramlich oder Sven Lindhorst-Emme.</p>
-      <ul>
-        <li class="h1--large">Überschrift 1+ 57px</li>
-        <li class="h1">Überschrift 1 48px</li>
-        <li class="h2">Überschrift 2 40px</li>
-        <li class="h3">Überschrift 3 33px</li>
-        <li class="h4">Überschrift 4 28px</li>
-        <li class="h5">Überschrift 5 23px</li>
-        <li class="h6">Überschrift 6 13px</li>
-      </ul>
-      <h4 class="h4--adaptive">Fließtext</h4>
-      <ul>
-        <li>Mobile 16px</li>
-        <li>Desktop 19px</li>
-      </ul>
-    </section>
   </div>
 </main>
 <script type="text/javascript" src="../_assets/js/waypoints.min.js"></script>

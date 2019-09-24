@@ -2,6 +2,7 @@
 title: design
 layout: layouts/default
 baseurl: ../
+date: Last Modified
 ---
 <main class="l-sidebar">
   <input id="js-page-nav__toggle" type="checkbox" class="page-nav__toggle">
@@ -25,9 +26,9 @@ baseurl: ../
           <a class="page-nav__link" href="#layout">Layout</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#layout" class="page-subnav__link">Abstände</a></li>
-              <li class="page-subnav__item"><a href="#breakpoints" class="page-subnav__link">Breakpoints</a></li>
-              <li class="page-subnav__item"><a href="#page-grid" class="page-subnav__link">Grid</a></li>
+              <li class="page-subnav__item"><a href="#grid" class="page-subnav__link">Grid</a></li>
+              <li class="page-subnav__item"><a href="#spacing" class="page-subnav__link">Abstände</a></li>
+              <li class="page-subnav__item"><a href="#buttons" class="page-subnav__link">Buttons</a></li>
             </ul>
           </div>
         </li>
@@ -51,36 +52,14 @@ baseurl: ../
       </ul>
     </nav>
   </div>
-  <div class="l-sidebar__main">
+  <div class="l-sidebar__main l-stack--300">
 
     {% include partials/logo.html %}
     {% include partials/colors.html %}
     {% include partials/layout.html %}
+    {% include partials/icons.html %}
+    {% include partials/typographie.html %}
 
-
-    <section id="icons" class="l-full-page l-stack waypoint" data-title="Icons">
-      <h2 class="h1--adaptive">Icons</h2>
-    </section>
-    <section id="typo" class="l-full-page l-stack waypoint" data-title="Typographie">
-      <h2 class="h2--adaptive">Typographie</h2>
-      <h3 class="h3--adaptive"><span class="font-400">Moderat Regulär und</span> Fett</h3>
-      <h4 class="h4--adaptive">Überschriften</h4>
-      <p>Moderat ist eine zeitgenössische Sans-Serif-Schrift, die sich durch eine charakteristische Kombination aus geometrischen Formen und einigen kantigen Akzenten auszeichnet. Für die KD-Lounge, eine von Studenten initiierte und getragene Vortragsreihe an der HTWG Konstanz, die sich mit Design und allen angrenzenden Disziplinen beschäftigt, wurde eine Schrift entworfen, die nicht nur auf Einladungen und Plakaten für die Lounge Verwendung fand, sondern auch zur Refinanzierung ebendieser dient. Unter den bisherigen Gästen der KD-Lounge waren Gestalter wie Kurt Weidemann, David Carson, Ruedi Baur, Erich Brechbühl, Götz Gramlich oder Sven Lindhorst-Emme.</p>
-      <ul>
-        <li class="h1--large">Überschrift 1+ 57px</li>
-        <li class="h1">Überschrift 1 48px</li>
-        <li class="h2">Überschrift 2 40px</li>
-        <li class="h3">Überschrift 3 33px</li>
-        <li class="h4">Überschrift 4 28px</li>
-        <li class="h5">Überschrift 5 23px</li>
-        <li class="h6">Überschrift 6 13px</li>
-      </ul>
-      <h4 class="h4--adaptive">Fließtext</h4>
-      <ul>
-        <li>Mobile 16px</li>
-        <li>Desktop 19px</li>
-      </ul>
-    </section>
   </div>
 </main>
 <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/waypoints.min.js"></script>

@@ -1,101 +1,43 @@
+
 .palette {
+  display: flex;
+  flex-direction: column-reverse;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.palette {
-  display: flex;
-}
-
-.palette__item {
-  flex: 1 1 50%;
-  min-width: calc(4rem + var(--growthRatio));
-  min-height: calc(4rem + var(--growthRatio));
-  border-radius: 20px;
-  overflow: hidden;
-  transition: flex-basis .2s ease-in-out;
-}
-
-.palette__item:hover {
-  flex-basis: 75%;
-}
-
-.palette__item + .palette__item {
-  margin-left: calc(2rem + var(--growthRatio));
-}
-
-.palette--sub {
-  flex-direction: column;
-}
-
-.color__body {
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity .2s .2s linear, transform .2s .2s ease-in-out;
-}
-
 .color {
-  position: relative;
-  z-index: 100;
-  padding: 1.5rem 1rem 1.5rem 3rem;
-  hyphens: none;
-  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
 }
 
-.color:hover .color__body {
-  opacity: 1;
-  transform: translateX(0);
+.color > * {
+  flex: 1;
+  height: 15vh;
+}
+
+.color > * + * {
+  margin-left: calc(1rem + var(--growthRatio));
 }
 
 .color__body {
-  position: relative;
-  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
 }
 
-.color--is-dark {
-  color: var(--c-white);
-}
+@media (min-width: 50rem) {
 
-.color__bg-svg {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
+  .palette {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
 
-.color__type,
-.color__name,
-.color__label,
-.color__number {
-  font-weight: 700;
-}
-
-.color__type {
-  font-size: var(--h6-size);
-  line-height: var(--h6-line-height);
-  text-transform: uppercase;
-}
-
-.color__name {
-  margin-bottom: var(--s0);
-  font-size: var(--h4-size);
-  line-height: var(--h4-line-height);
-}
-
-.color__codes {
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-column-gap: .5rem;
-}
-
-.color__label,
-.color__value {
-  line-height: 1.5rem;
-}
-
-.color__label {
-  font-weight: 700;
+  .color {
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
