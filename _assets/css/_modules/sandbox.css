@@ -9,6 +9,14 @@
   margin: calc(2rem + var(--growthRatio)) calc(-1.5rem - 3vw) calc(-1.5rem - 3vw);
 }
 
+.page--is-dark .sandbox {
+  background: var(--c-neutral-900);
+}
+
+.page--is-colored .sandbox {
+  background: var(--c-orange-300);
+}
+
 @media (min-width: 64rem) {
 
   .sandbox {
