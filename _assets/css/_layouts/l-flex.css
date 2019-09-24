@@ -35,6 +35,12 @@
     justify-content: space-between;
   }
 
+  .l-flex__child {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+
   .l-flex--desktop-up > .l-flex__child + .l-flex__child {
     margin: 0 0 0 calc(2rem + var(--growthRatio));
   }

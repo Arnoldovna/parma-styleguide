@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="214px" height="60px" viewBox="0 0 214 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>btn--primary--deconstructed</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Markenportal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-478.000000, -7928.000000)">
+            <g id="btn--primary--deconstructed" transform="translate(478.000000, 7928.000000)">
+                <rect id="Rectangle" stroke="#CBCFD2" x="4.5" y="0.5" width="150" height="59" rx="4"></rect>
+                <g id="icons-/-arrow--right" transform="translate(119.000000, 23.000000)" fill="#CBCFD2">
+                    <polygon id="arrow--right" transform="translate(6.949747, 7.949747) rotate(-45.000000) translate(-6.949747, -7.949747) " points="8.44974747 4.44974747 10.4497475 4.44974747 10.4497475 11.4497475 3.44974747 11.4497475 3.44974747 9.44974747 8.44974747 9.44974747"></polygon>
+                </g>
+                <text id="Text" font-family="ModeratTrial-Medium, Moderat Trial" font-size="19" font-weight="400" line-spacing="24" fill="#CBCFD2">
+                    <tspan x="28" y="35">Wayfarer</tspan>
+                </text>
+                <g id="Lining" transform="translate(171.000000, 0.000000)" fill="#FBA308">
+                    <rect id="Rectangle" x="2" y="0" width="1" height="60"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="59" width="5" height="1"></rect>
+                </g>
+                <g id="Lining" transform="translate(16.000000, 30.500000) rotate(90.000000) translate(-16.000000, -30.500000) translate(13.500000, 18.500000)" fill="#FBA308">
+                    <rect id="Rectangle" x="2" y="0" width="1" height="24"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="23" width="5" height="1"></rect>
+                </g>
+                <g id="Lining" transform="translate(116.500000, 30.500000) rotate(90.000000) translate(-116.500000, -30.500000) translate(114.000000, 22.500000)" fill="#FBA308">
+                    <rect id="Rectangle" x="2" y="0" width="1" height="16"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="15" width="5" height="1"></rect>
+                </g>
+                <g id="Lining" transform="translate(143.000000, 30.500000) rotate(90.000000) translate(-143.000000, -30.500000) translate(140.500000, 18.500000)" fill="#FBA308">
+                    <rect id="Rectangle" x="2" y="0" width="1" height="24"></rect>
+                    <rect id="Rectangle" x="0" y="0" width="5" height="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="23" width="5" height="1"></rect>
+                </g>
+                <g id="lining-/-rectangle--left" transform="translate(180.000000, 21.000000)" fill="#FBA308">
+                    <rect id="Rectangle" x="3" y="0" width="31" height="18" rx="1"></rect>
+                    <polygon id="Rectangle" points="3 6 3 12 0 9"></polygon>
+                </g>
+                <text id="60px" font-family="ModeratTrial-Regular, Moderat Trial" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="186" y="33">60px</tspan>
+                </text>
+                <g id="lining-/-rectangle--bottom" transform="translate(101.000000, 5.000000)" fill="#FBA308">
+                    <rect id="Rectangle" x="0" y="0" width="30" height="16.2857143" rx="1"></rect>
+                    <polygon id="Rectangle" transform="translate(15.000000, 17.000000) scale(1, -1) rotate(90.000000) translate(-15.000000, -17.000000) " points="16.5 14 16.5 20 13.5 17"></polygon>
+                </g>
+                <text id="16px" font-family="ModeratTrial-Regular, Moderat Trial" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="105.62" y="16">16px</tspan>
+                </text>
+                <g id="lining-/-rectangle--top" transform="translate(127.000000, 35.000000)" fill="#FBA308">
+                    <rect id="Rectangle" x="0" y="2.71428571" width="32" height="16.2857143" rx="1"></rect>
+                    <polygon id="Rectangle" transform="translate(16.000000, 1.500000) rotate(90.000000) translate(-16.000000, -1.500000) " points="17.5 -1.5 17.5 4.5 14.5 1.5"></polygon>
+                </g>
+                <text id="24px" font-family="ModeratTrial-Regular, Moderat Trial" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="131.51" y="49">24px</tspan>
+                </text>
+                <g id="lining-/-rectangle--top" transform="translate(0.000000, 35.000000)" fill="#FBA308">
+                    <rect id="Rectangle" x="0" y="2.71428571" width="32" height="16.2857143" rx="1"></rect>
+                    <polygon id="Rectangle" transform="translate(16.000000, 1.500000) rotate(90.000000) translate(-16.000000, -1.500000) " points="17.5 -1.5 17.5 4.5 14.5 1.5"></polygon>
+                </g>
+                <text id="24px" font-family="ModeratTrial-Regular, Moderat Trial" font-size="10" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="4.51" y="49">24px</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

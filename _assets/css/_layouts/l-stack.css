@@ -1,6 +1,6 @@
 
 .l-stack--50 > * + * {
-  margin-top: calc(.5rem + 1vw);
+  margin-top: calc(.05rem + 1vw);
 }
 
 .l-stack--75 > * + * {
