@@ -11,23 +11,23 @@
 
   <div class="l-stack--100">
     <h2>Primärfarben</h2>
-
-    {%- for color in colors.primary -%}
-    <ul class="palette">
-      {%- for shade in color[1] -%}
-      <li class="color">
-        <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <rect width="100%" height="100%" fill="#{{ shade.hex }}"/>
-        </svg>
-        <div class="color__body">
-          <div class="color__name">{{ shade.name }} {{ shade.number }}</div>
-          <div class="color__value">#{{ shade.hex }}
+    <div>
+      {%- for color in colors.primary -%}
+      <ul class="palette">
+        {%- for shade in color[1] -%}
+        <li class="color">
+          <svg class="color__bg-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <rect width="100%" fill="#{{ shade.hex }}"/>
+          </svg>
+          <div class="color__body">
+            <div class="color__name">{{ shade.name }} {{ shade.number }}</div>
+            <div class="color__value">#{{ shade.hex }}</div>
           </div>
-        </div>
-      </li>
+        </li>
+        {%- endfor -%}
+      </ul>
       {%- endfor -%}
-    </ul>
-    {%- endfor -%}
+    </div>
   </div>
   <div class="l-stack--100">
     <h3>Grautöne</h3>
