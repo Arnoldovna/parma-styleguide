@@ -1,0 +1,18 @@
+.icons--isometric,
+.icons--ui {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icons--isometric__icon,
+.icons--ui__icon {
+  flex: 1 0 auto;
+  padding: calc(1rem + var(--growthRatio));
+  text-align: center;
+}
+
+.icons--ui__icon {
+  width: 33%;
+}
