@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="24px" viewBox="0 0 31 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>i--font</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.177714286 0.403636364 11.8148571 0.403636364 11.8148571 15.5338182 0.177714286 15.5338182"></polygon>
+        <polygon id="path-3" points="0.000685714286 0.418909091 17.9846857 0.418909091 17.9846857 23.2725818 0.000685714286 23.2725818"></polygon>
+    </defs>
+    <g id="Markenportal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-1000.000000, -9045.000000)">
+            <g id="i--font" transform="translate(994.000000, 9035.000000)">
+                <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
+                <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
+                <g id="1-Atoms-/-1.5-Icons-/-20-Mailbox_Formating" transform="translate(6.000000, 6.000000)">
+                    <g id="Group-7" transform="translate(0.000000, 2.909091)">
+                        <g id="Group-3" transform="translate(18.285714, 8.308509)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M5.852,12.6247273 C3.98342857,12.6247273 2.46342857,10.5345455 2.46342857,7.96872727 C2.46342857,5.40145455 3.98342857,3.31272727 5.852,3.31272727 C7.72057143,3.31272727 9.24057143,5.40145455 9.24057143,7.96872727 C9.24057143,10.5345455 7.72057143,12.6247273 5.852,12.6247273 L5.852,12.6247273 Z M9.52971429,0.403636364 L9.52971429,2.25090909 C8.53771429,1.11490909 7.26228571,0.403636364 5.852,0.403636364 C2.71828571,0.403636364 0.177714286,3.79127273 0.177714286,7.96872727 C0.177714286,12.1461818 2.71828571,15.5338182 5.852,15.5338182 C7.26228571,15.5338182 8.53771429,14.8225455 9.52971429,13.6850909 L9.52971429,15.5338182 L11.8154286,15.5338182 L11.8154286,0.403636364 L9.52971429,0.403636364 Z" id="Fill-1" fill="#35444C" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-6" transform="translate(0.000000, 1.035782)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-5"></g>
+                            <path d="M8.99268571,4.60058182 L12.1332571,13.6304 L5.85211429,13.6304 L8.99268571,4.60058182 Z M2.49782857,23.2725818 L4.83954286,16.5394909 L13.1458286,16.5394909 L15.4875429,23.2725818 L17.9846857,23.2725818 L10.0372571,0.418763636 L7.94811429,0.418763636 L0.000685714286,23.2725818 L2.49782857,23.2725818 Z" id="Fill-4" fill="#35444C" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

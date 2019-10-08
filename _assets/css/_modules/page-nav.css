@@ -1,10 +1,10 @@
 
 .page-nav {
-  position: absolute;
+  /* position: absolute;
   top: calc(7rem + var(--growthRatio));
   z-index: 800;
   width: 100%;
-  height: calc(100vh - calc(3rem + var(--growthRatio)));
+  height: calc(100vh - calc(3rem + var(--growthRatio))); */
   padding: calc(.5rem + var(--growthRatio)) calc(1rem + var(--growthRatio));
   background: var(--c-neutral-900);
   color: var(--c-white);
@@ -161,12 +161,12 @@
   }
 
   .page-nav {
-    position: absolute;
+    /* position: absolute;
     top: calc(6rem + var(--growthRatio));
     bottom: 0;
     width: auto;
     height: auto;
-    padding: calc(2rem + var(--growthRatio)) 0 0;
+    padding: calc(2rem + var(--growthRatio)) 0 0; */
     background: transparent;
     color: var(--c-neutral-900);
     transform: translateY(0);
@@ -207,6 +207,6 @@
 
 @media (min-width: 75rem) {
   .page-nav {
-    top: calc(10rem + var(--growthRatio));
+    /* top: calc(10rem + var(--growthRatio)); */
   }
 }

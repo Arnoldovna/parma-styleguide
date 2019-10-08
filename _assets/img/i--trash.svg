@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>i--trash</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Markenportal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-6" transform="translate(-1236.000000, -9041.000000)">
+            <g id="i--trash" transform="translate(1230.000000, 9035.000000)">
+                <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
+                <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
+                <g id="1-Atoms-/-1.5-Icons-/-20-Mailbox_Trash" transform="translate(6.000000, 6.000000)" fill="#35444C">
+                    <path d="M20.8,-5.32907052e-14 L20.8,3.1888 L32,3.1888 L32,6.3888 L28.7808,6.3888 L28.7808,26.7456 C28.7808,29.3204757 26.7420377,31.4288292 24.1942603,31.5409134 L23.9808,31.5456 L8.0192,31.5456 C5.44432432,31.5456 3.33597078,29.5068377 3.22388657,26.9590603 L3.2192,26.7456 L3.2192,6.3888 L-5.68434189e-14,6.3888 L-5.68434189e-14,3.1888 L11.2,3.1888 L11.2,-5.32907052e-14 L20.8,-5.32907052e-14 Z M25.5808,6.3888 L6.4192,6.3888 L6.4192,26.7456 C6.4192,27.5797333 7.05999506,28.265442 7.87387298,28.3390573 L8.0192,28.3456 L23.9808,28.3456 C24.8134222,28.3456 25.5004741,27.7062321 25.5742433,26.8911649 L25.5808,26.7456 L25.5808,6.3888 Z M13.59952,9.6208 L13.59952,24.768 L10.39952,24.768 L10.39952,9.6208 L13.59952,9.6208 Z M21.59952,9.6208 L21.59952,24.768 L18.39952,24.768 L18.39952,9.6208 L21.59952,9.6208 Z" id="Icon_Trash"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
