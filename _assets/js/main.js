@@ -1,4 +1,31 @@
 
+
+//
+// POLYFILLS
+// ------------------------------------------------------------- //
+
+// Array.from
+if (!Array.from) {
+    Array.from = function (object) {
+        'use strict';
+        return [].slice.call(object);
+    };
+}
+
+// NodeList.forEach
+if (window.NodeList && !NodeList.prototype.forEach) {
+    NodeList.prototype.forEach = Array.prototype.forEach;
+}
+
+// CSS variables
+if(typeof cssVars !== 'undefined') {
+  cssVars()
+}
+
+
+//
+// On DOM loaded
+// ------------------------------------------------------------- //
 document.addEventListener('DOMContentLoaded', (event) => {
 
   // const pageNav = document.querySelector("#js-page-nav")
@@ -331,60 +358,63 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // Intersection observer
   // ------------------------------------------------------------- //
 
-  const io = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      // Toggle class if intersects
-      entry.target.classList.toggle('in-view', entry.isIntersecting)
-      // console.log(entry.target)
-      // console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
+  if ('IntersectionObserver' in window) {
 
-      // Handle page header intersection
-      if (entry.target.classList.contains('page-header')) {
-        pageHeaderIntersectionHandler(entry.isIntersecting)
+    const io = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        // Toggle class if intersects
+        entry.target.classList.toggle('in-view', entry.isIntersecting)
+        // console.log(entry.target)
+        // console.log(`${entry.target.id} is in view: ${entry.isIntersecting}`)
+
+        // Handle page header intersection
+        if (entry.target.classList.contains('page-header')) {
+          pageHeaderIntersectionHandler(entry.isIntersecting)
+        }
       }
-    }
-  })
+    })
 
-  if(document.querySelector('.js-io')) {
-    document.querySelectorAll('.js-io').forEach(el => { io.observe(el) })
+    if(document.querySelector('.js-io')) {
+      document.querySelectorAll('.js-io').forEach(el => { io.observe(el) })
+    }
+  }
+
+  const wireframesSVG = document.querySelector('#js-wireframes svg')
+
+  if(document.querySelector('.js-switcher')) {
+    document.querySelectorAll('.js-switcher').forEach(el => {
+      el.addEventListener('click', (e) => {
+
+        e.preventDefault()
+
+        // Remove active class from all switcher links
+        document.querySelectorAll('.js-switcher').forEach(link => {
+
+          link.classList.remove('switcher__link--is-active')
+        })
+        // Add active class to current switcher link
+        e.target.classList.add('switcher__link--is-active')
+
+        let tl = new TimelineMax()
+
+        tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
+        .set(wireframesSVG, { marginLeft: e.target.dataset.offset })
+        .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
+      })
+    })
+  }
+
+  if(document.querySelector('.product-img')) {
+
+    let pics = document.querySelectorAll('.product-img')
+
+    let master = Array.from(pics).reduce(function(tl, pic, i) {
+      let start = !i ? 0 : "-=0.3"
+      return tl.fromTo(pic, .3, { autoAlpha: 0, x: '-110%', y: '-50%'}, { autoAlpha: 1, x: '-40%' }, start)
+      .to(pic, 4, { x: '-30%', y: '-50%', ease: Linear.easeNone })
+      .to(pic, .3, { autoAlpha: 0, x: '30%', y: '-50%' })
+    }, new TimelineMax())
+
+    master.repeat(-1)
   }
 })
-
-const wireframesSVG = document.querySelector('#js-wireframes svg')
-
-if(document.querySelector('.js-switcher')) {
-  document.querySelectorAll('.js-switcher').forEach(el => {
-    el.addEventListener('click', (e) => {
-
-      e.preventDefault()
-
-      // Remove active class from all switcher links
-      document.querySelectorAll('.js-switcher').forEach(link => {
-
-        link.classList.remove('switcher__link--is-active')
-      })
-      // Add active class to current switcher link
-      e.target.classList.add('switcher__link--is-active')
-
-      let tl = new TimelineMax()
-
-      tl.to(wireframesSVG, .15, { opacity: 0, y: '20px' })
-      .set(wireframesSVG, { marginLeft: e.target.dataset.offset })
-      .to(wireframesSVG, .15, { opacity: 1, y: '0px' })
-    })
-  })
-}
-
-if(document.querySelector('.product-img')) {
-
-  let pics = document.querySelectorAll('.product-img')
-
-  let master = Array.from(pics).reduce(function(tl, pic, i) {
-    let start = !i ? 0 : "-=0.3"
-  	return tl.fromTo(pic, .3, { autoAlpha: 0, x: '-110%', y: '-50%'}, { autoAlpha: 1, x: '-40%' }, start)
-             .to(pic, 4, { x: '-30%', y: '-50%', ease: Linear.easeNone })
-             .to(pic, .3, { autoAlpha: 0, x: '30%', y: '-50%' })
-  }, new TimelineMax())
-
-  master.repeat(-1)
-}

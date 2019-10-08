@@ -17,6 +17,10 @@
     {% include partials/header.html %}
     {{ content }}
     {% include partials/footer.html %}
+    <script type="text/javascript">
+      if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+        document.write('<script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"><\/script>');
+    </script>
     <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/plugins/CSSPlugin.min.js"></script>
     <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/TimelineMax.min.js"></script>
     <script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/gsap/TweenMax.min.js"></script>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx eleventy",
+    "build": "npx eleventy && babel _assets/js --out-dir _site/_assets/js && npx postcss _assets/css/*.css --use autoprefixer -d _site/_assets/css/",
     "serve": "npx eleventy --serve",
     "debug": "DEBUG=* npx eleventy"
   },
@@ -14,6 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.6.4",
+    "postcss-cli": "^6.1.3"
   }
 }
