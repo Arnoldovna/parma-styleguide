@@ -20,6 +20,7 @@
 @import "_modules/page-nav.css";
 @import "_modules/logo.css";
 @import "_modules/wireframes.css";
+@import "_modules/typography.css";
 @import "_layouts/l-sidebar.css";
 @import "_layouts/l-stack.css";
 @import "_layouts/l-scroll-block.css";
@@ -151,6 +152,16 @@ img {
 .pos-rel {
   position: relative;
   z-index: 800;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
 }
 
 @media (min-width: 36rem) {
