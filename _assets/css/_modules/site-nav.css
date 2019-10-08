@@ -86,6 +86,11 @@ a:hover #right {
   transform: translate(2px, 0);
 }
 
+a svg {
+  width: 20px;
+  height: 16px;
+}
+
 /* SHOW nav when input is checked */
 :checked ~ .site-nav {
   transform: translateY(0);

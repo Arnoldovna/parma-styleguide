@@ -68,7 +68,7 @@
   color: var(--c-white);
 }
 
-@media (min-width: 48rem) {
+/* @media (min-width: 48rem) { */
 
   .typo__inner {
     position: absolute;
@@ -99,7 +99,7 @@
   .typo :nth-child(3) {
     margin-left: calc(1rem + var(--growthRatio));
   }
-}
+/* } */
 
 @media (min-width: 64rem) {
 

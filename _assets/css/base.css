@@ -128,7 +128,11 @@ h6, .h6 {
 }
 
 .h1--200 {
-  font-size: var(--h1--200-size);
+  font-size: calc(100% + .5vw);
+}
+
+.h1--100 {
+  font-size: calc(100% + .05vw);
 }
 
 a {
