@@ -4,71 +4,139 @@ layout: layouts/default.html
 baseurl: ../
 date: Last Modified
 ---
+
 <main class="l-sidebar">
-  <input id="js-page-nav__toggle" type="checkbox" class="page-nav__toggle">
-  <label id="js-page-nav__label" for="js-page-nav__toggle" class="page-nav__label">
+  <input id="js-page-nav__toggle" type="checkbox" class="page-nav__toggle" />
+  <label
+    id="js-page-nav__label"
+    for="js-page-nav__toggle"
+    class="page-nav__label"
+  >
     <span id="js-page-nav__label__content">Inhalte</span>
-    <img class="page-nav__arrow" src="{{ baseurl }}_assets/img/arrow--down.svg" alt="Pfeil nach unten">
+    <img
+      class="page-nav__arrow"
+      src="{{ baseurl }}_assets/img/arrow--down.svg"
+      alt="Pfeil nach unten"
+    />
   </label>
   <div class="l-sidebar__aside">
     <nav id="js-page-nav" class="page-nav">
       <ul class="page-nav__items">
         <li class="page-nav__item">
-          <div class="page-nav__icon page-nav__icon--is-active">{% include ../_assets/img/klammer--rechts.svg %}</div>
-          <a class="page-nav__link page-nav__link--is-active" href="#logo">Logo</a>
+          <div class="page-nav__icon page-nav__icon--is-active">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
+          <a class="page-nav__link page-nav__link--is-active" href="#logo"
+            >Logo</a
+          >
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#logo__variations" class="page-subnav__link">Variationen</a></li>
+              <li class="page-subnav__item">
+                <a href="#logo__variations" class="page-subnav__link"
+                  >Variationen</a
+                >
+              </li>
             </ul>
           </div>
         </li>
         <li class="page-nav__item">
-          <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
+          <div class="page-nav__icon">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
           <a class="page-nav__link" href="#colors">Farben</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#colors__primary" class="page-subnav__link">Primärfarben</a></li>
-              <li class="page-subnav__item"><a href="#colors__neutrals" class="page-subnav__link">Grautöne</a></li>
+              <li class="page-subnav__item">
+                <a href="#colors__primary" class="page-subnav__link"
+                  >Primärfarben</a
+                >
+              </li>
+              <li class="page-subnav__item">
+                <a href="#colors__neutrals" class="page-subnav__link"
+                  >Grautöne</a
+                >
+              </li>
             </ul>
           </div>
         </li>
         <li class="page-nav__item">
-          <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
+          <div class="page-nav__icon">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
+          <a class="page-nav__link" href="#test">Test</a>
+          <div class="subnav-wrapper">
+            <ul class="page-subnav">
+              <li class="page-subnav__item">
+                <a href="#test__primary" class="page-subnav__link">BLA</a>
+              </li>
+              <li class="page-subnav__item">
+                <a href="#test__neutrals" class="page-subnav__link">BLUB</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="page-nav__item">
+          <div class="page-nav__icon">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
           <a class="page-nav__link" href="#layout">Layout</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#layout__grid" class="page-subnav__link">Grid</a></li>
-              <li class="page-subnav__item"><a href="#layout__spacing" class="page-subnav__link">Abstände</a></li>
-              <li class="page-subnav__item"><a href="#layout__buttons" class="page-subnav__link">Buttons</a></li>
+              <li class="page-subnav__item">
+                <a href="#layout__grid" class="page-subnav__link">Grid</a>
+              </li>
+              <li class="page-subnav__item">
+                <a href="#layout__spacing" class="page-subnav__link"
+                  >Abstände</a
+                >
+              </li>
+              <li class="page-subnav__item">
+                <a href="#layout__buttons" class="page-subnav__link">Buttons</a>
+              </li>
             </ul>
           </div>
         </li>
         <li class="page-nav__item">
-          <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
+          <div class="page-nav__icon">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
           <a class="page-nav__link" href="#icons">Icons</a>
           <div class="subnav-wrapper">
             <ul class="page-subnav">
-              <li class="page-subnav__item"><a href="#icons__taxonomy" class="page-subnav__link">Taxonomie</a></li>
-              <li class="page-subnav__item"><a href="#icons__isometric" class="page-subnav__link">Isometrisch</a></li>
-              <li class="page-subnav__item"><a href="#icons__ui-icons" class="page-subnav__link">UI-Icons</a></li>
+              <li class="page-subnav__item">
+                <a href="#icons__taxonomy" class="page-subnav__link"
+                  >Taxonomie</a
+                >
+              </li>
+              <li class="page-subnav__item">
+                <a href="#icons__isometric" class="page-subnav__link"
+                  >Isometrisch</a
+                >
+              </li>
+              <li class="page-subnav__item">
+                <a href="#icons__ui-icons" class="page-subnav__link"
+                  >UI-Icons</a
+                >
+              </li>
             </ul>
           </div>
         </li>
         <li class="page-nav__item">
-          <div class="page-nav__icon">{% include ../_assets/img/klammer--rechts.svg %}</div>
+          <div class="page-nav__icon">
+            {% include ../_assets/img/klammer--rechts.svg %}
+          </div>
           <a class="page-nav__link" href="#typo">Typographie</a>
         </li>
       </ul>
     </nav>
   </div>
   <div class="l-sidebar__main l-stack--600">
-
-    {% include partials/logo.html %}
-    {% include partials/colors.html %}
-    {% include partials/layout.html %}
-    {% include partials/icons.html %}
-    {% include partials/typographie.html %}
-
+    {% include partials/logo.html %} {% include partials/colors.html %} {%
+    include partials/test.html %} {% include partials/layout.html %} {% include
+    partials/icons.html %} {% include partials/typographie.html %}
   </div>
 </main>
-<script type="text/javascript" src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/waypoints.min.js"></script>
+<script
+  type="text/javascript"
+  src="{% if baseurl %}{{ baseurl }}{% endif %}_assets/js/waypoints.min.js"
+></script>
