@@ -1,11 +1,11 @@
-
 .page-header {
   position: absolute;
   top: 0;
-  z-index: 904;
-  width: 100%;
+  z-index: 100;
+  width: 100vw;
   height: calc(4rem + var(--growthRatio));
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header__bar {
@@ -13,69 +13,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: calc(.5rem + var(--growthRatio)) calc(1rem + var(--growthRatio));
+  /* padding: calc(0.5rem + var(--growthRatio)) calc(1rem + var(--growthRatio)); */
   background: white;
   z-index: 900;
 }
 
-.logo--huk {
-  max-height: calc(1.5rem + var(--growthRatio));
-  background: url(../../img/logo--huk24.svg) top left no-repeat;
+.logo-parma {
+  background: url(../../img/produkte/logo-parma.svg) top left no-repeat;
   background-size: contain;
   background-position: left center;
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-}
-
-@media (min-width: 32rem) {
-
-  .page-header {
-    display: flex;
-    background: var(--c-white);
-  }
-
-  .page-header__bar {
-    display: flex;
-    position: static;
-    padding: calc(1rem + var(--growthRatio));
-    overflow: hidden;
-  }
-
-  .logo--huk {
-    margin: 0;
-  }
-}
-
-@media (min-width: 36rem) {
-
-  .page-header {
-    height: calc(6rem + var(--growthRatio));
-  }
-
-  .page-header__bar {
-    padding-left: calc(1.5rem + var(--growthRatio));
-  }
-}
-
-@media (min-width: 48rem) {
-
-  .page-header {
-    height: calc(8rem + var(--growthRatio));
-  }
-
-  .page-header__bar {
-    padding-left: calc(3rem + var(--growthRatio));
-  }
-}
-
-@media (min-width: 75rem) {
-
-  .page-header {
-    height: calc(10rem + var(--growthRatio));
-  }
-
-  .page-header__bar {
-    padding-left: calc(5rem + var(--growthRatio));
-  }
 }
